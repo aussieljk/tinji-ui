@@ -16,6 +16,11 @@ const particleCount = particles.length;
 
 const description = `Every one of the ${particleCount} particles rendered on a single page, each with its live preview and full source code. The kitchen sink.`;
 
+// ~510 demos + full source render to a >20MB document, over Vercel's 19MB
+// static-page limit. Render on demand instead of prerendering.
+export const dynamic = "force-dynamic";
+export const maxDuration = 300;
+
 export const metadata: Metadata = {
   description,
   title: "Kitchen Sink - tinji ui",
