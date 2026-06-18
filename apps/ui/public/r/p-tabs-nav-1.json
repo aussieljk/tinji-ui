@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "p-tabs-nav-1",
+  "description": "Navigation tabs rendered as links with active state",
+  "registryDependencies": [
+    "@coss/tabs-nav"
+  ],
+  "files": [
+    {
+      "path": "registry/default/particles/p-tabs-nav-1.tsx",
+      "content": "import {\n  TabsNav,\n  TabsNavLink,\n  TabsNavList,\n} from \"@/registry/default/ui/tabs-nav\";\n\nexport default function Particle() {\n  return (\n    <TabsNav aria-label=\"Account\">\n      <TabsNavList>\n        <TabsNavLink active href=\"#overview\">\n          Overview\n        </TabsNavLink>\n        <TabsNavLink href=\"#activity\">Activity</TabsNavLink>\n        <TabsNavLink href=\"#settings\">Settings</TabsNavLink>\n      </TabsNavList>\n    </TabsNav>\n  );\n}\n",
+      "type": "registry:block"
+    }
+  ],
+  "categories": [
+    "tabs nav"
+  ],
+  "type": "registry:block"
+}

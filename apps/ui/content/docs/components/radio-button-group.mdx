@@ -1,0 +1,73 @@
+---
+title: Radio Button Group
+description: A radio group whose options are styled as selectable bordered buttons.
+---
+
+<ComponentPreview name="p-radio-button-group-1" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTab value="cli">CLI</TabsTab>
+  <TabsTab value="manual">Manual</TabsTab>
+</TabsList>
+<TabsPanel value="cli">
+
+```bash
+npx shadcn@latest add @coss/radio-button-group
+```
+
+</TabsPanel>
+
+<TabsPanel value="manual">
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @base-ui/react
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="radio-button-group" title="components/ui/radio-button-group.tsx" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsPanel>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import {
+  RadioButtonGroup,
+  RadioButtonGroupItem,
+} from "@/components/ui/radio-button-group"
+```
+
+```tsx
+<RadioButtonGroup defaultValue="pro">
+  <RadioButtonGroupItem value="starter">Starter</RadioButtonGroupItem>
+  <RadioButtonGroupItem value="pro">Pro</RadioButtonGroupItem>
+  <RadioButtonGroupItem value="enterprise">Enterprise</RadioButtonGroupItem>
+</RadioButtonGroup>
+```
+
+## API Reference
+
+Built on Base UI's `RadioGroup` and `Radio` primitives. Each item is a button-like selectable box that highlights with a primary border and ring when checked (via the `data-checked` state).
+
+### RadioButtonGroup
+
+Root component. Styled wrapper for `RadioGroup.Root` from Base UI with flex column layout.
+
+### RadioButtonGroupItem
+
+An individual selectable button. Styled wrapper for `Radio.Root` from Base UI. Supports any children as the label content and reflects its state with `data-checked` / `data-disabled`.

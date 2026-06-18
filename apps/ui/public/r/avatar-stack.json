@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "avatar-stack",
+  "registryDependencies": [
+    "@coss/avatar"
+  ],
+  "files": [
+    {
+      "path": "registry/default/ui/avatar-stack.tsx",
+      "content": "import type React from \"react\";\nimport { cn } from \"@/registry/default/lib/utils\";\nimport { Avatar, AvatarFallback } from \"@/registry/default/ui/avatar\";\n\nexport function AvatarStack({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">): React.ReactElement {\n  return (\n    <div\n      className={cn(\n        \"flex items-center -space-x-2 [&_[data-slot=avatar]]:ring-2 [&_[data-slot=avatar]]:ring-background\",\n        className,\n      )}\n      data-slot=\"avatar-stack\"\n      {...props}\n    />\n  );\n}\n\nexport function AvatarStackOverflow({\n  className,\n  children,\n  ...props\n}: React.ComponentProps<typeof Avatar>): React.ReactElement {\n  return (\n    <Avatar\n      className={cn(\"bg-muted text-muted-foreground\", className)}\n      data-slot=\"avatar-stack-overflow\"\n      {...props}\n    >\n      <AvatarFallback className=\"bg-transparent\">{children}</AvatarFallback>\n    </Avatar>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "type": "registry:ui"
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "avatar-group",
+  "registryDependencies": [
+    "@coss/avatar"
+  ],
+  "files": [
+    {
+      "path": "registry/default/ui/avatar-group.tsx",
+      "content": "import type React from \"react\";\nimport { cn } from \"@/registry/default/lib/utils\";\nimport { Avatar, AvatarFallback } from \"@/registry/default/ui/avatar\";\n\nexport function AvatarGroup({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">): React.ReactElement {\n  return (\n    <div\n      className={cn(\"flex items-center gap-2\", className)}\n      data-slot=\"avatar-group\"\n      {...props}\n    />\n  );\n}\n\nexport function AvatarGroupOverflow({\n  className,\n  children,\n  ...props\n}: React.ComponentProps<typeof Avatar>): React.ReactElement {\n  return (\n    <Avatar\n      className={cn(\"bg-muted text-muted-foreground\", className)}\n      data-slot=\"avatar-group-overflow\"\n      {...props}\n    >\n      <AvatarFallback className=\"bg-transparent\">{children}</AvatarFallback>\n    </Avatar>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "type": "registry:ui"
+}

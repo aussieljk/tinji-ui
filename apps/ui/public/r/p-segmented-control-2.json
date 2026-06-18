@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "p-segmented-control-2",
+  "description": "Segmented control rendered as navigation links",
+  "registryDependencies": [
+    "@coss/segmented-control"
+  ],
+  "files": [
+    {
+      "path": "registry/default/particles/p-segmented-control-2.tsx",
+      "content": "import {\n  SegmentedControlNav,\n  SegmentedControlNavItem,\n} from \"@/registry/default/ui/segmented-control\";\n\nexport default function Particle() {\n  return (\n    <SegmentedControlNav\n      aria-label=\"Account sections\"\n      className=\"w-full max-w-xs\"\n    >\n      <SegmentedControlNavItem aria-current=\"page\" href=\"#overview\">\n        Overview\n      </SegmentedControlNavItem>\n      <SegmentedControlNavItem href=\"#activity\">\n        Activity\n      </SegmentedControlNavItem>\n      <SegmentedControlNavItem href=\"#settings\">\n        Settings\n      </SegmentedControlNavItem>\n    </SegmentedControlNav>\n  );\n}\n",
+      "type": "registry:block"
+    }
+  ],
+  "categories": [
+    "segmented control"
+  ],
+  "type": "registry:block"
+}

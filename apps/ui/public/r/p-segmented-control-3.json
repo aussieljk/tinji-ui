@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "p-segmented-control-3",
+  "description": "Segmented control backed by a radio group",
+  "registryDependencies": [
+    "@coss/segmented-control"
+  ],
+  "files": [
+    {
+      "path": "registry/default/particles/p-segmented-control-3.tsx",
+      "content": "import {\n  SegmentedControlRadioGroup,\n  SegmentedControlRadioItem,\n} from \"@/registry/default/ui/segmented-control\";\n\nexport default function Particle() {\n  return (\n    <SegmentedControlRadioGroup\n      aria-label=\"Theme\"\n      className=\"w-full max-w-xs\"\n      defaultValue=\"system\"\n    >\n      <SegmentedControlRadioItem value=\"light\">Light</SegmentedControlRadioItem>\n      <SegmentedControlRadioItem value=\"dark\">Dark</SegmentedControlRadioItem>\n      <SegmentedControlRadioItem value=\"system\">\n        System\n      </SegmentedControlRadioItem>\n    </SegmentedControlRadioGroup>\n  );\n}\n",
+      "type": "registry:block"
+    }
+  ],
+  "categories": [
+    "segmented control"
+  ],
+  "type": "registry:block"
+}

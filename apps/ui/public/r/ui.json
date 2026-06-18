@@ -55,7 +55,21 @@
     "@coss/toggle",
     "@coss/toggle-group",
     "@coss/toolbar",
-    "@coss/tooltip"
+    "@coss/tooltip",
+    "@coss/avatar-group",
+    "@coss/avatar-stack",
+    "@coss/credit-card",
+    "@coss/widget-stack",
+    "@coss/lightbox",
+    "@coss/scroll-gallery",
+    "@coss/segmented-control",
+    "@coss/tabs-nav",
+    "@coss/filter-chip",
+    "@coss/radio-button-group",
+    "@coss/data-list",
+    "@coss/stacked-horizontal-bar-chart",
+    "@coss/date-field",
+    "@coss/typography"
   ],
   "type": "registry:ui"
 }

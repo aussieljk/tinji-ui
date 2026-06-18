@@ -1,0 +1,77 @@
+---
+title: Widget Stack
+description: A stack of layered widget cards, like the iOS widget stack.
+---
+
+<ComponentPreview name="p-widget-stack-1" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTab value="cli">CLI</TabsTab>
+  <TabsTab value="manual">Manual</TabsTab>
+</TabsList>
+<TabsPanel value="cli">
+
+```bash
+npx shadcn@latest add @coss/widget-stack
+```
+
+</TabsPanel>
+
+<TabsPanel value="manual">
+
+<Steps>
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="widget-stack" title="components/ui/widget-stack.tsx" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsPanel>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import {
+  WidgetStack,
+  WidgetStackItem,
+} from "@/components/ui/widget-stack"
+```
+
+```tsx
+<WidgetStack>
+  <WidgetStackItem depth={0}>Today</WidgetStackItem>
+  <WidgetStackItem depth={1}>Weather</WidgetStackItem>
+  <WidgetStackItem depth={2}>Activity</WidgetStackItem>
+</WidgetStack>
+```
+
+Items share the same grid cell and are offset by their `depth`. The front-most
+card uses `depth={0}`; higher values sit further back, peeking out below with a
+slight scale and opacity reduction.
+
+## API Reference
+
+This is a custom component using Base UI's `useRender` hook, not a direct Base UI wrapper.
+
+### WidgetStack
+
+Root container that layers its items in a single grid cell. Supports the
+`render` prop.
+
+### WidgetStackItem
+
+A card in the stack. Supports the `render` prop.
+
+| Prop     | Type                 | Default | Description                                                |
+| -------- | -------------------- | ------- | ---------------------------------------------------------- |
+| `depth`  | `number`             | `0`     | Stack depth; `0` is front-most, larger values sit behind   |
+| `render` | `React.ReactElement` | -       | Render as a different element                              |

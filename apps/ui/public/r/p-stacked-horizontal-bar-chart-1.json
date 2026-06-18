@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "p-stacked-horizontal-bar-chart-1",
+  "description": "Stacked horizontal bar chart with a legend",
+  "registryDependencies": [
+    "@coss/stacked-horizontal-bar-chart"
+  ],
+  "files": [
+    {
+      "path": "registry/default/particles/p-stacked-horizontal-bar-chart-1.tsx",
+      "content": "import { StackedHorizontalBarChart } from \"@/registry/default/ui/stacked-horizontal-bar-chart\";\n\nconst data = [\n  { label: \"Direct\", value: 4200 },\n  { label: \"Referral\", value: 3100 },\n  { label: \"Organic\", value: 2400 },\n  { label: \"Social\", value: 1500 },\n  { label: \"Email\", value: 800 },\n];\n\nexport default function Particle() {\n  return (\n    <StackedHorizontalBarChart\n      aria-label=\"Traffic sources\"\n      className=\"max-w-md\"\n      data={data}\n    />\n  );\n}\n",
+      "type": "registry:block"
+    }
+  ],
+  "categories": [
+    "stacked bar chart"
+  ],
+  "type": "registry:block"
+}

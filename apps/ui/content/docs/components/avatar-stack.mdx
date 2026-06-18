@@ -1,0 +1,78 @@
+---
+title: Avatar Stack
+description: Overlapping avatars separated by a ring, with an optional overflow count.
+---
+
+<ComponentPreview name="p-avatar-stack-1" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTab value="cli">CLI</TabsTab>
+  <TabsTab value="manual">Manual</TabsTab>
+</TabsList>
+
+<TabsPanel value="cli">
+
+```bash
+npx shadcn@latest add @coss/avatar-stack
+```
+
+</TabsPanel>
+
+<TabsPanel value="manual">
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @base-ui/react
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="avatar-stack" title="components/ui/avatar-stack.tsx" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsPanel>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import {
+  AvatarStack,
+  AvatarStackOverflow,
+} from "@/components/ui/avatar-stack"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+```
+
+```tsx
+<AvatarStack>
+  <Avatar>
+    <AvatarImage src="/avatars/01.png" alt="User avatar" />
+    <AvatarFallback>JD</AvatarFallback>
+  </Avatar>
+  <Avatar>
+    <AvatarFallback>ML</AvatarFallback>
+  </Avatar>
+  <AvatarStackOverflow>+5</AvatarStackOverflow>
+</AvatarStack>
+```
+
+## API Reference
+
+### AvatarStack
+
+Container that overlaps its avatars using negative spacing and applies a `ring-2 ring-background` to each child avatar so they stay visually separated. Renders a `div` with `data-slot="avatar-stack"`.
+
+### AvatarStackOverflow
+
+An avatar-shaped indicator for the remaining count (e.g. `+5`). Composes the base `Avatar` with a muted background.

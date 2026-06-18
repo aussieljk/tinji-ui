@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "p-avatar-stack-1",
+  "description": "Overlapping avatar stack with an overflow count",
+  "registryDependencies": [
+    "@coss/avatar",
+    "@coss/avatar-stack"
+  ],
+  "files": [
+    {
+      "path": "registry/default/particles/p-avatar-stack-1.tsx",
+      "content": "import {\n  Avatar,\n  AvatarFallback,\n  AvatarImage,\n} from \"@/registry/default/ui/avatar\";\nimport {\n  AvatarStack,\n  AvatarStackOverflow,\n} from \"@/registry/default/ui/avatar-stack\";\n\nexport default function Particle() {\n  return (\n    <AvatarStack>\n      <Avatar>\n        <AvatarImage alt=\"Luke Tracy\" src=\"https://github.com/shadcn.png\" />\n        <AvatarFallback>LT</AvatarFallback>\n      </Avatar>\n      <Avatar>\n        <AvatarImage alt=\"Maya Lin\" src=\"https://github.com/vercel.png\" />\n        <AvatarFallback>ML</AvatarFallback>\n      </Avatar>\n      <Avatar>\n        <AvatarImage alt=\"John Doe\" src=\"https://github.com/nextjs.png\" />\n        <AvatarFallback>JD</AvatarFallback>\n      </Avatar>\n      <AvatarStackOverflow>+5</AvatarStackOverflow>\n    </AvatarStack>\n  );\n}\n",
+      "type": "registry:block"
+    }
+  ],
+  "categories": [
+    "avatar stack"
+  ],
+  "type": "registry:block"
+}

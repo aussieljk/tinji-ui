@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "p-widget-stack-1",
+  "description": "Layered widget cards stacked with offset and scale",
+  "registryDependencies": [
+    "@coss/widget-stack"
+  ],
+  "files": [
+    {
+      "path": "registry/default/particles/p-widget-stack-1.tsx",
+      "content": "import {\n  WidgetStack,\n  WidgetStackItem,\n} from \"@/registry/default/ui/widget-stack\";\n\nexport default function Particle() {\n  return (\n    <WidgetStack className=\"pb-8\">\n      <WidgetStackItem depth={0}>\n        <p className=\"font-semibold text-sm\">Today</p>\n        <p className=\"text-muted-foreground text-sm\">3 meetings, 2 tasks due</p>\n      </WidgetStackItem>\n      <WidgetStackItem depth={1}>\n        <p className=\"font-semibold text-sm\">Weather</p>\n      </WidgetStackItem>\n      <WidgetStackItem depth={2}>\n        <p className=\"font-semibold text-sm\">Activity</p>\n      </WidgetStackItem>\n    </WidgetStack>\n  );\n}\n",
+      "type": "registry:block"
+    }
+  ],
+  "categories": [
+    "widget stack"
+  ],
+  "type": "registry:block"
+}

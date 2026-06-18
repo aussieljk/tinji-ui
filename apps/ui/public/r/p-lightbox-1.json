@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "p-lightbox-1",
+  "description": "Thumbnail gallery that opens a full-screen lightbox",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@coss/lightbox"
+  ],
+  "files": [
+    {
+      "path": "registry/default/particles/p-lightbox-1.tsx",
+      "content": "\"use client\";\n\nimport { useState } from \"react\";\nimport {\n  Lightbox,\n  LightboxImage,\n  LightboxNext,\n  LightboxPopup,\n  LightboxPrevious,\n  LightboxTrigger,\n} from \"@/registry/default/ui/lightbox\";\n\nconst images = [\n  {\n    alt: \"Snow-capped mountain range at sunrise\",\n    src: \"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80\",\n    thumb:\n      \"https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=320&q=80\",\n  },\n  {\n    alt: \"Forest path covered in autumn leaves\",\n    src: \"https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1600&q=80\",\n    thumb:\n      \"https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=320&q=80\",\n  },\n  {\n    alt: \"Calm lake reflecting the evening sky\",\n    src: \"https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=1600&q=80\",\n    thumb:\n      \"https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=320&q=80\",\n  },\n];\n\nexport default function Particle() {\n  const [open, setOpen] = useState(false);\n  const [index, setIndex] = useState(0);\n\n  const showAt = (i: number) => {\n    setIndex(i);\n    setOpen(true);\n  };\n\n  const previous = () =>\n    setIndex((i) => (i - 1 + images.length) % images.length);\n  const next = () => setIndex((i) => (i + 1) % images.length);\n\n  const active = images[index];\n\n  return (\n    <Lightbox onOpenChange={setOpen} open={open}>\n      <div className=\"flex flex-wrap gap-2\">\n        {images.map((image, i) => (\n          <LightboxTrigger\n            className=\"size-20 cursor-pointer overflow-hidden rounded-lg border outline-none transition-opacity hover:opacity-80 focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1 focus-visible:ring-offset-background\"\n            key={image.src}\n            onClick={() => showAt(i)}\n          >\n            <img\n              alt={image.alt}\n              className=\"size-full object-cover\"\n              src={image.thumb}\n            />\n          </LightboxTrigger>\n        ))}\n      </div>\n      <LightboxPopup>\n        <LightboxPrevious onClick={previous} />\n        {active && <LightboxImage alt={active.alt} src={active.src} />}\n        <LightboxNext onClick={next} />\n      </LightboxPopup>\n    </Lightbox>\n  );\n}\n",
+      "type": "registry:block"
+    }
+  ],
+  "categories": [
+    "lightbox"
+  ],
+  "type": "registry:block"
+}

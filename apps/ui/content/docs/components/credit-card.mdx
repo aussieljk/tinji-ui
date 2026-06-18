@@ -1,0 +1,119 @@
+---
+title: Credit Card
+description: A presentational credit-card display with number, holder, expiry, and brand.
+---
+
+<ComponentPreview name="p-credit-card-1" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTab value="cli">CLI</TabsTab>
+  <TabsTab value="manual">Manual</TabsTab>
+</TabsList>
+<TabsPanel value="cli">
+
+```bash
+npx shadcn@latest add @coss/credit-card
+```
+
+</TabsPanel>
+
+<TabsPanel value="manual">
+
+<Steps>
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="credit-card" title="components/ui/credit-card.tsx" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsPanel>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import { CreditCard } from "@/components/ui/credit-card"
+```
+
+```tsx
+<CreditCard
+  brand="VISA"
+  expiry="08/28"
+  name="Jordan Rivers"
+  number="4242 4242 4242 4242"
+/>
+```
+
+### Composable parts
+
+For full control over the layout, compose the card from its parts instead of
+passing props.
+
+```tsx
+import {
+  CreditCard,
+  CreditCardBrand,
+  CreditCardChip,
+  CreditCardExpiry,
+  CreditCardName,
+  CreditCardNumber,
+} from "@/components/ui/credit-card"
+
+<CreditCard>
+  <div className="flex items-start justify-between">
+    <CreditCardChip />
+    <CreditCardBrand>VISA</CreditCardBrand>
+  </div>
+  <CreditCardNumber>4242 4242 4242 4242</CreditCardNumber>
+  <div className="flex items-end justify-between gap-4">
+    <CreditCardName>Jordan Rivers</CreditCardName>
+    <CreditCardExpiry>08/28</CreditCardExpiry>
+  </div>
+</CreditCard>
+```
+
+## API Reference
+
+This is a custom component using Base UI's `useRender` hook, not a direct Base UI wrapper.
+
+### CreditCard
+
+Root container for the card. When children are omitted, it renders a default
+layout from the `number`, `name`, `expiry`, and `brand` props. Supports the
+`render` prop.
+
+| Prop     | Type                | Default | Description                                  |
+| -------- | ------------------- | ------- | -------------------------------------------- |
+| `number` | `string`            | -       | Card number shown on the surface             |
+| `name`   | `string`            | -       | Cardholder name                              |
+| `expiry` | `string`            | -       | Expiry date (e.g. `08/28`)                   |
+| `brand`  | `React.ReactNode`   | -       | Brand area content (e.g. `VISA`)             |
+| `render` | `React.ReactElement`| -       | Render as a different element                |
+
+### CreditCardChip
+
+The chip graphic. Supports the `render` prop.
+
+### CreditCardBrand
+
+Brand label area. Supports the `render` prop.
+
+### CreditCardNumber
+
+Card number text. Supports the `render` prop.
+
+### CreditCardName
+
+Cardholder name text. Supports the `render` prop.
+
+### CreditCardExpiry
+
+Expiry date text. Supports the `render` prop.

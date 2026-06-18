@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "p-avatar-group-1",
+  "description": "Row of avatars with an overflow count",
+  "registryDependencies": [
+    "@coss/avatar",
+    "@coss/avatar-group"
+  ],
+  "files": [
+    {
+      "path": "registry/default/particles/p-avatar-group-1.tsx",
+      "content": "import {\n  Avatar,\n  AvatarFallback,\n  AvatarImage,\n} from \"@/registry/default/ui/avatar\";\nimport {\n  AvatarGroup,\n  AvatarGroupOverflow,\n} from \"@/registry/default/ui/avatar-group\";\n\nexport default function Particle() {\n  return (\n    <AvatarGroup>\n      <Avatar>\n        <AvatarImage alt=\"Luke Tracy\" src=\"https://github.com/shadcn.png\" />\n        <AvatarFallback>LT</AvatarFallback>\n      </Avatar>\n      <Avatar>\n        <AvatarImage alt=\"Maya Lin\" src=\"https://github.com/vercel.png\" />\n        <AvatarFallback>ML</AvatarFallback>\n      </Avatar>\n      <Avatar>\n        <AvatarFallback>JD</AvatarFallback>\n      </Avatar>\n      <AvatarGroupOverflow>+3</AvatarGroupOverflow>\n    </AvatarGroup>\n  );\n}\n",
+      "type": "registry:block"
+    }
+  ],
+  "categories": [
+    "avatar group"
+  ],
+  "type": "registry:block"
+}

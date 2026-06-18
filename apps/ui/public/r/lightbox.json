@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "lightbox",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@coss/button",
+    "@coss/dialog"
+  ],
+  "files": [
+    {
+      "path": "registry/default/ui/lightbox.tsx",
+      "content": "\"use client\";\n\nimport { ChevronLeftIcon, ChevronRightIcon, XIcon } from \"lucide-react\";\nimport type React from \"react\";\nimport { cn } from \"@/registry/default/lib/utils\";\nimport { Button } from \"@/registry/default/ui/button\";\nimport {\n  Dialog,\n  DialogBackdrop,\n  DialogClose,\n  DialogPortal,\n  DialogPrimitive,\n  DialogTrigger,\n} from \"@/registry/default/ui/dialog\";\n\nexport const Lightbox: typeof Dialog = Dialog;\n\nexport const LightboxTrigger: typeof DialogTrigger = DialogTrigger;\n\nexport function LightboxPopup({\n  className,\n  children,\n  showCloseButton = true,\n  closeProps,\n  portalProps,\n  ...props\n}: DialogPrimitive.Popup.Props & {\n  showCloseButton?: boolean;\n  closeProps?: DialogPrimitive.Close.Props;\n  portalProps?: DialogPrimitive.Portal.Props;\n}): React.ReactElement {\n  return (\n    <DialogPortal {...portalProps}>\n      <DialogBackdrop className=\"bg-black/90 backdrop-blur-none\" />\n      <DialogPrimitive.Popup\n        className={cn(\n          \"fixed inset-0 z-50 flex items-center justify-center p-4 text-white outline-none transition-opacity duration-200 data-ending-style:opacity-0 data-starting-style:opacity-0 sm:p-12\",\n          className,\n        )}\n        data-slot=\"lightbox-popup\"\n        {...props}\n      >\n        {children}\n        {showCloseButton && (\n          <DialogPrimitive.Close\n            aria-label=\"Close\"\n            className=\"absolute end-3 top-3 text-white hover:bg-white/10 hover:text-white data-pressed:bg-white/10\"\n            render={<Button size=\"icon\" variant=\"ghost\" />}\n            {...closeProps}\n          >\n            <XIcon />\n          </DialogPrimitive.Close>\n        )}\n      </DialogPrimitive.Popup>\n    </DialogPortal>\n  );\n}\n\nexport function LightboxImage({\n  className,\n  alt,\n  ...props\n}: React.ComponentProps<\"img\">): React.ReactElement {\n  return (\n    <img\n      alt={alt}\n      className={cn(\n        \"max-h-full max-w-full select-none object-contain\",\n        className,\n      )}\n      data-slot=\"lightbox-image\"\n      {...props}\n    />\n  );\n}\n\nexport const LightboxClose: typeof DialogClose = DialogClose;\n\nexport function LightboxPrevious({\n  className,\n  children,\n  ...props\n}: React.ComponentProps<typeof Button>): React.ReactElement {\n  return (\n    <Button\n      aria-label=\"Previous\"\n      className={cn(\n        \"absolute start-3 top-1/2 -translate-y-1/2 text-white hover:bg-white/10 hover:text-white data-pressed:bg-white/10\",\n        className,\n      )}\n      data-slot=\"lightbox-previous\"\n      size=\"icon-lg\"\n      variant=\"ghost\"\n      {...props}\n    >\n      {children ?? <ChevronLeftIcon aria-hidden=\"true\" />}\n    </Button>\n  );\n}\n\nexport function LightboxNext({\n  className,\n  children,\n  ...props\n}: React.ComponentProps<typeof Button>): React.ReactElement {\n  return (\n    <Button\n      aria-label=\"Next\"\n      className={cn(\n        \"absolute end-3 top-1/2 -translate-y-1/2 text-white hover:bg-white/10 hover:text-white data-pressed:bg-white/10\",\n        className,\n      )}\n      data-slot=\"lightbox-next\"\n      size=\"icon-lg\"\n      variant=\"ghost\"\n      {...props}\n    >\n      {children ?? <ChevronRightIcon aria-hidden=\"true\" />}\n    </Button>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "type": "registry:ui"
+}

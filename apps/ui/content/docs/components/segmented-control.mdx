@@ -1,0 +1,99 @@
+---
+title: Segmented Control
+description: A pill-shaped control that switches between a small set of related options.
+---
+
+<ComponentPreview name="p-segmented-control-1" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTab value="cli">CLI</TabsTab>
+  <TabsTab value="manual">Manual</TabsTab>
+</TabsList>
+<TabsPanel value="cli">
+
+```bash
+npx shadcn@latest add @coss/segmented-control
+```
+
+</TabsPanel>
+
+<TabsPanel value="manual">
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @base-ui/react
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource
+  name="segmented-control"
+  title="components/ui/segmented-control.tsx"
+/>
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsPanel>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import {
+  SegmentedControl,
+  SegmentedControlItem,
+} from "@/components/ui/segmented-control";
+```
+
+```tsx
+<SegmentedControl defaultValue={["monthly"]}>
+  <SegmentedControlItem value="monthly">Monthly</SegmentedControlItem>
+  <SegmentedControlItem value="yearly">Yearly</SegmentedControlItem>
+</SegmentedControl>
+```
+
+## API Reference
+
+### SegmentedControl
+
+Root component. Styled wrapper for `ToggleGroup.Root` from Base UI. Renders the muted track and lays out items as equal-width segments.
+
+### SegmentedControlItem
+
+Individual segment within a `SegmentedControl`. Styled wrapper for `Toggle` from Base UI. The selected segment is highlighted via the `data-pressed` state.
+
+### SegmentedControlNav
+
+Navigation variant rendered as a `<nav>` element. Use it for link-based switching where each segment points to a different route.
+
+### SegmentedControlNavItem
+
+Anchor segment within a `SegmentedControlNav`. Use the [`render`](https://base-ui.com/react/utils/use-render) prop to render a framework `Link`. The active segment is styled via `aria-current`.
+
+### SegmentedControlRadioGroup
+
+Radio-group-backed variant. Styled wrapper for `RadioGroup` from Base UI. Use it inside forms where a single value should be submitted.
+
+### SegmentedControlRadioItem
+
+Radio segment within a `SegmentedControlRadioGroup`. Styled wrapper for `Radio.Root` from Base UI. The selected segment is highlighted via the `data-checked` state.
+
+## Examples
+
+### Navigation
+
+<ComponentPreview name="p-segmented-control-2" />
+
+### Radio Group
+
+<ComponentPreview name="p-segmented-control-3" />

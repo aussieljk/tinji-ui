@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "p-typography-1",
+  "description": "Headings and body text with strong and emphasis",
+  "registryDependencies": [
+    "@coss/typography"
+  ],
+  "files": [
+    {
+      "path": "registry/default/particles/p-typography-1.tsx",
+      "content": "import { Em, Heading, Strong, Text } from \"@/registry/default/ui/typography\";\n\nexport default function Particle() {\n  return (\n    <div className=\"flex max-w-prose flex-col gap-3\">\n      <Heading level={1} size=\"xl\">\n        The quick brown fox\n      </Heading>\n      <Text color=\"muted\">\n        A versatile set of typographic primitives for headings, body text, and\n        inline emphasis.\n      </Text>\n      <Text>\n        Use <Strong>Strong</Strong> for important content and <Em>Em</Em> for\n        subtle emphasis within a paragraph of text.\n      </Text>\n    </div>\n  );\n}\n",
+      "type": "registry:block"
+    }
+  ],
+  "categories": [
+    "typography"
+  ],
+  "type": "registry:block"
+}

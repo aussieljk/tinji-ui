@@ -57,7 +57,21 @@
         "@coss/toggle",
         "@coss/toggle-group",
         "@coss/toolbar",
-        "@coss/tooltip"
+        "@coss/tooltip",
+        "@coss/avatar-group",
+        "@coss/avatar-stack",
+        "@coss/credit-card",
+        "@coss/widget-stack",
+        "@coss/lightbox",
+        "@coss/scroll-gallery",
+        "@coss/segmented-control",
+        "@coss/tabs-nav",
+        "@coss/filter-chip",
+        "@coss/radio-button-group",
+        "@coss/data-list",
+        "@coss/stacked-horizontal-bar-chart",
+        "@coss/date-field",
+        "@coss/typography"
       ],
       "type": "registry:ui"
     },
@@ -787,6 +801,9 @@
       "type": "registry:ui"
     },
     {
+      "dependencies": [
+        "@base-ui/react"
+      ],
       "files": [
         {
           "path": "registry/default/ui/table.tsx",
@@ -964,6 +981,187 @@
         }
       ],
       "name": "tooltip",
+      "type": "registry:ui"
+    },
+    {
+      "files": [
+        {
+          "path": "registry/default/ui/avatar-group.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "name": "avatar-group",
+      "registryDependencies": [
+        "@coss/avatar"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "files": [
+        {
+          "path": "registry/default/ui/avatar-stack.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "name": "avatar-stack",
+      "registryDependencies": [
+        "@coss/avatar"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "registry/default/ui/credit-card.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "name": "credit-card",
+      "type": "registry:ui"
+    },
+    {
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "registry/default/ui/widget-stack.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "name": "widget-stack",
+      "type": "registry:ui"
+    },
+    {
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/default/ui/lightbox.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "name": "lightbox",
+      "registryDependencies": [
+        "@coss/button",
+        "@coss/dialog"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "dependencies": [
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/default/ui/scroll-gallery.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "name": "scroll-gallery",
+      "registryDependencies": [
+        "@coss/button"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "registry/default/ui/segmented-control.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "name": "segmented-control",
+      "type": "registry:ui"
+    },
+    {
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "registry/default/ui/tabs-nav.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "name": "tabs-nav",
+      "type": "registry:ui"
+    },
+    {
+      "dependencies": [
+        "@base-ui/react",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/default/ui/filter-chip.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "name": "filter-chip",
+      "type": "registry:ui"
+    },
+    {
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "registry/default/ui/radio-button-group.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "name": "radio-button-group",
+      "type": "registry:ui"
+    },
+    {
+      "files": [
+        {
+          "path": "registry/default/ui/data-list.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "name": "data-list",
+      "type": "registry:ui"
+    },
+    {
+      "files": [
+        {
+          "path": "registry/default/ui/stacked-horizontal-bar-chart.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "name": "stacked-horizontal-bar-chart",
+      "type": "registry:ui"
+    },
+    {
+      "files": [
+        {
+          "path": "registry/default/ui/date-field.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "name": "date-field",
+      "type": "registry:ui"
+    },
+    {
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "files": [
+        {
+          "path": "registry/default/ui/typography.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "name": "typography",
       "type": "registry:ui"
     },
     {
@@ -11322,6 +11520,306 @@
         "@coss/button",
         "@coss/group",
         "@coss/tooltip"
+      ],
+      "type": "registry:block"
+    },
+    {
+      "categories": [
+        "typography"
+      ],
+      "description": "Headings and body text with strong and emphasis",
+      "files": [
+        {
+          "path": "registry/default/particles/p-typography-1.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "name": "p-typography-1",
+      "registryDependencies": [
+        "@coss/typography"
+      ],
+      "type": "registry:block"
+    },
+    {
+      "categories": [
+        "typography"
+      ],
+      "description": "Blockquote, inline quote, code, and a link",
+      "files": [
+        {
+          "path": "registry/default/particles/p-typography-2.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "name": "p-typography-2",
+      "registryDependencies": [
+        "@coss/typography"
+      ],
+      "type": "registry:block"
+    },
+    {
+      "categories": [
+        "avatar group"
+      ],
+      "description": "Row of avatars with an overflow count",
+      "files": [
+        {
+          "path": "registry/default/particles/p-avatar-group-1.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "name": "p-avatar-group-1",
+      "registryDependencies": [
+        "@coss/avatar",
+        "@coss/avatar-group"
+      ],
+      "type": "registry:block"
+    },
+    {
+      "categories": [
+        "avatar stack"
+      ],
+      "description": "Overlapping avatar stack with an overflow count",
+      "files": [
+        {
+          "path": "registry/default/particles/p-avatar-stack-1.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "name": "p-avatar-stack-1",
+      "registryDependencies": [
+        "@coss/avatar",
+        "@coss/avatar-stack"
+      ],
+      "type": "registry:block"
+    },
+    {
+      "categories": [
+        "credit card"
+      ],
+      "description": "Credit card with number, holder, expiry, and brand",
+      "files": [
+        {
+          "path": "registry/default/particles/p-credit-card-1.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "name": "p-credit-card-1",
+      "registryDependencies": [
+        "@coss/credit-card"
+      ],
+      "type": "registry:block"
+    },
+    {
+      "categories": [
+        "widget stack"
+      ],
+      "description": "Layered widget cards stacked with offset and scale",
+      "files": [
+        {
+          "path": "registry/default/particles/p-widget-stack-1.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "name": "p-widget-stack-1",
+      "registryDependencies": [
+        "@coss/widget-stack"
+      ],
+      "type": "registry:block"
+    },
+    {
+      "categories": [
+        "lightbox"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "description": "Thumbnail gallery that opens a full-screen lightbox",
+      "files": [
+        {
+          "path": "registry/default/particles/p-lightbox-1.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "name": "p-lightbox-1",
+      "registryDependencies": [
+        "@coss/lightbox"
+      ],
+      "type": "registry:block"
+    },
+    {
+      "categories": [
+        "scroll gallery"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "description": "Horizontally scrolling gallery with prev/next buttons",
+      "files": [
+        {
+          "path": "registry/default/particles/p-scroll-gallery-1.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "name": "p-scroll-gallery-1",
+      "registryDependencies": [
+        "@coss/scroll-gallery"
+      ],
+      "type": "registry:block"
+    },
+    {
+      "categories": [
+        "segmented control"
+      ],
+      "description": "Segmented control for switching between options",
+      "files": [
+        {
+          "path": "registry/default/particles/p-segmented-control-1.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "name": "p-segmented-control-1",
+      "registryDependencies": [
+        "@coss/segmented-control"
+      ],
+      "type": "registry:block"
+    },
+    {
+      "categories": [
+        "segmented control"
+      ],
+      "description": "Segmented control rendered as navigation links",
+      "files": [
+        {
+          "path": "registry/default/particles/p-segmented-control-2.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "name": "p-segmented-control-2",
+      "registryDependencies": [
+        "@coss/segmented-control"
+      ],
+      "type": "registry:block"
+    },
+    {
+      "categories": [
+        "segmented control"
+      ],
+      "description": "Segmented control backed by a radio group",
+      "files": [
+        {
+          "path": "registry/default/particles/p-segmented-control-3.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "name": "p-segmented-control-3",
+      "registryDependencies": [
+        "@coss/segmented-control"
+      ],
+      "type": "registry:block"
+    },
+    {
+      "categories": [
+        "tabs nav"
+      ],
+      "description": "Navigation tabs rendered as links with active state",
+      "files": [
+        {
+          "path": "registry/default/particles/p-tabs-nav-1.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "name": "p-tabs-nav-1",
+      "registryDependencies": [
+        "@coss/tabs-nav"
+      ],
+      "type": "registry:block"
+    },
+    {
+      "categories": [
+        "filter chip"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "description": "Toggleable filter chip with selected state and dismiss",
+      "files": [
+        {
+          "path": "registry/default/particles/p-filter-chip-1.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "name": "p-filter-chip-1",
+      "registryDependencies": [
+        "@coss/filter-chip"
+      ],
+      "type": "registry:block"
+    },
+    {
+      "categories": [
+        "radio button group"
+      ],
+      "description": "Radio group styled as selectable cards",
+      "files": [
+        {
+          "path": "registry/default/particles/p-radio-button-group-1.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "name": "p-radio-button-group-1",
+      "registryDependencies": [
+        "@coss/radio-button-group"
+      ],
+      "type": "registry:block"
+    },
+    {
+      "categories": [
+        "data list"
+      ],
+      "description": "Key/value list showing record details",
+      "files": [
+        {
+          "path": "registry/default/particles/p-data-list-1.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "name": "p-data-list-1",
+      "registryDependencies": [
+        "@coss/data-list"
+      ],
+      "type": "registry:block"
+    },
+    {
+      "categories": [
+        "stacked bar chart"
+      ],
+      "description": "Stacked horizontal bar chart with a legend",
+      "files": [
+        {
+          "path": "registry/default/particles/p-stacked-horizontal-bar-chart-1.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "name": "p-stacked-horizontal-bar-chart-1",
+      "registryDependencies": [
+        "@coss/stacked-horizontal-bar-chart"
+      ],
+      "type": "registry:block"
+    },
+    {
+      "categories": [
+        "date field"
+      ],
+      "description": "Segmented date field with day, month, and year",
+      "files": [
+        {
+          "path": "registry/default/particles/p-date-field-1.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "name": "p-date-field-1",
+      "registryDependencies": [
+        "@coss/date-field"
       ],
       "type": "registry:block"
     },

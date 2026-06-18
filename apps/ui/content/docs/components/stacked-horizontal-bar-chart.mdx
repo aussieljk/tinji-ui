@@ -1,0 +1,144 @@
+---
+title: Stacked Horizontal Bar Chart
+description: A pure-CSS horizontal bar split into proportional colored segments with a legend.
+---
+
+<ComponentPreview name="p-stacked-horizontal-bar-chart-1" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTab value="cli">CLI</TabsTab>
+  <TabsTab value="manual">Manual</TabsTab>
+</TabsList>
+<TabsPanel value="cli">
+
+```bash
+npx shadcn@latest add @coss/stacked-horizontal-bar-chart
+```
+
+</TabsPanel>
+
+<TabsPanel value="manual">
+
+<Steps>
+
+<Step>Import the following variables into your CSS file</Step>
+
+```css
+@theme inline {
+  --color-info: var(--info);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+}
+
+:root {
+  --info: var(--color-blue-500);
+  --success: var(--color-emerald-500);
+  --warning: var(--color-amber-500);
+}
+
+.dark {
+  --info: var(--color-blue-500);
+  --success: var(--color-emerald-500);
+  --warning: var(--color-amber-500);
+}
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource
+  name="stacked-horizontal-bar-chart"
+  title="components/ui/stacked-horizontal-bar-chart.tsx"
+/>
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsPanel>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import { StackedHorizontalBarChart } from "@/components/ui/stacked-horizontal-bar-chart"
+```
+
+```tsx
+<StackedHorizontalBarChart
+  aria-label="Traffic sources"
+  data={[
+    { label: "Direct", value: 4200 },
+    { label: "Referral", value: 3100 },
+    { label: "Organic", value: 2400 },
+  ]}
+/>
+```
+
+Each segment's width is calculated as `value / total`. Pass a `color` (any CSS
+color string) on a datum to override the default semantic token colors.
+
+## Composition
+
+You can build the chart from its parts for full control over the track, segments,
+and legend.
+
+```tsx
+import {
+  StackedHorizontalBarChart,
+  StackedHorizontalBarChartTrack,
+  StackedHorizontalBarChartSegment,
+  StackedHorizontalBarChartLegend,
+  StackedHorizontalBarChartLegendItem,
+} from "@/components/ui/stacked-horizontal-bar-chart"
+
+export function Example() {
+  return (
+    <StackedHorizontalBarChart aria-label="Storage">
+      <StackedHorizontalBarChartTrack>
+        <StackedHorizontalBarChartSegment className="bg-primary" label="Apps" value={60} />
+        <StackedHorizontalBarChartSegment className="bg-info" label="Media" value={30} />
+        <StackedHorizontalBarChartSegment className="bg-success" label="Other" value={10} />
+      </StackedHorizontalBarChartTrack>
+      <StackedHorizontalBarChartLegend>
+        <StackedHorizontalBarChartLegendItem indicatorClassName="bg-primary" label="Apps" value={60} />
+        <StackedHorizontalBarChartLegendItem indicatorClassName="bg-info" label="Media" value={30} />
+        <StackedHorizontalBarChartLegendItem indicatorClassName="bg-success" label="Other" value={10} />
+      </StackedHorizontalBarChartLegend>
+    </StackedHorizontalBarChart>
+  )
+}
+```
+
+## API Reference
+
+This is a custom, pure-CSS component. It does not depend on a charting library.
+
+### StackedHorizontalBarChart
+
+| Prop            | Type                                              | Default | Description                                                       |
+| --------------- | ------------------------------------------------- | ------- | ----------------------------------------------------------------- |
+| `data`          | `{ label: string; value: number; color?: string }[]` | `[]`    | Data to render. Omitted when using composable children.           |
+| `aria-label`    | `string`                                          | -       | Accessible label for the chart.                                   |
+| `children`      | `React.ReactNode`                                 | -       | Composable parts. Overrides `data`-driven rendering when present. |
+
+### StackedHorizontalBarChartSegment
+
+| Prop      | Type     | Default | Description                                                |
+| --------- | -------- | ------- | ---------------------------------------------------------- |
+| `value`   | `number` | -       | Segment value. Width is computed as a share of the total. |
+| `label`   | `string` | -       | Accessible label for the segment.                         |
+| `color`   | `string` | -       | Optional CSS color string. Use `className` for tokens.    |
+
+### StackedHorizontalBarChartLegendItem
+
+| Prop                 | Type     | Default | Description                                |
+| -------------------- | -------- | ------- | ------------------------------------------ |
+| `label`              | `string` | -       | Legend label text.                         |
+| `value`              | `number` | -       | Optional value shown next to the label.    |
+| `color`              | `string` | -       | Optional CSS color for the indicator dot.  |
+| `indicatorClassName` | `string` | -       | Class for the indicator dot (e.g. token).  |

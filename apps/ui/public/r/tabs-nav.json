@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "tabs-nav",
+  "dependencies": [
+    "@base-ui/react"
+  ],
+  "files": [
+    {
+      "path": "registry/default/ui/tabs-nav.tsx",
+      "content": "\"use client\";\n\nimport { mergeProps } from \"@base-ui/react/merge-props\";\nimport { useRender } from \"@base-ui/react/use-render\";\nimport type React from \"react\";\nimport { cn } from \"@/registry/default/lib/utils\";\n\nexport function TabsNav({\n  className,\n  ...props\n}: React.ComponentProps<\"nav\">): React.ReactElement {\n  return (\n    <nav\n      className={cn(\"flex flex-col gap-2\", className)}\n      data-slot=\"tabs-nav\"\n      {...props}\n    />\n  );\n}\n\nexport function TabsNavList({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">): React.ReactElement {\n  return (\n    <div\n      className={cn(\n        \"relative z-0 flex w-fit items-center justify-center gap-x-0.5 py-1 text-muted-foreground\",\n        className,\n      )}\n      data-slot=\"tabs-nav-list\"\n      {...props}\n    />\n  );\n}\n\nexport interface TabsNavLinkProps extends useRender.ComponentProps<\"a\"> {\n  /** Marks the link as the currently active page (sets `aria-current=\"page\"`). */\n  active?: boolean;\n}\n\nexport function TabsNavLink({\n  className,\n  active,\n  render,\n  ...props\n}: TabsNavLinkProps): React.ReactElement {\n  const defaultProps = {\n    className: cn(\n      \"relative flex h-9 shrink-0 cursor-pointer items-center justify-center gap-1.5 whitespace-nowrap rounded-md border border-transparent px-[calc(--spacing(2.5)-1px)] font-medium text-base no-underline outline-none transition-[color,background-color,box-shadow] after:absolute after:inset-x-2.5 after:-bottom-1 after:h-0.5 after:rounded-full after:bg-primary after:opacity-0 after:transition-opacity hover:bg-accent hover:text-muted-foreground focus-visible:ring-2 focus-visible:ring-ring data-[active]:text-foreground data-[active]:after:opacity-100 sm:h-8 sm:text-sm [&_svg:not([class*='size-'])]:size-4.5 sm:[&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:-mx-0.5 [&_svg]:shrink-0\",\n      className,\n    ),\n    \"aria-current\": active ? (\"page\" as const) : undefined,\n    \"data-active\": active ? \"\" : undefined,\n    \"data-slot\": \"tabs-nav-link\",\n  };\n\n  return useRender({\n    defaultTagName: \"a\",\n    props: mergeProps<\"a\">(defaultProps, props),\n    render,\n  });\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "type": "registry:ui"
+}

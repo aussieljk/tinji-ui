@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "p-credit-card-1",
+  "description": "Credit card with number, holder, expiry, and brand",
+  "registryDependencies": [
+    "@coss/credit-card"
+  ],
+  "files": [
+    {
+      "path": "registry/default/particles/p-credit-card-1.tsx",
+      "content": "import { CreditCard } from \"@/registry/default/ui/credit-card\";\n\nexport default function Particle() {\n  return (\n    <CreditCard\n      brand=\"VISA\"\n      expiry=\"08/28\"\n      name=\"Jordan Rivers\"\n      number=\"4242 4242 4242 4242\"\n    />\n  );\n}\n",
+      "type": "registry:block"
+    }
+  ],
+  "categories": [
+    "credit card"
+  ],
+  "type": "registry:block"
+}

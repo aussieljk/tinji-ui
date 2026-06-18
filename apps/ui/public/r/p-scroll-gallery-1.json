@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "p-scroll-gallery-1",
+  "description": "Horizontally scrolling gallery with prev/next buttons",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@coss/scroll-gallery"
+  ],
+  "files": [
+    {
+      "path": "registry/default/particles/p-scroll-gallery-1.tsx",
+      "content": "import {\n  ScrollGallery,\n  ScrollGalleryItem,\n  ScrollGalleryNext,\n  ScrollGalleryPrevious,\n  ScrollGalleryViewport,\n} from \"@/registry/default/ui/scroll-gallery\";\n\nconst slides = [\n  {\n    color: \"from-rose-400 to-orange-300\",\n    subtitle: \"Mountain trails at golden hour\",\n    title: \"Alpine Ridge\",\n  },\n  {\n    color: \"from-sky-400 to-indigo-300\",\n    subtitle: \"Where the city meets the sea\",\n    title: \"Harbor Lights\",\n  },\n  {\n    color: \"from-emerald-400 to-teal-300\",\n    subtitle: \"Mist rolling through ancient pines\",\n    title: \"Old Growth\",\n  },\n  {\n    color: \"from-violet-400 to-fuchsia-300\",\n    subtitle: \"Dunes shifting under a pink sky\",\n    title: \"Desert Bloom\",\n  },\n  {\n    color: \"from-amber-400 to-yellow-300\",\n    subtitle: \"Endless rows at first light\",\n    title: \"Field Notes\",\n  },\n  {\n    color: \"from-cyan-400 to-blue-300\",\n    subtitle: \"Tide pools and quiet shores\",\n    title: \"Low Tide\",\n  },\n];\n\nexport default function Particle() {\n  return (\n    <ScrollGallery className=\"w-full max-w-xl\">\n      <div className=\"flex items-center justify-between px-1\">\n        <div className=\"flex flex-col\">\n          <span className=\"font-semibold text-sm\">Featured</span>\n          <span className=\"text-muted-foreground text-xs\">\n            Swipe or use the arrows to browse\n          </span>\n        </div>\n        <div className=\"flex gap-2\">\n          <ScrollGalleryPrevious />\n          <ScrollGalleryNext />\n        </div>\n      </div>\n      <ScrollGalleryViewport>\n        {slides.map((slide) => (\n          <ScrollGalleryItem\n            className=\"w-64 overflow-hidden rounded-xl border bg-card\"\n            key={slide.title}\n          >\n            <div\n              aria-hidden=\"true\"\n              className={`h-36 w-full bg-gradient-to-br ${slide.color}`}\n            />\n            <div className=\"flex flex-col gap-0.5 p-3\">\n              <span className=\"font-medium text-sm\">{slide.title}</span>\n              <span className=\"text-muted-foreground text-xs\">\n                {slide.subtitle}\n              </span>\n            </div>\n          </ScrollGalleryItem>\n        ))}\n      </ScrollGalleryViewport>\n    </ScrollGallery>\n  );\n}\n",
+      "type": "registry:block"
+    }
+  ],
+  "categories": [
+    "scroll gallery"
+  ],
+  "type": "registry:block"
+}

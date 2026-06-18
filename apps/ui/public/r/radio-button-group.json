@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "radio-button-group",
+  "dependencies": [
+    "@base-ui/react"
+  ],
+  "files": [
+    {
+      "path": "registry/default/ui/radio-button-group.tsx",
+      "content": "\"use client\";\n\nimport { Radio as RadioPrimitive } from \"@base-ui/react/radio\";\nimport { RadioGroup as RadioGroupPrimitive } from \"@base-ui/react/radio-group\";\nimport type React from \"react\";\nimport { cn } from \"@/registry/default/lib/utils\";\n\nexport function RadioButtonGroup({\n  className,\n  ...props\n}: RadioGroupPrimitive.Props): React.ReactElement {\n  return (\n    <RadioGroupPrimitive\n      className={cn(\"flex flex-col gap-2\", className)}\n      data-slot=\"radio-button-group\"\n      {...props}\n    />\n  );\n}\n\nexport function RadioButtonGroupItem({\n  className,\n  children,\n  ...props\n}: RadioPrimitive.Root.Props): React.ReactElement {\n  return (\n    <RadioPrimitive.Root\n      className={cn(\n        \"relative flex w-full cursor-pointer select-none items-center gap-3 rounded-lg border border-input bg-popover not-dark:bg-clip-padding p-3 text-start text-foreground text-sm shadow-xs/5 outline-none transition-shadow before:pointer-events-none before:absolute before:inset-0 before:rounded-[calc(var(--radius-lg)-1px)] not-data-checked:not-aria-invalid:before:shadow-[0_1px_--theme(--color-black/4%)] hover:bg-accent/50 focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1 focus-visible:ring-offset-background aria-invalid:border-destructive/36 data-disabled:cursor-not-allowed data-checked:border-primary data-disabled:opacity-64 data-checked:ring-1 data-checked:ring-primary dark:bg-input/32 dark:hover:bg-input/48 [[data-disabled],[data-checked]]:shadow-none\",\n        className,\n      )}\n      data-slot=\"radio-button-group-item\"\n      {...props}\n    >\n      {children}\n    </RadioPrimitive.Root>\n  );\n}\n\nexport { RadioGroupPrimitive, RadioPrimitive };\n",
+      "type": "registry:ui"
+    }
+  ],
+  "type": "registry:ui"
+}

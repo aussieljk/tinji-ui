@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "p-date-field-1",
+  "description": "Segmented date field with day, month, and year",
+  "registryDependencies": [
+    "@coss/date-field"
+  ],
+  "files": [
+    {
+      "path": "registry/default/particles/p-date-field-1.tsx",
+      "content": "import { DateField } from \"@/registry/default/ui/date-field\";\n\nexport default function Particle() {\n  return (\n    <DateField\n      aria-label=\"Date of birth\"\n      defaultValue={{ day: \"12\", month: \"08\", year: \"1995\" }}\n    />\n  );\n}\n",
+      "type": "registry:block"
+    }
+  ],
+  "categories": [
+    "date field"
+  ],
+  "type": "registry:block"
+}

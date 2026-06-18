@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "p-segmented-control-1",
+  "description": "Segmented control for switching between options",
+  "registryDependencies": [
+    "@coss/segmented-control"
+  ],
+  "files": [
+    {
+      "path": "registry/default/particles/p-segmented-control-1.tsx",
+      "content": "\"use client\";\n\nimport { useState } from \"react\";\nimport {\n  SegmentedControl,\n  SegmentedControlItem,\n} from \"@/registry/default/ui/segmented-control\";\n\nexport default function Particle() {\n  const [value, setValue] = useState<string[]>([\"monthly\"]);\n\n  return (\n    <SegmentedControl\n      aria-label=\"Billing period\"\n      className=\"w-full max-w-xs\"\n      onValueChange={setValue}\n      value={value}\n    >\n      <SegmentedControlItem value=\"monthly\">Monthly</SegmentedControlItem>\n      <SegmentedControlItem value=\"yearly\">Yearly</SegmentedControlItem>\n      <SegmentedControlItem value=\"lifetime\">Lifetime</SegmentedControlItem>\n    </SegmentedControl>\n  );\n}\n",
+      "type": "registry:block"
+    }
+  ],
+  "categories": [
+    "segmented control"
+  ],
+  "type": "registry:block"
+}

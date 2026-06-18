@@ -1,0 +1,117 @@
+---
+title: Lightbox
+description: A full-screen image viewer with navigation, built on the Dialog primitive.
+---
+
+<ComponentPreview name="p-lightbox-1" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTab value="cli">CLI</TabsTab>
+  <TabsTab value="manual">Manual</TabsTab>
+</TabsList>
+<TabsPanel value="cli">
+
+```bash
+npx shadcn@latest add @coss/lightbox
+```
+
+</TabsPanel>
+
+<TabsPanel value="manual">
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @base-ui/react lucide-react
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="lightbox" title="components/ui/lightbox.tsx" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsPanel>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import {
+  Lightbox,
+  LightboxClose,
+  LightboxImage,
+  LightboxNext,
+  LightboxPopup,
+  LightboxPrevious,
+  LightboxTrigger,
+} from "@/components/ui/lightbox"
+```
+
+```tsx
+<Lightbox>
+  <LightboxTrigger>
+    <img alt="Thumbnail" src="/thumb.jpg" />
+  </LightboxTrigger>
+  <LightboxPopup>
+    <LightboxImage alt="Full size" src="/full.jpg" />
+  </LightboxPopup>
+</Lightbox>
+```
+
+## Composition
+
+The Lightbox is composed from the [Dialog](/docs/components/dialog) primitive. `Lightbox` and
+`LightboxTrigger` are aliases for `Dialog` and `DialogTrigger`, while `LightboxPopup` renders a
+full-screen dark overlay with a centered image and a close button in the top-right corner. Because it
+builds on Dialog, it inherits Dialog's focus management, scroll locking, and accessibility behavior.
+
+For galleries with multiple images, the consuming component controls the `open` state and the current
+image index, wiring `LightboxPrevious` and `LightboxNext` to navigate. See the example above.
+
+## API Reference
+
+### Lightbox
+
+Root component. Alias for `Dialog` from Base UI. Accepts `open` / `onOpenChange` for controlled usage.
+
+### LightboxTrigger
+
+Element that opens the lightbox, typically a thumbnail image. Alias for `DialogTrigger`.
+
+### LightboxPopup
+
+Full-screen container with a dark backdrop, centered content, and a close button.
+
+| Prop              | Type                  | Default | Description                                                                       |
+| ----------------- | --------------------- | ------- | --------------------------------------------------------------------------------- |
+| `showCloseButton` | `boolean`             | `true`  | When true, displays a close button in the top-right corner                        |
+| `closeProps`      | `Dialog.Close.Props`  | -       | Props forwarded to the internal close button, useful for overriding `aria-label`  |
+| `portalProps`     | `Dialog.Portal.Props` | -       | Props forwarded to the internal portal (`keepMounted`, `container`, etc.)         |
+
+### LightboxImage
+
+The displayed image. Renders an `<img>` with `object-contain` sizing constrained to the viewport.
+
+### LightboxClose
+
+Close button component. Alias for `Dialog.Close` from Base UI.
+
+### LightboxPrevious
+
+Navigation button rendered on the left edge. Defaults to a chevron icon; wire `onClick` to move to the
+previous image.
+
+### LightboxNext
+
+Navigation button rendered on the right edge. Defaults to a chevron icon; wire `onClick` to move to the
+next image.

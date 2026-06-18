@@ -1,0 +1,130 @@
+---
+title: Typography
+description: A set of typographic primitives for headings, text, and inline elements.
+---
+
+<ComponentPreview name="p-typography-1" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTab value="cli">CLI</TabsTab>
+  <TabsTab value="manual">Manual</TabsTab>
+</TabsList>
+<TabsPanel value="cli">
+
+```bash
+npx shadcn@latest add @coss/typography
+```
+
+</TabsPanel>
+
+<TabsPanel value="manual">
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @base-ui/react
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="typography" title="components/ui/typography.tsx" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsPanel>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import {
+  Blockquote,
+  Code,
+  Em,
+  Heading,
+  Link,
+  Quote,
+  Strong,
+  Text,
+} from "@/components/ui/typography"
+```
+
+```tsx
+<Heading level={1} size="xl">The quick brown fox</Heading>
+<Text color="muted">A versatile set of typographic primitives.</Text>
+<Text>
+  Use <Strong>Strong</Strong> and <Em>Em</Em> for emphasis, or{" "}
+  <Code>inline code</Code> and a <Link href="#">link</Link>.
+</Text>
+```
+
+## API Reference
+
+These are custom components, most built on Base UI's `useRender` hook rather than direct Base UI wrappers.
+
+### Heading
+
+Renders an `h1`–`h6` element. The `level` prop controls the rendered tag, while `size` controls the visual scale independently.
+
+| Prop     | Type                                          | Default | Description                                       |
+| -------- | --------------------------------------------- | ------- | ------------------------------------------------- |
+| `level`  | `1 \| 2 \| 3 \| 4 \| 5 \| 6`                  | `2`     | The semantic heading level (rendered tag h1–h6).  |
+| `size`   | `"xs" \| "sm" \| "md" \| "lg" \| "xl" \| "2xl"` | `"xl"`  | The visual size of the heading.                   |
+| `render` | `React.ReactElement`                          | -       | Render as a different element.                     |
+
+### Text
+
+Renders a paragraph by default. Use the `render` prop for inline `span` usage.
+
+| Prop     | Type                                  | Default     | Description                          |
+| -------- | ------------------------------------- | ----------- | ------------------------------------ |
+| `size`   | `"xs" \| "sm" \| "md" \| "lg"`        | `"md"`      | The text size.                       |
+| `color`  | `"default" \| "muted"`                | `"default"` | The text color token.                |
+| `render` | `React.ReactElement`                  | -           | Render as a different element.       |
+
+### Strong
+
+Renders a `strong` element for important content.
+
+### Em
+
+Renders an `em` element for emphasized content.
+
+### Code
+
+Renders an inline `code` element with a muted background.
+
+### Quote
+
+Renders an inline `q` element for short quotations.
+
+### Blockquote
+
+Renders a `blockquote` element for block-level quotations.
+
+### Link
+
+Renders an anchor element. Use the `render` prop to render as a framework link.
+
+| Prop     | Type                 | Default | Description                              |
+| -------- | -------------------- | ------- | ---------------------------------------- |
+| `render` | `React.ReactElement` | -       | Render as a different element (e.g. Link). |
+
+## Examples
+
+### Headings and Text
+
+<ComponentPreview name="p-typography-1" />
+
+### Inline Elements
+
+<ComponentPreview name="p-typography-2" />

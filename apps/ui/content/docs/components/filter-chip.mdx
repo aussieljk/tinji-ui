@@ -1,0 +1,73 @@
+---
+title: Filter Chip
+description: A toggleable pill for filtering content, with optional dismiss control.
+---
+
+<ComponentPreview name="p-filter-chip-1" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTab value="cli">CLI</TabsTab>
+  <TabsTab value="manual">Manual</TabsTab>
+</TabsList>
+<TabsPanel value="cli">
+
+```bash
+npx shadcn@latest add @coss/filter-chip
+```
+
+</TabsPanel>
+
+<TabsPanel value="manual">
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install lucide-react
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="filter-chip" title="components/ui/filter-chip.tsx" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsPanel>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import { FilterChip, FilterChipRemove } from "@/components/ui/filter-chip"
+```
+
+```tsx
+<FilterChip selected={selected} onClick={() => setSelected((v) => !v)}>
+  Active
+  <FilterChipRemove onClick={() => setSelected(false)} />
+</FilterChip>
+```
+
+## API Reference
+
+### FilterChip
+
+A rounded-full toggle button with a selected state. Uses Base UI's `useRender` hook.
+
+| Prop       | Type                 | Default     | Description                                |
+| ---------- | -------------------- | ----------- | ------------------------------------------ |
+| `selected` | `boolean`            | -           | Whether the chip is selected               |
+| `size`     | `"default" \| "sm"`  | `"default"` | Controls the chip size                     |
+| `render`   | `React.ReactElement` | -           | Render as a different element              |
+
+### FilterChipRemove
+
+An icon button for dismissing the chip. Renders an `XIcon` by default.

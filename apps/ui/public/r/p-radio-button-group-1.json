@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "p-radio-button-group-1",
+  "description": "Radio group styled as selectable cards",
+  "registryDependencies": [
+    "@coss/radio-button-group"
+  ],
+  "files": [
+    {
+      "path": "registry/default/particles/p-radio-button-group-1.tsx",
+      "content": "import {\n  RadioButtonGroup,\n  RadioButtonGroupItem,\n} from \"@/registry/default/ui/radio-button-group\";\n\nexport default function Particle() {\n  return (\n    <RadioButtonGroup\n      aria-label=\"Select a plan\"\n      className=\"w-full max-w-xs\"\n      defaultValue=\"pro\"\n    >\n      <RadioButtonGroupItem value=\"starter\">\n        <div className=\"flex flex-col gap-0.5\">\n          <span className=\"font-medium\">Starter</span>\n          <span className=\"text-muted-foreground text-xs\">\n            For individuals getting started.\n          </span>\n        </div>\n      </RadioButtonGroupItem>\n      <RadioButtonGroupItem value=\"pro\">\n        <div className=\"flex flex-col gap-0.5\">\n          <span className=\"font-medium\">Pro</span>\n          <span className=\"text-muted-foreground text-xs\">\n            For growing teams and businesses.\n          </span>\n        </div>\n      </RadioButtonGroupItem>\n      <RadioButtonGroupItem value=\"enterprise\">\n        <div className=\"flex flex-col gap-0.5\">\n          <span className=\"font-medium\">Enterprise</span>\n          <span className=\"text-muted-foreground text-xs\">\n            Advanced controls and support.\n          </span>\n        </div>\n      </RadioButtonGroupItem>\n    </RadioButtonGroup>\n  );\n}\n",
+      "type": "registry:block"
+    }
+  ],
+  "categories": [
+    "radio button group"
+  ],
+  "type": "registry:block"
+}

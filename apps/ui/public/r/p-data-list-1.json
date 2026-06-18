@@ -1,0 +1,19 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "p-data-list-1",
+  "description": "Key/value list showing record details",
+  "registryDependencies": [
+    "@coss/data-list"
+  ],
+  "files": [
+    {
+      "path": "registry/default/particles/p-data-list-1.tsx",
+      "content": "import {\n  DataList,\n  DataListItem,\n  DataListLabel,\n  DataListValue,\n} from \"@/registry/default/ui/data-list\";\n\nexport default function Particle() {\n  return (\n    <DataList className=\"w-full max-w-sm\" orientation=\"horizontal\">\n      <DataListItem>\n        <DataListLabel>Status</DataListLabel>\n        <DataListValue>Active</DataListValue>\n      </DataListItem>\n      <DataListItem>\n        <DataListLabel>Name</DataListLabel>\n        <DataListValue>Ada Lovelace</DataListValue>\n      </DataListItem>\n      <DataListItem>\n        <DataListLabel>Email</DataListLabel>\n        <DataListValue>ada@example.com</DataListValue>\n      </DataListItem>\n      <DataListItem>\n        <DataListLabel>Plan</DataListLabel>\n        <DataListValue>Pro</DataListValue>\n      </DataListItem>\n    </DataList>\n  );\n}\n",
+      "type": "registry:block"
+    }
+  ],
+  "categories": [
+    "data list"
+  ],
+  "type": "registry:block"
+}

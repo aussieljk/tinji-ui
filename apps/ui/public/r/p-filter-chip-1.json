@@ -1,0 +1,22 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "p-filter-chip-1",
+  "description": "Toggleable filter chip with selected state and dismiss",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@coss/filter-chip"
+  ],
+  "files": [
+    {
+      "path": "registry/default/particles/p-filter-chip-1.tsx",
+      "content": "\"use client\";\n\nimport { CheckIcon } from \"lucide-react\";\nimport { useState } from \"react\";\nimport {\n  FilterChip,\n  FilterChipRemove,\n} from \"@/registry/default/ui/filter-chip\";\n\nexport default function Particle() {\n  const [selected, setSelected] = useState(true);\n\n  return (\n    <div className=\"flex flex-wrap items-center gap-2\">\n      <FilterChip\n        onClick={() => setSelected((value) => !value)}\n        selected={selected}\n      >\n        {selected ? <CheckIcon aria-hidden=\"true\" /> : null}\n        Active\n        {selected ? (\n          <FilterChipRemove\n            aria-label=\"Clear active filter\"\n            onClick={(event) => {\n              event.stopPropagation();\n              setSelected(false);\n            }}\n          />\n        ) : null}\n      </FilterChip>\n    </div>\n  );\n}\n",
+      "type": "registry:block"
+    }
+  ],
+  "categories": [
+    "filter chip"
+  ],
+  "type": "registry:block"
+}

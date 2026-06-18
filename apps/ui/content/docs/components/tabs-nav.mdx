@@ -1,0 +1,93 @@
+---
+title: Tabs Nav
+description: A navigation variant of tabs rendered as links for routing between pages.
+---
+
+<ComponentPreview name="p-tabs-nav-1" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTab value="cli">CLI</TabsTab>
+  <TabsTab value="manual">Manual</TabsTab>
+</TabsList>
+<TabsPanel value="cli">
+
+```bash
+npx shadcn@latest add @coss/tabs-nav
+```
+
+</TabsPanel>
+
+<TabsPanel value="manual">
+
+<Steps>
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="tabs-nav" title="components/ui/tabs-nav.tsx" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsPanel>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import { TabsNav, TabsNavLink, TabsNavList } from "@/components/ui/tabs-nav"
+```
+
+```tsx
+<TabsNav aria-label="Account">
+  <TabsNavList>
+    <TabsNavLink active href="/overview">
+      Overview
+    </TabsNavLink>
+    <TabsNavLink href="/activity">Activity</TabsNavLink>
+    <TabsNavLink href="/settings">Settings</TabsNavLink>
+  </TabsNavList>
+</TabsNav>
+```
+
+## Link
+
+Use the [`render`](https://base-ui.com/react/utils/use-render#migrating-from-radix-ui) prop to render `TabsNavLink` as a framework router link, such as Next.js `Link`.
+
+```tsx
+import Link from "next/link"
+
+import { TabsNavLink } from "@/components/ui/tabs-nav"
+
+export function RouterLink() {
+  return (
+    <TabsNavLink active render={<Link href="/overview" />}>
+      Overview
+    </TabsNavLink>
+  )
+}
+```
+
+## API Reference
+
+### TabsNav
+
+The navigation landmark. Renders a `<nav>` element.
+
+### TabsNavList
+
+Container for the navigation links.
+
+### TabsNavLink
+
+An anchor link styled like a tab. Sets `aria-current="page"` when active.
+
+| Prop     | Type                 | Default | Description                                       |
+| -------- | -------------------- | ------- | ------------------------------------------------- |
+| `active` | `boolean`            | -       | Marks the link as the current page                |
+| `render` | `React.ReactElement` | -       | Render as a different element (e.g., a router Link) |

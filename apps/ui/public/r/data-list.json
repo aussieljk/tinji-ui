@@ -1,0 +1,12 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "data-list",
+  "files": [
+    {
+      "path": "registry/default/ui/data-list.tsx",
+      "content": "import { cva, type VariantProps } from \"class-variance-authority\";\nimport type React from \"react\";\nimport { cn } from \"@/registry/default/lib/utils\";\n\nexport const dataListVariants = cva(\"text-sm\", {\n  defaultVariants: {\n    orientation: \"vertical\",\n  },\n  variants: {\n    orientation: {\n      horizontal: \"grid grid-cols-1\",\n      vertical: \"flex flex-col\",\n    },\n  },\n});\n\nexport function DataList({\n  className,\n  orientation = \"vertical\",\n  ...props\n}: React.ComponentProps<\"dl\"> &\n  VariantProps<typeof dataListVariants>): React.ReactElement {\n  return (\n    <dl\n      className={cn(dataListVariants({ orientation }), className)}\n      data-orientation={orientation}\n      data-slot=\"data-list\"\n      {...props}\n    />\n  );\n}\n\nexport function DataListItem({\n  className,\n  ...props\n}: React.ComponentProps<\"div\">): React.ReactElement {\n  return (\n    <div\n      className={cn(\n        \"flex in-data-[orientation=horizontal]:grid in-data-[orientation=horizontal]:grid-cols-[minmax(0,1fr)_minmax(0,2fr)] in-data-[orientation=vertical]:flex-col in-data-[orientation=horizontal]:items-center gap-1 in-data-[orientation=horizontal]:gap-4 in-data-[orientation=horizontal]:py-1.5 in-data-[orientation=vertical]:py-2\",\n        className,\n      )}\n      data-slot=\"data-list-item\"\n      {...props}\n    />\n  );\n}\n\nexport function DataListLabel({\n  className,\n  ...props\n}: React.ComponentProps<\"dt\">): React.ReactElement {\n  return (\n    <dt\n      className={cn(\"text-muted-foreground\", className)}\n      data-slot=\"data-list-label\"\n      {...props}\n    />\n  );\n}\n\nexport function DataListValue({\n  className,\n  ...props\n}: React.ComponentProps<\"dd\">): React.ReactElement {\n  return (\n    <dd\n      className={cn(\"text-foreground\", className)}\n      data-slot=\"data-list-value\"\n      {...props}\n    />\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "type": "registry:ui"
+}

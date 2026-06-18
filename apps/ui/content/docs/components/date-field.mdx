@@ -1,0 +1,87 @@
+---
+title: Date Field
+description: A segmented date input with keyboard-typable day, month, and year segments.
+---
+
+<ComponentPreview name="p-date-field-1" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTab value="cli">CLI</TabsTab>
+  <TabsTab value="manual">Manual</TabsTab>
+</TabsList>
+<TabsPanel value="cli">
+
+```bash
+npx shadcn@latest add @coss/date-field
+```
+
+</TabsPanel>
+
+<TabsPanel value="manual">
+
+<Steps>
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="date-field" title="components/ui/date-field.tsx" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsPanel>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import { DateField } from "@/components/ui/date-field"
+```
+
+```tsx
+<DateField aria-label="Date of birth" />
+```
+
+Type into any segment to advance automatically to the next one. Use the arrow
+keys to move between segments, and `Backspace` on an empty segment to step back.
+
+## Controlled
+
+```tsx
+"use client"
+
+import { useState } from "react"
+
+import { DateField, type DateFieldValue } from "@/components/ui/date-field"
+
+export function Example() {
+  const [value, setValue] = useState<DateFieldValue>({
+    day: "",
+    month: "",
+    year: "",
+  })
+
+  return (
+    <DateField aria-label="Date" onValueChange={setValue} value={value} />
+  )
+}
+```
+
+## API Reference
+
+This is a custom component built from native input segments.
+
+### DateField
+
+| Prop            | Type                                  | Default | Description                                       |
+| --------------- | ------------------------------------- | ------- | ------------------------------------------------- |
+| `value`         | `DateFieldValue`                      | -       | Controlled value (`{ day, month, year }`).        |
+| `defaultValue`  | `DateFieldValue`                      | -       | Uncontrolled initial value.                       |
+| `onValueChange` | `(value: DateFieldValue) => void`     | -       | Called whenever a segment changes.                |
+| `disabled`      | `boolean`                             | `false` | Disables all segments.                            |
+| `aria-label`    | `string`                              | -       | Accessible label for the field group.             |

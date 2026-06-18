@@ -1,0 +1,86 @@
+---
+title: Data List
+description: A key/value list for displaying metadata using description list semantics.
+---
+
+<ComponentPreview name="p-data-list-1" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTab value="cli">CLI</TabsTab>
+  <TabsTab value="manual">Manual</TabsTab>
+</TabsList>
+<TabsPanel value="cli">
+
+```bash
+npx shadcn@latest add @coss/data-list
+```
+
+</TabsPanel>
+
+<TabsPanel value="manual">
+
+<Steps>
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="data-list" title="components/ui/data-list.tsx" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsPanel>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import {
+  DataList,
+  DataListItem,
+  DataListLabel,
+  DataListValue,
+} from "@/components/ui/data-list"
+```
+
+```tsx
+<DataList orientation="horizontal">
+  <DataListItem>
+    <DataListLabel>Status</DataListLabel>
+    <DataListValue>Active</DataListValue>
+  </DataListItem>
+  <DataListItem>
+    <DataListLabel>Name</DataListLabel>
+    <DataListValue>Ada Lovelace</DataListValue>
+  </DataListItem>
+</DataList>
+```
+
+## API Reference
+
+Renders semantic `<dl>` / `<dt>` / `<dd>` elements.
+
+### DataList
+
+Root component (`<dl>`). Supports an `orientation` prop.
+
+| Prop          | Type                          | Default      | Description                                  |
+| ------------- | ----------------------------- | ------------ | -------------------------------------------- |
+| `orientation` | `"horizontal" \| "vertical"`  | `"vertical"` | Lays out label and value side by side or stacked |
+
+### DataListItem
+
+Wraps a single label/value pair (`<div>`).
+
+### DataListLabel
+
+The muted key (`<dt>`).
+
+### DataListValue
+
+The value (`<dd>`).

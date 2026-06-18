@@ -1,0 +1,94 @@
+---
+title: Scroll Gallery
+description: A horizontally-scrolling, scroll-snapping gallery of media or cards with optional navigation buttons.
+---
+
+<ComponentPreview name="p-scroll-gallery-1" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTab value="cli">CLI</TabsTab>
+  <TabsTab value="manual">Manual</TabsTab>
+</TabsList>
+<TabsPanel value="cli">
+
+```bash
+npx shadcn@latest add @coss/scroll-gallery
+```
+
+</TabsPanel>
+
+<TabsPanel value="manual">
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install @base-ui/react lucide-react
+```
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource name="scroll-gallery" title="components/ui/scroll-gallery.tsx" />
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsPanel>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import {
+  ScrollGallery,
+  ScrollGalleryItem,
+  ScrollGalleryNext,
+  ScrollGalleryPrevious,
+  ScrollGalleryViewport,
+} from "@/components/ui/scroll-gallery"
+```
+
+```tsx
+<ScrollGallery>
+  <div className="flex justify-end gap-2">
+    <ScrollGalleryPrevious />
+    <ScrollGalleryNext />
+  </div>
+  <ScrollGalleryViewport>
+    <ScrollGalleryItem className="w-64">Item 1</ScrollGalleryItem>
+    <ScrollGalleryItem className="w-64">Item 2</ScrollGalleryItem>
+    <ScrollGalleryItem className="w-64">Item 3</ScrollGalleryItem>
+  </ScrollGalleryViewport>
+</ScrollGallery>
+```
+
+## API Reference
+
+This is a custom component built on native scroll-snap. `ScrollGalleryPrevious` and `ScrollGalleryNext` use an internal context to scroll the viewport, so they must be rendered inside a `ScrollGallery`.
+
+### ScrollGallery
+
+Root flex container. Provides the viewport ref via context so the navigation buttons can scroll the gallery. Accepts a `render` prop.
+
+### ScrollGalleryViewport
+
+Horizontally-scrolling container with `snap-x snap-mandatory` and a hidden scrollbar. Receives the ref used by the navigation buttons. Accepts a `render` prop.
+
+### ScrollGalleryItem
+
+A single snap target (`shrink-0 snap-start`). Set the width on each item via `className`. Accepts a `render` prop.
+
+### ScrollGalleryPrevious
+
+Button that scrolls the viewport toward the start. Defaults to `variant="outline"`, `size="icon"`, and a `ChevronLeft` icon. Accepts all `Button` props.
+
+### ScrollGalleryNext
+
+Button that scrolls the viewport toward the end. Defaults to `variant="outline"`, `size="icon"`, and a `ChevronRight` icon. Accepts all `Button` props.
