@@ -1,0 +1,187 @@
+---
+title: Changelog
+description: Breaking changes, migration guides, and notable updates.
+---
+
+## June 11, 2026
+
+### Context Menu
+
+**`@coss/context-menu`** is a new registry component for right-click and long-press action menus anchored to the pointer. See the [Context Menu](/ui/docs/components/context-menu) docs for installation and examples.
+
+**Install:**
+
+```bash
+npx shadcn@latest add @coss/context-menu
+```
+
+No migration from an existing coss primitive—opt in where you need pointer-triggered menus instead of (or alongside) **`Menu`**.
+
+### Menu & Context Menu — link items
+
+**`MenuLinkItem`** and **`ContextMenuLinkItem`** are styled wrappers for Base UI **`LinkItem`**. They match **`MenuItem`** / **`ContextMenuItem`** visually and default **`closeOnClick`** to **`true`** so the menu closes on navigation.
+
+**`LinkItem`** renders a native **`<a>`** when you pass **`href`**. If you were already using **`render={<Link href="..." />}`** (or another router link), **keep `render`** on the link item — swap the component name only, do not drop `render` for `href` alone.
+
+Use **`href`** only for plain anchor links with no router **`Link`**.
+
+**Migration:**
+
+```diff
+  import {
+    Menu,
+-   MenuItem,
++   MenuLinkItem,
+    MenuPopup,
+    MenuTrigger,
+  } from "@/components/ui/menu"
+```
+
+```diff
+- <MenuItem render={<Link href="/docs" />}>Docs</MenuItem>
++ <MenuLinkItem render={<Link href="/docs" />}>Docs</MenuLinkItem>
+```
+
+Plain anchor (no router **`Link`**):
+
+```tsx
+<MenuLinkItem href="/docs">Docs</MenuLinkItem>
+```
+
+For context menus:
+
+```diff
+- <ContextMenuItem render={<Link href="/docs" />}>Docs</ContextMenuItem>
++ <ContextMenuLinkItem render={<Link href="/docs" />}>Docs</ContextMenuLinkItem>
+```
+
+Existing **`MenuItem render={<Link … />}`** usage keeps working; migrate when you touch those menus.
+
+**Agent migration prompt:**
+
+```text
+coss now exports MenuLinkItem (menu.tsx) and ContextMenuLinkItem (context-menu.tsx) for navigation rows. Replace MenuItem/ContextMenuItem with render={<Link href="..." />} by changing only the component to MenuLinkItem/ContextMenuLinkItem — keep render={<Link … />}; do not replace render with href when using Next.js or another router Link. Use href on MenuLinkItem/ContextMenuLinkItem only for plain <a> navigation without a router Link. Keep MenuItem/ContextMenuItem for actions (onClick), not navigation. Context Menu is a new @coss/context-menu package—see Context Menu docs.
+```
+
+## May 29, 2026
+
+### Scroll Area
+
+**`ScrollArea`** adds an optional **`fill`** prop (default **`false`**). When **`fill`** is enabled, **`size-full`** is applied to **`ScrollArea.Content`** so inner flex layouts can use the full viewport height (for example, pinning a footer with **`mt-auto`** in a sidebar).
+
+Most scroll areas should keep the default. Opt in only when the scroll container must stretch rather than size to its children.
+
+**Migration:**
+
+No change required for existing **`ScrollArea`** usage (lists, dialogs, comboboxes, command menus). For custom sidebars or other flex columns with **`mt-auto`** footers inside a scroll area, opt in explicitly:
+
+```diff
+- <ScrollArea className="flex-1 min-h-0">
++ <ScrollArea className="flex-1 min-h-0" fill>
+    <div className="flex h-full flex-col">
+      …
+      <footer className="mt-auto">…</footer>
+    </div>
+  </ScrollArea>
+```
+
+**`SidebarContent`** from **`@coss/sidebar`** already passes **`fill`**—update your local **`sidebar.tsx`** copy if you vendor the component.
+
+**Agent migration prompt:**
+
+```text
+After upgrading @coss/scroll-area, ScrollArea has an optional fill prop (default false). Do not add fill to every ScrollArea. Add fill only where a flex column inside the scroll area must stretch to the viewport height (e.g. mt-auto footer in a sidebar). Pair fill with flex-1 min-h-0 on the ScrollArea and h-full flex-col on the inner wrapper. SidebarContent in @coss/sidebar already uses fill.
+```
+
+## Apr 17, 2026
+
+### Form
+
+The **`Form`** component (`form.tsx`) no longer applies default layout classes (`flex`, `flex-col`, `gap-4`, `w-full`). It is a thin wrapper around Base UI only; pass **`className`** wherever you need a vertical field stack, width constraints, or dialog/sheet layout.
+
+**Migration:**
+
+For a typical stacked-field form, restore the previous default explicitly:
+
+```diff
+- <Form onSubmit={…}>
++ <Form className="flex w-full flex-col gap-4" onSubmit={…}>
+```
+
+For **dialogs, sheets, and drawers**, keep **`DialogHeader`** (or **`SheetHeader`**, **`DrawerHeader`**) **outside** the form. Wrap **`DialogPanel`** and **`DialogFooter`** (or sheet/drawer equivalents) in **`<Form className="contents">`** or a native **`<form className="contents">`**. **`display: contents`** keeps **header, panel, and footer** as the **direct flex children** of the popup’s column layout so **`DialogPanel`** scroll and height constraints work correctly.
+
+**Agent migration prompt:**
+
+```text
+The coss Form component no longer adds default Tailwind layout. Add className="flex w-full flex-col gap-4" to Form where you relied on the old stacked-field layout. For dialog/sheet/drawer: put header outside the form; wrap only panel+footer in Form (or native form) with className="contents". Merge any existing Form className with flex utilities where needed (e.g. max-w-64 becomes flex w-full max-w-64 flex-col gap-4).
+```
+
+## Apr 14, 2026
+
+### OTP Field
+
+The **`input-otp.tsx`** registry component has been removed in favor of **`otp-field.tsx`** (`@coss/otp-field`), which wraps Base UI OTP Field. See the [OTP Field](/ui/docs/components/otp-field) docs and [migration guide](/ui/docs/radix-migration#otp-field) for API details.
+
+**Migration:**
+
+```diff
+- npx shadcn@latest add @coss/input-otp
++ npx shadcn@latest add @coss/otp-field
+```
+
+```diff
+- import { ... } from "@/components/ui/input-otp"
++ import { ... } from "@/components/ui/otp-field"
+```
+
+**Agent migration prompt:**
+
+```text
+Replace the removed @coss/input-otp / components/ui/input-otp.tsx with @coss/otp-field / components/ui/otp-field.tsx. Follow the OTP Field docs: use OTPField, OTPFieldInput, and OTPFieldSeparator; use length on the root; remove the old input-otp npm package if present.
+```
+
+## Apr 12, 2026
+
+### Table
+
+`Table` now supports an optional **`variant`** prop: **`"default"`** (the default) or **`"card"`**. Omitting it keeps the same appearance as before. Use **`variant="card"`** for the card-style grid (separated rows, rounded cells, updated hover/footer treatment)—including tables inside a [Frame](/ui/docs/components/frame) or [CardFrame](/ui/docs/components/card) as shown in the [Table docs](/ui/docs/components/table).
+
+**Migration:**
+
+No change required for existing tables. Opt in where you want the card-style table:
+
+```tsx
+<Table variant="card">
+```
+
+**Agent migration prompt:**
+
+```text
+After upgrading @coss/table, Table supports an optional variant prop: "default" (default) or "card". Existing Table components require no edits. Add variant="card" to Table where you want the card-style table (e.g. inside Frame or CardFrame). Do not add variant to every table—only where the design calls for the card-style grid.
+```
+
+## Mar 20, 2026
+
+### Toggle Group
+
+`Toggle` was renamed to `ToggleGroupItem` in `toggle-group.tsx` to avoid a naming conflict with the standalone `Toggle` export.
+
+**Migration:**
+
+```diff
+- import { Toggle, ToggleGroup } from "@/components/ui/toggle-group"
++ import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group"
+```
+
+```diff
+  <ToggleGroup>
+-   <Toggle value="bold">Bold</Toggle>
++   <ToggleGroupItem value="bold">Bold</ToggleGroupItem>
+  </ToggleGroup>
+```
+
+**Agent migration prompt:**
+
+```text
+In my codebase, rename all usages of `Toggle` imported from `toggle-group` to `ToggleGroupItem`. Update both the import statements and JSX usage. Do not change `Toggle` imports from `toggle.tsx` (standalone toggle). Only change files that import `Toggle` from the `toggle-group` module.
+```
