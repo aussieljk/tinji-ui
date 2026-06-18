@@ -10,7 +10,7 @@ export default function robots(): MetadataRoute.Robots {
     sitemap: [
       "https://ui.tinji.dev/sitemap.xml",
       "https://ui.tinji.dev/origin/sitemap.xml",
-      "https://ui.tinji.dev/ui/sitemap.xml",
+      "https://ui.tinji.dev/sitemap.xml",
     ],
   };
 }

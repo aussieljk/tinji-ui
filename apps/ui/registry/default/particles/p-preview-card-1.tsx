@@ -10,12 +10,12 @@ export default function Particle() {
   return (
     <PreviewCard>
       <PreviewCardTrigger render={<Button variant="ghost" />}>
-        ui.tinji.dev/ui
+        ui.tinji.dev
       </PreviewCardTrigger>
       <PreviewCardPopup>
         <div className="flex flex-col gap-4">
           <div className="flex flex-col gap-1">
-            <h4 className="font-medium text-sm">ui.tinji.dev/ui</h4>
+            <h4 className="font-medium text-sm">ui.tinji.dev</h4>
             <p className="text-muted-foreground text-sm">
               Beautifully designed components that you can copy and paste into
               your apps.

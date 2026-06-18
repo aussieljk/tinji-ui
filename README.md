@@ -1,10 +1,10 @@
 ![ui.tinji.dev](https://github.com/user-attachments/assets/56dfe7f7-85b7-44ee-b89a-1c30c5c4a156)
 
-<h3 align="center">ui.tinji.dev/ui (formerly Origin UI)</h3>
+<h3 align="center">ui.tinji.dev (formerly Origin UI)</h3>
 
 ## About the Project
 
-ui.tinji.dev/ui is the official Cal.com Design System.
+ui.tinji.dev is the official Cal.com Design System.
 
 ## Repository Overview
 
@@ -113,7 +113,7 @@ This is the component library we'll be progressively adopting for [cal.com](http
 
 ### Origin UI Acquisition
 
-This repository also includes the **Origin UI** components as a legacy snapshot. Origin UI was a pre-acquisition collection of Radix-based, shadcn-style components that remains available for use, but with limited support and maintenance. Active development now focuses on the new [Particles](https://ui.tinji.dev/ui/particles) components built on the tinji ui primitives.
+This repository also includes the **Origin UI** components as a legacy snapshot. Origin UI was a pre-acquisition collection of Radix-based, shadcn-style components that remains available for use, but with limited support and maintenance. Active development now focuses on the new [Particles](https://ui.tinji.dev/particles) components built on the tinji ui primitives.
 
 ### Contributing to tinji ui
 

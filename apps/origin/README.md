@@ -2,7 +2,7 @@
 >
 > - This app is a preserved, pre-acquisition version of Origin UI (Radix-based, shadcn-style).
 > - It remains available for use, but support and maintenance are limited.
-> - Active development now focuses on the new [Particles](https://ui.tinji.dev/ui/particles) components built on the [tinji ui](https://ui.tinji.dev/ui/docs) primitives.
+> - Active development now focuses on the new [Particles](https://ui.tinji.dev/particles) components built on the [tinji ui](https://ui.tinji.dev/docs) primitives.
 
 # ui.tinji.dev origin (formerly Origin UI)
 

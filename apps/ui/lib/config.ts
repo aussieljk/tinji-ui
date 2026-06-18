@@ -13,5 +13,5 @@ export const appConfig = {
     },
   ],
   ogImage: "https://ui.tinji.dev/og.jpg",
-  url: "https://ui.tinji.dev/ui",
+  url: "https://ui.tinji.dev",
 };

@@ -82,8 +82,8 @@ If these are unsupported in the environment, use fallback sources below.
 
 ### Outside the tinji repo
 
-- tinji particles catalog: `https://ui.tinji.dev/ui/particles`
-- tinji docs catalog: `https://ui.tinji.dev/ui/`
+- tinji particles catalog: `https://ui.tinji.dev/particles`
+- tinji docs catalog: `https://ui.tinji.dev/`
 
 ## Manual Install Path
 

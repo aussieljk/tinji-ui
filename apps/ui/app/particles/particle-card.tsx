@@ -44,8 +44,7 @@ export async function ParticleCard({
   className?: string;
   colSpan?: number;
 }) {
-  const tinjiuiUrl =
-    process.env.NEXT_PUBLIC_APP_URL || "https://ui.tinji.dev/ui";
+  const tinjiuiUrl = process.env.NEXT_PUBLIC_APP_URL || "https://ui.tinji.dev";
 
   const particle = await getCachedRegistryItem(name);
 

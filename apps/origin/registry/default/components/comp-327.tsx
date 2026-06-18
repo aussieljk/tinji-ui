@@ -114,7 +114,7 @@ export default function Component() {
           <div className="relative">
             <Input
               className="pe-9"
-              defaultValue="https://ui.tinji.dev/ui/refer/87689"
+              defaultValue="https://ui.tinji.dev/refer/87689"
               id={id}
               readOnly
               ref={inputRef}

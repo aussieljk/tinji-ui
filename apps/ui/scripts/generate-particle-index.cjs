@@ -15,8 +15,8 @@
 const fs = require("node:fs");
 const path = require("node:path");
 
-const TINJI_PARTICLES_URL = "https://ui.tinji.dev/ui/particles";
-const TINJI_JSON_BASE_URL = "https://ui.tinji.dev/ui/r";
+const TINJI_PARTICLES_URL = "https://ui.tinji.dev/particles";
+const TINJI_JSON_BASE_URL = "https://ui.tinji.dev/r";
 const TINJI_REPO_PARTICLES_PATH = "apps/ui/registry/default/particles";
 
 function main() {
@@ -96,7 +96,7 @@ function main() {
   lines.push("# Tinji UI Particles Index");
   lines.push("");
   lines.push(
-    `Particles are copy-paste-ready UI patterns built on [tinji](https://ui.tinji.dev/ui) primitives. Browse them visually at <${TINJI_PARTICLES_URL}>.`,
+    `Particles are copy-paste-ready UI patterns built on [tinji](https://ui.tinji.dev) primitives. Browse them visually at <${TINJI_PARTICLES_URL}>.`,
   );
   lines.push("");
   lines.push("## How to use this skill");
