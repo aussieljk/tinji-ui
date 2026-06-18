@@ -1,14 +1,24 @@
 "use client";
 
 import {
+  type Column,
+  type ColumnDef,
+  type ColumnSizingState,
+  flexRender,
+  getCoreRowModel,
+  getSortedRowModel,
+  type SortingState,
+  useReactTable,
+} from "@tanstack/react-table";
+import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@coss/ui/components/avatar";
-import { Badge } from "@coss/ui/components/badge";
-import { Button } from "@coss/ui/components/button";
-import { CardFrame, CardFrameFooter } from "@coss/ui/components/card";
-import { Checkbox } from "@coss/ui/components/checkbox";
+} from "@tinji/ui/components/avatar";
+import { Badge } from "@tinji/ui/components/badge";
+import { Button } from "@tinji/ui/components/button";
+import { CardFrame, CardFrameFooter } from "@tinji/ui/components/card";
+import { Checkbox } from "@tinji/ui/components/checkbox";
 import {
   Combobox,
   ComboboxCollection,
@@ -21,14 +31,14 @@ import {
   ComboboxPopup,
   ComboboxTrigger,
   ComboboxValue,
-} from "@coss/ui/components/combobox";
+} from "@tinji/ui/components/combobox";
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
-} from "@coss/ui/components/input-group";
-import { Label } from "@coss/ui/components/label";
-import { ScrollArea } from "@coss/ui/components/scroll-area";
+} from "@tinji/ui/components/input-group";
+import { Label } from "@tinji/ui/components/label";
+import { ScrollArea } from "@tinji/ui/components/scroll-area";
 import {
   Table,
   TableBody,
@@ -36,18 +46,8 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@coss/ui/components/table";
-import { cn } from "@coss/ui/lib/utils";
-import {
-  type Column,
-  type ColumnDef,
-  type ColumnSizingState,
-  flexRender,
-  getCoreRowModel,
-  getSortedRowModel,
-  type SortingState,
-  useReactTable,
-} from "@tanstack/react-table";
+} from "@tinji/ui/components/table";
+import { cn } from "@tinji/ui/lib/utils";
 import {
   ArrowUpRightIcon,
   ChevronDownIcon,

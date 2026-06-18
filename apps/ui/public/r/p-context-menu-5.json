@@ -3,7 +3,7 @@
   "name": "p-context-menu-5",
   "description": "Context menu with group labels",
   "registryDependencies": [
-    "@coss/context-menu"
+    "@tinji/context-menu"
   ],
   "files": [
     {

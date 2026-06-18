@@ -2,7 +2,7 @@
 
 import { mergeProps } from "@base-ui/react/merge-props";
 import { useRender } from "@base-ui/react/use-render";
-import { cn } from "@coss/ui/lib/utils";
+import { cn } from "@tinji/ui/lib/utils";
 import { ChevronRight, MoreHorizontal } from "lucide-react";
 import type * as React from "react";
 

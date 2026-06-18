@@ -1,7 +1,7 @@
-import { siteConfig } from "@coss/ui/lib/config";
-import { GitHubLink } from "@coss/ui/shared/github-link";
-import { ModeSwitcher } from "@coss/ui/shared/mode-switcher";
-import { ProductLabel } from "@coss/ui/shared/product-label";
+import { siteConfig } from "@tinji/ui/lib/config";
+import { GitHubLink } from "@tinji/ui/shared/github-link";
+import { ModeSwitcher } from "@tinji/ui/shared/mode-switcher";
+import { ProductLabel } from "@tinji/ui/shared/product-label";
 import Link from "next/link";
 
 export function SiteHeader({
@@ -13,7 +13,7 @@ export function SiteHeader({
   children?: React.ReactNode;
   currentProduct?: string;
 }) {
-  const gatewayOrigin = process.env.NEXT_PUBLIC_COSS_URL || "";
+  const gatewayOrigin = process.env.NEXT_PUBLIC_TINJI_URL || "";
   const gatewayHome = gatewayOrigin ? `${gatewayOrigin}/` : "/";
   const isExternal = !!gatewayOrigin;
 
@@ -24,11 +24,11 @@ export function SiteHeader({
         <div className="-mt-0.5 flex shrink-0 items-center gap-1.5 font-heading text-2xl sm:text-[1.625em]">
           {isExternal ? (
             <a aria-label="Home" href={gatewayHome}>
-              coss.com
+              ui.tinji.dev
             </a>
           ) : (
             <Link aria-label="Home" href={gatewayHome}>
-              coss.com
+              ui.tinji.dev
             </Link>
           )}
           <ProductLabel

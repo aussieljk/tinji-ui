@@ -3,7 +3,7 @@
   "name": "p-context-menu-1",
   "description": "Basic context menu",
   "registryDependencies": [
-    "@coss/context-menu"
+    "@tinji/context-menu"
   ],
   "files": [
     {

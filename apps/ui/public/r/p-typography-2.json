@@ -3,12 +3,12 @@
   "name": "p-typography-2",
   "description": "Blockquote, inline quote, code, and a link",
   "registryDependencies": [
-    "@coss/typography"
+    "@tinji/typography"
   ],
   "files": [
     {
       "path": "registry/default/particles/p-typography-2.tsx",
-      "content": "import {\n  Blockquote,\n  Code,\n  Link,\n  Quote,\n  Text,\n} from \"@/registry/default/ui/typography\";\n\nexport default function Particle() {\n  return (\n    <div className=\"flex max-w-prose flex-col gap-3\">\n      <Blockquote>\n        Design is not just what it looks like and feels like. Design is how it\n        works.\n      </Blockquote>\n      <Text>\n        As the saying goes, <Quote>less is more</Quote> when it comes to\n        interface design.\n      </Text>\n      <Text>\n        Install the package with <Code>npm install @coss/typography</Code> to\n        get started.\n      </Text>\n      <Text>\n        Read more in the{\" \"}\n        <Link href=\"https://base-ui.com\">Base UI documentation</Link>.\n      </Text>\n    </div>\n  );\n}\n",
+      "content": "import {\n  Blockquote,\n  Code,\n  Link,\n  Quote,\n  Text,\n} from \"@/registry/default/ui/typography\";\n\nexport default function Particle() {\n  return (\n    <div className=\"flex max-w-prose flex-col gap-3\">\n      <Blockquote>\n        Design is not just what it looks like and feels like. Design is how it\n        works.\n      </Blockquote>\n      <Text>\n        As the saying goes, <Quote>less is more</Quote> when it comes to\n        interface design.\n      </Text>\n      <Text>\n        Install the package with <Code>npm install @tinji/typography</Code> to\n        get started.\n      </Text>\n      <Text>\n        Read more in the{\" \"}\n        <Link href=\"https://base-ui.com\">Base UI documentation</Link>.\n      </Text>\n    </div>\n  );\n}\n",
       "type": "registry:block"
     }
   ],

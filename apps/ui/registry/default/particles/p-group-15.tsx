@@ -44,7 +44,7 @@ export default function Particle() {
       <Input
         aria-label="URL"
         className="flex-1"
-        defaultValue="coss.com"
+        defaultValue="ui.tinji.dev"
         type="text"
       />
       <GroupSeparator />

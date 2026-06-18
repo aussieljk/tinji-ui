@@ -38,7 +38,7 @@ const items = [
     ],
     icon: CommandIcon,
     id: "1",
-    title: "What makes coss ui different?",
+    title: "What makes tinji ui different?",
   },
   {
     collapsibles: [
@@ -77,7 +77,7 @@ const items = [
     ],
     icon: ZapIcon,
     id: "3",
-    title: "Is coss ui optimized for performance?",
+    title: "Is tinji ui optimized for performance?",
   },
   {
     collapsibles: [

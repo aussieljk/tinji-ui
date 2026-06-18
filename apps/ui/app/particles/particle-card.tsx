@@ -1,6 +1,6 @@
-import { Icons } from "@coss/ui/shared/icons";
 import { InformationCircleIcon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
+import { Icons } from "@tinji/ui/shared/icons";
 import { cache } from "react";
 import { Index } from "@/registry/__index__";
 import { Button } from "@/registry/default/ui/button";
@@ -44,7 +44,8 @@ export async function ParticleCard({
   className?: string;
   colSpan?: number;
 }) {
-  const cossuiUrl = process.env.NEXT_PUBLIC_APP_URL || "https://coss.com/ui";
+  const tinjiuiUrl =
+    process.env.NEXT_PUBLIC_APP_URL || "https://ui.tinji.dev/ui";
 
   const particle = await getCachedRegistryItem(name);
 
@@ -79,7 +80,7 @@ export async function ParticleCard({
               </Button>
             )}
             <CopyRegistry
-              value={`${cossuiUrl}/r/${name}.json`}
+              value={`${tinjiuiUrl}/r/${name}.json`}
               variant="outline"
             />
             <Drawer position="right">
@@ -103,10 +104,10 @@ export async function ParticleCard({
                     </h2>
                     <figure data-rehype-pretty-code-figure>
                       <CodeBlockCommand
-                        __bun__={`bunx --bun shadcn@latest add @coss/${name}`}
-                        __npm__={`npx shadcn@latest add @coss/${name}`}
-                        __pnpm__={`pnpm dlx shadcn@latest add @coss/${name}`}
-                        __yarn__={`yarn dlx shadcn@latest add @coss/${name}`}
+                        __bun__={`bunx --bun shadcn@latest add @tinji/${name}`}
+                        __npm__={`npx shadcn@latest add @tinji/${name}`}
+                        __pnpm__={`pnpm dlx shadcn@latest add @tinji/${name}`}
+                        __yarn__={`yarn dlx shadcn@latest add @tinji/${name}`}
                       />
                     </figure>
                   </div>
@@ -118,7 +119,7 @@ export async function ParticleCard({
                       <Button
                         render={
                           <a
-                            href={`https://v0.dev/chat/api/open?url=${encodeURIComponent(`${cossuiUrl}/r/${name}.json`)}`}
+                            href={`https://v0.dev/chat/api/open?url=${encodeURIComponent(`${tinjiuiUrl}/r/${name}.json`)}`}
                             rel="noopener noreferrer"
                             target="_blank"
                           >

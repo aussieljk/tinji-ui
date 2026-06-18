@@ -3,8 +3,8 @@
   "name": "p-input-6",
   "description": "Input with label",
   "registryDependencies": [
-    "@coss/input",
-    "@coss/label"
+    "@tinji/input",
+    "@tinji/label"
   ],
   "files": [
     {

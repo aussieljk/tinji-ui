@@ -4,24 +4,28 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@coss/ui/components/avatar";
-import { Button } from "@coss/ui/components/button";
-import { Field, FieldDescription, FieldLabel } from "@coss/ui/components/field";
+} from "@tinji/ui/components/avatar";
+import { Button } from "@tinji/ui/components/button";
+import {
+  Field,
+  FieldDescription,
+  FieldLabel,
+} from "@tinji/ui/components/field";
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
   InputGroupText,
   InputGroupTextarea,
-} from "@coss/ui/components/input-group";
-import { Label } from "@coss/ui/components/label";
-import { Toggle } from "@coss/ui/components/toggle";
+} from "@tinji/ui/components/input-group";
+import { Label } from "@tinji/ui/components/label";
+import { Toggle } from "@tinji/ui/components/toggle";
 import {
   Tooltip,
   TooltipPopup,
   TooltipTrigger,
-} from "@coss/ui/components/tooltip";
-import { useCopyToClipboard } from "@coss/ui/hooks/use-copy-to-clipboard";
+} from "@tinji/ui/components/tooltip";
+import { useCopyToClipboard } from "@tinji/ui/hooks/use-copy-to-clipboard";
 import {
   BoldIcon,
   CheckIcon,

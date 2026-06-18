@@ -12,7 +12,7 @@ import {
   DrawerPanel,
   DrawerPopup,
   DrawerTrigger,
-} from "@coss/ui/components/drawer";
+} from "@tinji/ui/components/drawer";
 import {
   Menu,
   MenuCheckboxItem,
@@ -22,8 +22,8 @@ import {
   MenuPopup,
   MenuSeparator,
   MenuTrigger,
-} from "@coss/ui/components/menu";
-import { cn } from "@coss/ui/lib/utils";
+} from "@tinji/ui/components/menu";
+import { cn } from "@tinji/ui/lib/utils";
 import * as React from "react";
 
 type AdaptiveMenuVariant = "drawer" | "menu";

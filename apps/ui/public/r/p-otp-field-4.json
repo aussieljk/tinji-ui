@@ -3,8 +3,8 @@
   "name": "p-otp-field-4",
   "description": "OTP field with label",
   "registryDependencies": [
-    "@coss/otp-field",
-    "@coss/field"
+    "@tinji/otp-field",
+    "@tinji/field"
   ],
   "files": [
     {

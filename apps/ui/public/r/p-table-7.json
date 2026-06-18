@@ -3,9 +3,9 @@
   "name": "p-table-7",
   "description": "CardFrame with card-style table",
   "registryDependencies": [
-    "@coss/badge",
-    "@coss/card",
-    "@coss/table"
+    "@tinji/badge",
+    "@tinji/card",
+    "@tinji/table"
   ],
   "files": [
     {

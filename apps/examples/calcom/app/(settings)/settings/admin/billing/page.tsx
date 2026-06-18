@@ -1,7 +1,7 @@
 "use client";
 
-import { Badge } from "@coss/ui/components/badge";
-import { Button } from "@coss/ui/components/button";
+import { Badge } from "@tinji/ui/components/badge";
+import { Button } from "@tinji/ui/components/button";
 import {
   Card,
   CardFrame,
@@ -9,10 +9,14 @@ import {
   CardFrameHeader,
   CardFrameTitle,
   CardPanel,
-} from "@coss/ui/components/card";
-import { Field, FieldDescription, FieldLabel } from "@coss/ui/components/field";
-import { Group } from "@coss/ui/components/group";
-import { Input } from "@coss/ui/components/input";
+} from "@tinji/ui/components/card";
+import {
+  Field,
+  FieldDescription,
+  FieldLabel,
+} from "@tinji/ui/components/field";
+import { Group } from "@tinji/ui/components/group";
+import { Input } from "@tinji/ui/components/input";
 import {
   Sheet,
   SheetClose,
@@ -23,7 +27,7 @@ import {
   SheetPopup,
   SheetTitle,
   SheetTrigger,
-} from "@coss/ui/components/sheet";
+} from "@tinji/ui/components/sheet";
 import { ExternalLinkIcon } from "lucide-react";
 import {
   AppHeader,

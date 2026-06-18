@@ -3,7 +3,7 @@
   "name": "p-date-field-1",
   "description": "Segmented date field with day, month, and year",
   "registryDependencies": [
-    "@coss/date-field"
+    "@tinji/date-field"
   ],
   "files": [
     {

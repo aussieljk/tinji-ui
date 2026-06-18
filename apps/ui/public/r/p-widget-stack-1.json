@@ -3,7 +3,7 @@
   "name": "p-widget-stack-1",
   "description": "Layered widget cards stacked with offset and scale",
   "registryDependencies": [
-    "@coss/widget-stack"
+    "@tinji/widget-stack"
   ],
   "files": [
     {

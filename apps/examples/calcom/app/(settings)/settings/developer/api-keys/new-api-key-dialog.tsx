@@ -1,12 +1,16 @@
 "use client";
 
-import { Alert, AlertDescription, AlertTitle } from "@coss/ui/components/alert";
-import { Button } from "@coss/ui/components/button";
+import {
+  Alert,
+  AlertDescription,
+  AlertTitle,
+} from "@tinji/ui/components/alert";
+import { Button } from "@tinji/ui/components/button";
 import {
   Collapsible,
   CollapsiblePanel,
   CollapsibleTrigger,
-} from "@coss/ui/components/collapsible";
+} from "@tinji/ui/components/collapsible";
 import {
   Dialog,
   DialogClose,
@@ -16,18 +20,22 @@ import {
   DialogPanel,
   DialogPopup,
   DialogTitle,
-} from "@coss/ui/components/dialog";
-import { Field, FieldDescription, FieldLabel } from "@coss/ui/components/field";
-import { Form } from "@coss/ui/components/form";
-import { Input } from "@coss/ui/components/input";
+} from "@tinji/ui/components/dialog";
+import {
+  Field,
+  FieldDescription,
+  FieldLabel,
+} from "@tinji/ui/components/field";
+import { Form } from "@tinji/ui/components/form";
+import { Input } from "@tinji/ui/components/input";
 import {
   Select,
   SelectItem,
   SelectPopup,
   SelectTrigger,
   SelectValue,
-} from "@coss/ui/components/select";
-import { Switch } from "@coss/ui/components/switch";
+} from "@tinji/ui/components/select";
+import { Switch } from "@tinji/ui/components/switch";
 import { InfoIcon, TriangleAlertIcon } from "lucide-react";
 import { useEffect, useState } from "react";
 import { CopyableField } from "../oauth/copyable-field";

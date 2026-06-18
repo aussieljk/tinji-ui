@@ -6,10 +6,10 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "@coss/button",
-    "@coss/drawer",
-    "@coss/menu",
-    "@coss/use-media-query"
+    "@tinji/button",
+    "@tinji/drawer",
+    "@tinji/menu",
+    "@tinji/use-media-query"
   ],
   "files": [
     {

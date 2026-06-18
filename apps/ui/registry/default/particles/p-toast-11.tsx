@@ -3,7 +3,7 @@
 import { Button } from "@/registry/default/ui/button";
 import { toastManager } from "@/registry/default/ui/toast";
 
-const ERROR_TOAST_ID = "coss-demo-error-upsert";
+const ERROR_TOAST_ID = "tinji-demo-error-upsert";
 
 export default function Particle() {
   return (

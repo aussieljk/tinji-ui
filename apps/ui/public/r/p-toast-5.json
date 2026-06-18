@@ -3,8 +3,8 @@
   "name": "p-toast-5",
   "description": "Promise-based stacked toast",
   "registryDependencies": [
-    "@coss/button",
-    "@coss/toast"
+    "@tinji/button",
+    "@tinji/toast"
   ],
   "files": [
     {

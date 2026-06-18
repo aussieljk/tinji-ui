@@ -1,8 +1,8 @@
 "use client";
 
-import { Button, buttonVariants } from "@coss/ui/components/button";
-import { Group, GroupSeparator, GroupText } from "@coss/ui/components/group";
-import { cn } from "@coss/ui/lib/utils";
+import { Button, buttonVariants } from "@tinji/ui/components/button";
+import { Group, GroupSeparator, GroupText } from "@tinji/ui/components/group";
+import { cn } from "@tinji/ui/lib/utils";
 import { XIcon } from "lucide-react";
 import type * as React from "react";
 

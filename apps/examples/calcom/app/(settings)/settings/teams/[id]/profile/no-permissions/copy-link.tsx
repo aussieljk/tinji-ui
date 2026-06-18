@@ -1,13 +1,13 @@
 "use client";
 
-import { Button } from "@coss/ui/components/button";
-import { anchoredToastManager } from "@coss/ui/components/toast";
+import { Button } from "@tinji/ui/components/button";
+import { anchoredToastManager } from "@tinji/ui/components/toast";
 import {
   Tooltip,
   TooltipPopup,
   TooltipTrigger,
-} from "@coss/ui/components/tooltip";
-import { useCopyToClipboard } from "@coss/ui/hooks/use-copy-to-clipboard";
+} from "@tinji/ui/components/tooltip";
+import { useCopyToClipboard } from "@tinji/ui/hooks/use-copy-to-clipboard";
 import { CopyIcon } from "lucide-react";
 import { useRef } from "react";
 

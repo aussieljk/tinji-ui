@@ -1,9 +1,9 @@
 "use client";
 
 import { Combobox as ComboboxPrimitive } from "@base-ui/react/combobox";
-import { Input } from "@coss/ui/components/input";
-import { ScrollArea } from "@coss/ui/components/scroll-area";
-import { cn } from "@coss/ui/lib/utils";
+import { Input } from "@tinji/ui/components/input";
+import { ScrollArea } from "@tinji/ui/components/scroll-area";
+import { cn } from "@tinji/ui/lib/utils";
 import { ChevronsUpDownIcon, XIcon } from "lucide-react";
 import * as React from "react";
 

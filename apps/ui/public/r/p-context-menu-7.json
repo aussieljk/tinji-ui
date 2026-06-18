@@ -3,7 +3,7 @@
   "name": "p-context-menu-7",
   "description": "Context menu with radio group",
   "registryDependencies": [
-    "@coss/context-menu"
+    "@tinji/context-menu"
   ],
   "files": [
     {

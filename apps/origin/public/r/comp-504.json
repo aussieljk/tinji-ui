@@ -3,10 +3,10 @@
   "name": "comp-504",
   "type": "registry:component",
   "registryDependencies": [
-    "https://coss.com/origin/r/button.json",
-    "https://coss.com/origin/r/calendar.json",
-    "https://coss.com/origin/r/collapsible.json",
-    "https://coss.com/origin/r/scroll-area.json"
+    "https://ui.tinji.dev/origin/r/button.json",
+    "https://ui.tinji.dev/origin/r/calendar.json",
+    "https://ui.tinji.dev/origin/r/collapsible.json",
+    "https://ui.tinji.dev/origin/r/scroll-area.json"
   ],
   "files": [
     {

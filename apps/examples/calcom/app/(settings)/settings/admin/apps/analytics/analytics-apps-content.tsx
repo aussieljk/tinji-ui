@@ -8,9 +8,9 @@ import {
   AlertDialogHeader,
   AlertDialogPopup,
   AlertDialogTitle,
-} from "@coss/ui/components/alert-dialog";
-import { Button } from "@coss/ui/components/button";
-import { Card, CardPanel } from "@coss/ui/components/card";
+} from "@tinji/ui/components/alert-dialog";
+import { Button } from "@tinji/ui/components/button";
+import { Card, CardPanel } from "@tinji/ui/components/card";
 import {
   Dialog,
   DialogClose,
@@ -19,30 +19,30 @@ import {
   DialogPanel,
   DialogPopup,
   DialogTitle,
-} from "@coss/ui/components/dialog";
+} from "@tinji/ui/components/dialog";
 import {
   Empty,
   EmptyDescription,
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from "@coss/ui/components/empty";
-import { Field, FieldLabel } from "@coss/ui/components/field";
-import { Input } from "@coss/ui/components/input";
+} from "@tinji/ui/components/empty";
+import { Field, FieldLabel } from "@tinji/ui/components/field";
+import { Input } from "@tinji/ui/components/input";
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
-} from "@coss/ui/components/input-group";
-import { ScrollArea } from "@coss/ui/components/scroll-area";
-import { Switch } from "@coss/ui/components/switch";
-import { toastManager } from "@coss/ui/components/toast";
+} from "@tinji/ui/components/input-group";
+import { ScrollArea } from "@tinji/ui/components/scroll-area";
+import { Switch } from "@tinji/ui/components/switch";
+import { toastManager } from "@tinji/ui/components/toast";
 import {
   Tooltip,
   TooltipPopup,
   TooltipTrigger,
-} from "@coss/ui/components/tooltip";
-import { useMediaQuery } from "@coss/ui/hooks/use-media-query";
+} from "@tinji/ui/components/tooltip";
+import { useMediaQuery } from "@tinji/ui/hooks/use-media-query";
 import {
   BarChart3Icon,
   CalendarIcon,

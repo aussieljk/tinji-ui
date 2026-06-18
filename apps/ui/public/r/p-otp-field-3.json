@@ -3,7 +3,7 @@
   "name": "p-otp-field-3",
   "description": "OTP field with separator",
   "registryDependencies": [
-    "@coss/otp-field"
+    "@tinji/otp-field"
   ],
   "files": [
     {

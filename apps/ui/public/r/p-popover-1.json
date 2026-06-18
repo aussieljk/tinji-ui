@@ -3,11 +3,11 @@
   "name": "p-popover-1",
   "description": "Popover with a form",
   "registryDependencies": [
-    "@coss/button",
-    "@coss/field",
-    "@coss/form",
-    "@coss/popover",
-    "@coss/textarea"
+    "@tinji/button",
+    "@tinji/field",
+    "@tinji/form",
+    "@tinji/popover",
+    "@tinji/textarea"
   ],
   "files": [
     {

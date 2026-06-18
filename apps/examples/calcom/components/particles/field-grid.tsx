@@ -1,4 +1,4 @@
-import { cn } from "@coss/ui/lib/utils";
+import { cn } from "@tinji/ui/lib/utils";
 
 function FieldGrid({ className, ...props }: React.ComponentProps<"div">) {
   return (

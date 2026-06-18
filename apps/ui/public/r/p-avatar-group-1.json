@@ -3,8 +3,8 @@
   "name": "p-avatar-group-1",
   "description": "Row of avatars with an overflow count",
   "registryDependencies": [
-    "@coss/avatar",
-    "@coss/avatar-group"
+    "@tinji/avatar",
+    "@tinji/avatar-group"
   ],
   "files": [
     {

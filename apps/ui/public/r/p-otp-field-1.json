@@ -3,7 +3,7 @@
   "name": "p-otp-field-1",
   "description": "Basic OTP field",
   "registryDependencies": [
-    "@coss/otp-field"
+    "@tinji/otp-field"
   ],
   "files": [
     {

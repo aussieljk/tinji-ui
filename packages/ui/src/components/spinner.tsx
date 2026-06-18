@@ -1,4 +1,4 @@
-import { cn } from "@coss/ui/lib/utils";
+import { cn } from "@tinji/ui/lib/utils";
 import { Loader2Icon } from "lucide-react";
 import type React from "react";
 

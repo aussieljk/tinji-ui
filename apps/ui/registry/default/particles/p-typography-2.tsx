@@ -18,7 +18,7 @@ export default function Particle() {
         interface design.
       </Text>
       <Text>
-        Install the package with <Code>npm install @coss/typography</Code> to
+        Install the package with <Code>npm install @tinji/typography</Code> to
         get started.
       </Text>
       <Text>

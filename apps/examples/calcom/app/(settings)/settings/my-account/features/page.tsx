@@ -1,4 +1,4 @@
-import { Card, CardFrame, CardPanel } from "@coss/ui/components/card";
+import { Card, CardFrame, CardPanel } from "@tinji/ui/components/card";
 import { AutoOptInToggle, FeaturesList } from "./features-list";
 import {
   AppHeader,

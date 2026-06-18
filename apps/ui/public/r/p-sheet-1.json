@@ -3,11 +3,11 @@
   "name": "p-sheet-1",
   "description": "Basic sheet",
   "registryDependencies": [
-    "@coss/button",
-    "@coss/field",
-    "@coss/form",
-    "@coss/input",
-    "@coss/sheet"
+    "@tinji/button",
+    "@tinji/field",
+    "@tinji/form",
+    "@tinji/input",
+    "@tinji/sheet"
   ],
   "files": [
     {

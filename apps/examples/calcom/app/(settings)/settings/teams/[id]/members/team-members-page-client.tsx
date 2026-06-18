@@ -1,14 +1,22 @@
 "use client";
 
 import {
+  type ColumnDef,
+  flexRender,
+  getCoreRowModel,
+  getSortedRowModel,
+  type SortingState,
+  useReactTable,
+} from "@tanstack/react-table";
+import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@coss/ui/components/avatar";
-import { Badge } from "@coss/ui/components/badge";
-import { Button } from "@coss/ui/components/button";
-import { CardFrame } from "@coss/ui/components/card";
-import { Checkbox } from "@coss/ui/components/checkbox";
+} from "@tinji/ui/components/avatar";
+import { Badge } from "@tinji/ui/components/badge";
+import { Button } from "@tinji/ui/components/button";
+import { CardFrame } from "@tinji/ui/components/card";
+import { Checkbox } from "@tinji/ui/components/checkbox";
 import {
   Combobox,
   ComboboxCollection,
@@ -21,14 +29,14 @@ import {
   ComboboxPopup,
   ComboboxTrigger,
   ComboboxValue,
-} from "@coss/ui/components/combobox";
-import { Group, GroupSeparator } from "@coss/ui/components/group";
+} from "@tinji/ui/components/combobox";
+import { Group, GroupSeparator } from "@tinji/ui/components/group";
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
-} from "@coss/ui/components/input-group";
-import { Label } from "@coss/ui/components/label";
+} from "@tinji/ui/components/input-group";
+import { Label } from "@tinji/ui/components/label";
 import {
   Menu,
   MenuGroup,
@@ -37,7 +45,7 @@ import {
   MenuPopup,
   MenuSeparator,
   MenuTrigger,
-} from "@coss/ui/components/menu";
+} from "@tinji/ui/components/menu";
 import {
   Table,
   TableBody,
@@ -45,15 +53,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@coss/ui/components/table";
-import {
-  type ColumnDef,
-  flexRender,
-  getCoreRowModel,
-  getSortedRowModel,
-  type SortingState,
-  useReactTable,
-} from "@tanstack/react-table";
+} from "@tinji/ui/components/table";
 import {
   ArrowUpRightIcon,
   ChevronDownIcon,

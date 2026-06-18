@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@coss/ui/components/button";
+import { Button } from "@tinji/ui/components/button";
 import {
   Empty,
   EmptyContent,
@@ -8,13 +8,13 @@ import {
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from "@coss/ui/components/empty";
+} from "@tinji/ui/components/empty";
 import {
   Menu,
   MenuItem,
   MenuPopup,
   MenuTrigger,
-} from "@coss/ui/components/menu";
+} from "@tinji/ui/components/menu";
 import { EllipsisIcon, WebhookIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
 import type { CreateForOption } from "./new-webhook-button";

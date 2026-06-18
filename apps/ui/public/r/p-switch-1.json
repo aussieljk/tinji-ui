@@ -3,8 +3,8 @@
   "name": "p-switch-1",
   "description": "Basic switch",
   "registryDependencies": [
-    "@coss/label",
-    "@coss/switch"
+    "@tinji/label",
+    "@tinji/switch"
   ],
   "files": [
     {

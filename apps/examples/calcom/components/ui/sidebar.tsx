@@ -1,19 +1,19 @@
 "use client";
 
-import { mergeProps } from "@coss/ui/base-ui/merge-props";
-import { useRender } from "@coss/ui/base-ui/use-render";
-import { ScrollArea } from "@coss/ui/components/scroll-area";
-import { Separator } from "@coss/ui/components/separator";
-import { Skeleton } from "@coss/ui/components/skeleton";
+import { mergeProps } from "@tinji/ui/base-ui/merge-props";
+import { useRender } from "@tinji/ui/base-ui/use-render";
+import { ScrollArea } from "@tinji/ui/components/scroll-area";
+import { Separator } from "@tinji/ui/components/separator";
+import { Skeleton } from "@tinji/ui/components/skeleton";
 import {
   Tooltip,
   TooltipCreateHandle,
   TooltipPopup,
   TooltipProvider,
   TooltipTrigger,
-} from "@coss/ui/components/tooltip";
-import { useMediaQuery } from "@coss/ui/hooks/use-media-query";
-import { cn } from "@coss/ui/lib/utils";
+} from "@tinji/ui/components/tooltip";
+import { useMediaQuery } from "@tinji/ui/hooks/use-media-query";
+import { cn } from "@tinji/ui/lib/utils";
 import * as React from "react";
 
 type SidebarTooltipHandle = ReturnType<

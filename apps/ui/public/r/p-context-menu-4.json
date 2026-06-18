@@ -3,7 +3,7 @@
   "name": "p-context-menu-4",
   "description": "Context menu with checkbox items",
   "registryDependencies": [
-    "@coss/context-menu"
+    "@tinji/context-menu"
   ],
   "files": [
     {

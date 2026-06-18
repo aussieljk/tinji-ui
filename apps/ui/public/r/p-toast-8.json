@@ -3,9 +3,9 @@
   "name": "p-toast-8",
   "description": "Anchored error toast after async failure",
   "registryDependencies": [
-    "@coss/button",
-    "@coss/spinner",
-    "@coss/toast"
+    "@tinji/button",
+    "@tinji/spinner",
+    "@tinji/toast"
   ],
   "files": [
     {

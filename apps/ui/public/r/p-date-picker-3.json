@@ -7,11 +7,11 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "@coss/button",
-    "@coss/calendar",
-    "@coss/combobox",
-    "@coss/field",
-    "@coss/popover"
+    "@tinji/button",
+    "@tinji/calendar",
+    "@tinji/combobox",
+    "@tinji/field",
+    "@tinji/popover"
   ],
   "files": [
     {

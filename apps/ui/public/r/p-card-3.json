@@ -6,11 +6,11 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "@coss/button",
-    "@coss/card",
-    "@coss/field",
-    "@coss/form",
-    "@coss/input"
+    "@tinji/button",
+    "@tinji/card",
+    "@tinji/field",
+    "@tinji/form",
+    "@tinji/input"
   ],
   "files": [
     {

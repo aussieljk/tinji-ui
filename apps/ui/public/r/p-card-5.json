@@ -3,12 +3,12 @@
   "name": "p-card-5",
   "description": "Framed card with header",
   "registryDependencies": [
-    "@coss/button",
-    "@coss/card",
-    "@coss/field",
-    "@coss/form",
-    "@coss/input",
-    "@coss/select"
+    "@tinji/button",
+    "@tinji/card",
+    "@tinji/field",
+    "@tinji/form",
+    "@tinji/input",
+    "@tinji/select"
   ],
   "files": [
     {

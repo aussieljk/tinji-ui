@@ -1,4 +1,4 @@
-import { Label } from "@coss/ui/components/label";
+import { Label } from "@tinji/ui/components/label";
 
 export function WebhookTestSection() {
   return (

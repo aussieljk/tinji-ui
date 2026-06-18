@@ -6,11 +6,11 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "@coss/button",
-    "@coss/fieldset",
-    "@coss/label",
-    "@coss/number-field",
-    "@coss/slider"
+    "@tinji/button",
+    "@tinji/fieldset",
+    "@tinji/label",
+    "@tinji/number-field",
+    "@tinji/slider"
   ],
   "files": [
     {

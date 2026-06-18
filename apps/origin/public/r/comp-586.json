@@ -3,10 +3,10 @@
   "name": "comp-586",
   "type": "registry:component",
   "registryDependencies": [
-    "https://coss.com/origin/r/avatar.json",
-    "https://coss.com/origin/r/button.json",
-    "https://coss.com/origin/r/dropdown-menu.json",
-    "https://coss.com/origin/r/input.json"
+    "https://ui.tinji.dev/origin/r/avatar.json",
+    "https://ui.tinji.dev/origin/r/button.json",
+    "https://ui.tinji.dev/origin/r/dropdown-menu.json",
+    "https://ui.tinji.dev/origin/r/input.json"
   ],
   "files": [
     {

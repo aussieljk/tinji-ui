@@ -10,18 +10,18 @@
     "@remixicon/react"
   ],
   "registryDependencies": [
-    "https://coss.com/origin/r/button.json",
-    "https://coss.com/origin/r/calendar.json",
-    "https://coss.com/origin/r/checkbox.json",
-    "https://coss.com/origin/r/dropdown-menu.json",
-    "https://coss.com/origin/r/dialog.json",
-    "https://coss.com/origin/r/input.json",
-    "https://coss.com/origin/r/textarea.json",
-    "https://coss.com/origin/r/label.json",
-    "https://coss.com/origin/r/popover.json",
-    "https://coss.com/origin/r/radio-group.json",
-    "https://coss.com/origin/r/select.json",
-    "https://coss.com/origin/r/sonner.json"
+    "https://ui.tinji.dev/origin/r/button.json",
+    "https://ui.tinji.dev/origin/r/calendar.json",
+    "https://ui.tinji.dev/origin/r/checkbox.json",
+    "https://ui.tinji.dev/origin/r/dropdown-menu.json",
+    "https://ui.tinji.dev/origin/r/dialog.json",
+    "https://ui.tinji.dev/origin/r/input.json",
+    "https://ui.tinji.dev/origin/r/textarea.json",
+    "https://ui.tinji.dev/origin/r/label.json",
+    "https://ui.tinji.dev/origin/r/popover.json",
+    "https://ui.tinji.dev/origin/r/radio-group.json",
+    "https://ui.tinji.dev/origin/r/select.json",
+    "https://ui.tinji.dev/origin/r/sonner.json"
   ],
   "files": [
     {

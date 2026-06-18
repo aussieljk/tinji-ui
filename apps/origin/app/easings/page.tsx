@@ -5,7 +5,7 @@ import PageHeader from "@/components/page-header";
 export const metadata: Metadata = {
   description:
     "A collection of easing utility classes to enhance your Tailwind CSS animations and transitions.",
-  title: "Tailwind CSS Easing Classes - coss.com origin",
+  title: "Tailwind CSS Easing Classes - ui.tinji.dev origin",
 };
 
 const easings = [

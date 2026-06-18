@@ -1,15 +1,15 @@
 "use client";
 
-import { Badge } from "@coss/ui/components/badge";
-import { Card, CardPanel } from "@coss/ui/components/card";
-import { Skeleton } from "@coss/ui/components/skeleton";
-import { toastManager } from "@coss/ui/components/toast";
+import { Badge } from "@tinji/ui/components/badge";
+import { Card, CardPanel } from "@tinji/ui/components/card";
+import { Skeleton } from "@tinji/ui/components/skeleton";
+import { toastManager } from "@tinji/ui/components/toast";
 import {
   Tooltip,
   TooltipCreateHandle,
   TooltipPopup,
   TooltipProvider,
-} from "@coss/ui/components/tooltip";
+} from "@tinji/ui/components/tooltip";
 import {
   ArmchairIcon,
   BanknoteIcon,

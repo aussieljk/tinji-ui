@@ -3,7 +3,7 @@
   "name": "p-credit-card-1",
   "description": "Credit card with number, holder, expiry, and brand",
   "registryDependencies": [
-    "@coss/credit-card"
+    "@tinji/credit-card"
   ],
   "files": [
     {

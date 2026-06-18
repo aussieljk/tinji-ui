@@ -3,7 +3,7 @@
   "name": "p-accordion-1",
   "description": "Basic accordion",
   "registryDependencies": [
-    "@coss/accordion"
+    "@tinji/accordion"
   ],
   "files": [
     {

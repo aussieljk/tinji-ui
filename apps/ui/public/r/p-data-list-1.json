@@ -3,7 +3,7 @@
   "name": "p-data-list-1",
   "description": "Key/value list showing record details",
   "registryDependencies": [
-    "@coss/data-list"
+    "@tinji/data-list"
   ],
   "files": [
     {

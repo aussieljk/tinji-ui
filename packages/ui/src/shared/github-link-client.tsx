@@ -1,9 +1,9 @@
 "use client";
 
-import { Button } from "@coss/ui/components/button";
-import { siteConfig } from "@coss/ui/lib/config";
 import { GithubIcon } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
+import { Button } from "@tinji/ui/components/button";
+import { siteConfig } from "@tinji/ui/lib/config";
 import Link from "next/link";
 import type * as React from "react";
 

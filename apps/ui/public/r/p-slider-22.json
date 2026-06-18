@@ -3,10 +3,10 @@
   "name": "p-slider-22",
   "description": "Price slider with histogram",
   "registryDependencies": [
-    "@coss/button",
-    "@coss/input-group",
-    "@coss/number-field",
-    "@coss/slider"
+    "@tinji/button",
+    "@tinji/input-group",
+    "@tinji/number-field",
+    "@tinji/slider"
   ],
   "files": [
     {

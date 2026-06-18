@@ -1,8 +1,8 @@
 "use client";
 
-import { Input, type InputProps } from "@coss/ui/components/input";
-import { Textarea, type TextareaProps } from "@coss/ui/components/textarea";
-import { cn } from "@coss/ui/lib/utils";
+import { Input, type InputProps } from "@tinji/ui/components/input";
+import { Textarea, type TextareaProps } from "@tinji/ui/components/textarea";
+import { cn } from "@tinji/ui/lib/utils";
 import { cva, type VariantProps } from "class-variance-authority";
 import type * as React from "react";
 

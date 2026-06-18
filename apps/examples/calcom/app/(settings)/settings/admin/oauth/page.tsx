@@ -6,14 +6,14 @@ import {
   CardFrameHeader,
   CardFrameTitle,
   CardPanel,
-} from "@coss/ui/components/card";
+} from "@tinji/ui/components/card";
 import {
   Empty,
   EmptyDescription,
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from "@coss/ui/components/empty";
+} from "@tinji/ui/components/empty";
 import { KeyRoundIcon } from "lucide-react";
 import {
   type OAuthClientItem,

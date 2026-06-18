@@ -3,9 +3,9 @@
   "name": "p-group-5",
   "description": "Group with disabled button",
   "registryDependencies": [
-    "@coss/button",
-    "@coss/group",
-    "@coss/menu"
+    "@tinji/button",
+    "@tinji/group",
+    "@tinji/menu"
   ],
   "files": [
     {

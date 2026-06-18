@@ -1,14 +1,14 @@
 "use client";
 
-import { Badge } from "@coss/ui/components/badge";
-import { Button } from "@coss/ui/components/button";
+import { Badge } from "@tinji/ui/components/badge";
+import { Button } from "@tinji/ui/components/button";
 import {
   Card,
   CardFrameDescription,
   CardFrameHeader,
   CardFrameTitle,
   CardPanel,
-} from "@coss/ui/components/card";
+} from "@tinji/ui/components/card";
 import { useState } from "react";
 import { Disable2FADialog } from "./disable-2fa-dialog";
 import { Enable2FADialog } from "./enable-2fa-dialog";

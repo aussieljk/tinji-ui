@@ -1,59 +1,59 @@
-import { CodeBlock } from "@coss/ui/shared/code-block";
+import { CodeBlock } from "@tinji/ui/shared/code-block";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   description: "open source is the foundation of all modern software",
-  title: "coss.com sms",
+  title: "ui.tinji.dev sms",
 };
 
 export default function Page() {
-  const initialization = `import { coss } from '@coss';
+  const initialization = `import { tinji } from '@tinji';
 
-coss.sms.init({
-  apiKey: process.env.COSS_KEY,
+tinji.sms.init({
+  apiKey: process.env.TINJI_KEY,
   environment: 'production', // or 'sandbox'
 });`;
 
   const sendingMessages = `// Send an SMS message
-await coss.sms.messages.send({
+await tinji.sms.messages.send({
   to: '+15551234567',
   from: '+15559876543',
   body: 'Your verification code is 123456',
 });`;
 
   const messages = `// Retrieve a message
-await coss.sms.messages.retrieve('msg_abc123');
+await tinji.sms.messages.retrieve('msg_abc123');
 
 // List sent messages
-await coss.sms.messages.list({
+await tinji.sms.messages.list({
   to: '+15551234567',
 });`;
 
   const phoneNumbers = `// Buy a new phone number
-await coss.sms.numbers.purchase({
+await tinji.sms.numbers.purchase({
   country: 'US',
   areaCode: '415',
 });
 
 // List owned numbers
-await coss.sms.numbers.list();
+await tinji.sms.numbers.list();
 
 // Release a phone number
-await coss.sms.numbers.release('+15559876543');`;
+await tinji.sms.numbers.release('+15559876543');`;
 
   const webhooks = `// Webhook events
-coss.sms.webhooks.on('message.delivered', (event) => {
+tinji.sms.webhooks.on('message.delivered', (event) => {
   console.log('Message delivered:', event.data);
 });
 
-coss.sms.webhooks.on('message.failed', (event) => {
+tinji.sms.webhooks.on('message.failed', (event) => {
   console.log('Message failed:', event.data);
 });`;
 
   const utilities = `// Validate webhook signature
-const isValid = coss.sms.utils.verifySignature({
+const isValid = tinji.sms.utils.verifySignature({
   payload: req.body,
-  signature: req.headers['coss-sms-signature'],
+  signature: req.headers['tinji-sms-signature'],
   secret: 'whsec_sms_123',
 });`;
 

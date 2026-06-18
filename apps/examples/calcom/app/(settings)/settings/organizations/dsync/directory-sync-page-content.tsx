@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@coss/ui/components/button";
+import { Button } from "@tinji/ui/components/button";
 import {
   Card,
   CardFrame,
@@ -9,7 +9,7 @@ import {
   CardFrameHeader,
   CardFrameTitle,
   CardPanel,
-} from "@coss/ui/components/card";
+} from "@tinji/ui/components/card";
 import { useState } from "react";
 import { CopyableField } from "../../developer/oauth/copyable-field";
 import { ConfigureDirectorySyncDialog } from "./configure-directory-sync-dialog";

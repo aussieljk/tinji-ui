@@ -10,7 +10,7 @@ import {
   TooltipTrigger,
 } from "@/registry/default/ui/tooltip";
 
-const ANCHORED_SAVE_ERROR_TOAST_ID = "coss-demo-anchored-save-error-toast";
+const ANCHORED_SAVE_ERROR_TOAST_ID = "tinji-demo-anchored-save-error-toast";
 
 export default function Particle() {
   const saveButtonRef = useRef<HTMLButtonElement>(null);

@@ -7,9 +7,9 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "@coss/calendar",
-    "@coss/field",
-    "@coss/input-group"
+    "@tinji/calendar",
+    "@tinji/field",
+    "@tinji/input-group"
   ],
   "files": [
     {

@@ -7,15 +7,15 @@ description: Breaking changes, migration guides, and notable updates.
 
 ### Context Menu
 
-**`@coss/context-menu`** is a new registry component for right-click and long-press action menus anchored to the pointer. See the [Context Menu](/ui/docs/components/context-menu) docs for installation and examples.
+**`@tinji/context-menu`** is a new registry component for right-click and long-press action menus anchored to the pointer. See the [Context Menu](/ui/docs/components/context-menu) docs for installation and examples.
 
 **Install:**
 
 ```bash
-npx shadcn@latest add @coss/context-menu
+npx shadcn@latest add @tinji/context-menu
 ```
 
-No migration from an existing coss primitive—opt in where you need pointer-triggered menus instead of (or alongside) **`Menu`**.
+No migration from an existing tinji primitive—opt in where you need pointer-triggered menus instead of (or alongside) **`Menu`**.
 
 ### Menu & Context Menu — link items
 
@@ -60,7 +60,7 @@ Existing **`MenuItem render={<Link … />}`** usage keeps working; migrate when 
 **Agent migration prompt:**
 
 ```text
-coss now exports MenuLinkItem (menu.tsx) and ContextMenuLinkItem (context-menu.tsx) for navigation rows. Replace MenuItem/ContextMenuItem with render={<Link href="..." />} by changing only the component to MenuLinkItem/ContextMenuLinkItem — keep render={<Link … />}; do not replace render with href when using Next.js or another router Link. Use href on MenuLinkItem/ContextMenuLinkItem only for plain <a> navigation without a router Link. Keep MenuItem/ContextMenuItem for actions (onClick), not navigation. Context Menu is a new @coss/context-menu package—see Context Menu docs.
+tinji now exports MenuLinkItem (menu.tsx) and ContextMenuLinkItem (context-menu.tsx) for navigation rows. Replace MenuItem/ContextMenuItem with render={<Link href="..." />} by changing only the component to MenuLinkItem/ContextMenuLinkItem — keep render={<Link … />}; do not replace render with href when using Next.js or another router Link. Use href on MenuLinkItem/ContextMenuLinkItem only for plain <a> navigation without a router Link. Keep MenuItem/ContextMenuItem for actions (onClick), not navigation. Context Menu is a new @tinji/context-menu package—see Context Menu docs.
 ```
 
 ## May 29, 2026
@@ -85,12 +85,12 @@ No change required for existing **`ScrollArea`** usage (lists, dialogs, combobox
   </ScrollArea>
 ```
 
-**`SidebarContent`** from **`@coss/sidebar`** already passes **`fill`**—update your local **`sidebar.tsx`** copy if you vendor the component.
+**`SidebarContent`** from **`@tinji/sidebar`** already passes **`fill`**—update your local **`sidebar.tsx`** copy if you vendor the component.
 
 **Agent migration prompt:**
 
 ```text
-After upgrading @coss/scroll-area, ScrollArea has an optional fill prop (default false). Do not add fill to every ScrollArea. Add fill only where a flex column inside the scroll area must stretch to the viewport height (e.g. mt-auto footer in a sidebar). Pair fill with flex-1 min-h-0 on the ScrollArea and h-full flex-col on the inner wrapper. SidebarContent in @coss/sidebar already uses fill.
+After upgrading @tinji/scroll-area, ScrollArea has an optional fill prop (default false). Do not add fill to every ScrollArea. Add fill only where a flex column inside the scroll area must stretch to the viewport height (e.g. mt-auto footer in a sidebar). Pair fill with flex-1 min-h-0 on the ScrollArea and h-full flex-col on the inner wrapper. SidebarContent in @tinji/sidebar already uses fill.
 ```
 
 ## Apr 17, 2026
@@ -113,20 +113,20 @@ For **dialogs, sheets, and drawers**, keep **`DialogHeader`** (or **`SheetHeader
 **Agent migration prompt:**
 
 ```text
-The coss Form component no longer adds default Tailwind layout. Add className="flex w-full flex-col gap-4" to Form where you relied on the old stacked-field layout. For dialog/sheet/drawer: put header outside the form; wrap only panel+footer in Form (or native form) with className="contents". Merge any existing Form className with flex utilities where needed (e.g. max-w-64 becomes flex w-full max-w-64 flex-col gap-4).
+The tinji Form component no longer adds default Tailwind layout. Add className="flex w-full flex-col gap-4" to Form where you relied on the old stacked-field layout. For dialog/sheet/drawer: put header outside the form; wrap only panel+footer in Form (or native form) with className="contents". Merge any existing Form className with flex utilities where needed (e.g. max-w-64 becomes flex w-full max-w-64 flex-col gap-4).
 ```
 
 ## Apr 14, 2026
 
 ### OTP Field
 
-The **`input-otp.tsx`** registry component has been removed in favor of **`otp-field.tsx`** (`@coss/otp-field`), which wraps Base UI OTP Field. See the [OTP Field](/ui/docs/components/otp-field) docs and [migration guide](/ui/docs/radix-migration#otp-field) for API details.
+The **`input-otp.tsx`** registry component has been removed in favor of **`otp-field.tsx`** (`@tinji/otp-field`), which wraps Base UI OTP Field. See the [OTP Field](/ui/docs/components/otp-field) docs and [migration guide](/ui/docs/radix-migration#otp-field) for API details.
 
 **Migration:**
 
 ```diff
-- npx shadcn@latest add @coss/input-otp
-+ npx shadcn@latest add @coss/otp-field
+- npx shadcn@latest add @tinji/input-otp
++ npx shadcn@latest add @tinji/otp-field
 ```
 
 ```diff
@@ -137,7 +137,7 @@ The **`input-otp.tsx`** registry component has been removed in favor of **`otp-f
 **Agent migration prompt:**
 
 ```text
-Replace the removed @coss/input-otp / components/ui/input-otp.tsx with @coss/otp-field / components/ui/otp-field.tsx. Follow the OTP Field docs: use OTPField, OTPFieldInput, and OTPFieldSeparator; use length on the root; remove the old input-otp npm package if present.
+Replace the removed @tinji/input-otp / components/ui/input-otp.tsx with @tinji/otp-field / components/ui/otp-field.tsx. Follow the OTP Field docs: use OTPField, OTPFieldInput, and OTPFieldSeparator; use length on the root; remove the old input-otp npm package if present.
 ```
 
 ## Apr 12, 2026
@@ -157,7 +157,7 @@ No change required for existing tables. Opt in where you want the card-style tab
 **Agent migration prompt:**
 
 ```text
-After upgrading @coss/table, Table supports an optional variant prop: "default" (default) or "card". Existing Table components require no edits. Add variant="card" to Table where you want the card-style table (e.g. inside Frame or CardFrame). Do not add variant to every table—only where the design calls for the card-style grid.
+After upgrading @tinji/table, Table supports an optional variant prop: "default" (default) or "card". Existing Table components require no edits. Add variant="card" to Table where you want the card-style table (e.g. inside Frame or CardFrame). Do not add variant to every table—only where the design calls for the card-style grid.
 ```
 
 ## Mar 20, 2026

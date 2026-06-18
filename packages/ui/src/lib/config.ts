@@ -1,11 +1,11 @@
 export const siteConfig = {
-	description: "coss.com - the everything but AI company.",
+	description: "ui.tinji.dev - the everything but AI company.",
 	links: {
-		github: "https://github.com/cosscom/coss",
-		twitter: "https://x.com/coss_com",
+		github: "https://github.com/aussieljk/tinji-ui",
+		twitter: "https://x.com/tinji_com",
 	},
-	name: "coss.com",
-	ogImage: "https://coss.com/og.jpg",
+	name: "ui.tinji.dev",
+	ogImage: "https://ui.tinji.dev/og.jpg",
 	products: [
 		{
 			href: "/",
@@ -52,5 +52,5 @@ export const siteConfig = {
 			upcoming: true,
 		},
 	],
-	url: "https://coss.com",
+	url: "https://ui.tinji.dev",
 };

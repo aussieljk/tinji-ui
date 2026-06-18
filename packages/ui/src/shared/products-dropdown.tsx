@@ -1,13 +1,13 @@
 "use client";
 
-import { Badge } from "@coss/ui/components/badge";
-import { Button } from "@coss/ui/components/button";
+import { Badge } from "@tinji/ui/components/badge";
+import { Button } from "@tinji/ui/components/button";
 import {
   Menu,
   MenuItem,
   MenuPopup,
   MenuTrigger,
-} from "@coss/ui/components/menu";
+} from "@tinji/ui/components/menu";
 import { ChevronDown } from "lucide-react";
 import Link from "next/link";
 
@@ -16,8 +16,8 @@ interface ProductsDropdownProps {
 }
 
 export function ProductsDropdown({ items }: ProductsDropdownProps) {
-  const gatewayOrigin = process.env.NEXT_PUBLIC_COSS_URL || "";
-  const uiGatewayOrigin = process.env.NEXT_PUBLIC_COSS_UI_URL || "";
+  const gatewayOrigin = process.env.NEXT_PUBLIC_TINJI_URL || "";
+  const uiGatewayOrigin = process.env.NEXT_PUBLIC_TINJI_UI_URL || "";
 
   const getLinkProps = (item: {
     href: string;

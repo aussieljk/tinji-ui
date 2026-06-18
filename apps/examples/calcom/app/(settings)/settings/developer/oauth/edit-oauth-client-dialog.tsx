@@ -1,7 +1,7 @@
 "use client";
 
-import { Badge } from "@coss/ui/components/badge";
-import { Button } from "@coss/ui/components/button";
+import { Badge } from "@tinji/ui/components/badge";
+import { Button } from "@tinji/ui/components/button";
 import {
   Dialog,
   DialogClose,
@@ -11,10 +11,10 @@ import {
   DialogPanel,
   DialogPopup,
   DialogTitle,
-} from "@coss/ui/components/dialog";
-import { Field, FieldLabel } from "@coss/ui/components/field";
-import { Form } from "@coss/ui/components/form";
-import { Input } from "@coss/ui/components/input";
+} from "@tinji/ui/components/dialog";
+import { Field, FieldLabel } from "@tinji/ui/components/field";
+import { Form } from "@tinji/ui/components/form";
+import { Input } from "@tinji/ui/components/input";
 import { CopyableField } from "./copyable-field";
 import { OAuthClientFormFields } from "./oauth-client-form-fields";
 import type { OAuthClientItem } from "./oauth-clients-list";

@@ -8,10 +8,10 @@ import {
   AlertDialogHeader,
   AlertDialogPopup,
   AlertDialogTitle,
-} from "@coss/ui/components/alert-dialog";
-import { Button } from "@coss/ui/components/button";
-import { Card, CardPanel } from "@coss/ui/components/card";
-import { toastManager } from "@coss/ui/components/toast";
+} from "@tinji/ui/components/alert-dialog";
+import { Button } from "@tinji/ui/components/button";
+import { Card, CardPanel } from "@tinji/ui/components/card";
+import { toastManager } from "@tinji/ui/components/toast";
 import { useState } from "react";
 import { AddDelegationCredentialDialog } from "./add-delegation-credential-dialog";
 import { DelegationCredentialEmpty } from "./delegation-credential-empty";

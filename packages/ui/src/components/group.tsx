@@ -2,8 +2,8 @@
 
 import { mergeProps } from "@base-ui/react/merge-props";
 import { useRender } from "@base-ui/react/use-render";
-import { Separator } from "@coss/ui/components/separator";
-import { cn } from "@coss/ui/lib/utils";
+import { Separator } from "@tinji/ui/components/separator";
+import { cn } from "@tinji/ui/lib/utils";
 import { cva, type VariantProps } from "class-variance-authority";
 import type * as React from "react";
 

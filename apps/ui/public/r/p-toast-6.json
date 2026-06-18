@@ -3,8 +3,8 @@
   "name": "p-toast-6",
   "description": "Stacked toasts with varying content height",
   "registryDependencies": [
-    "@coss/button",
-    "@coss/toast"
+    "@tinji/button",
+    "@tinji/toast"
   ],
   "files": [
     {

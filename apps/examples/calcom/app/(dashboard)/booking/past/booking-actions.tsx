@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@coss/ui/components/button";
+import { Button } from "@tinji/ui/components/button";
 import {
   Menu,
   MenuGroup,
@@ -9,13 +9,13 @@ import {
   MenuPopup,
   MenuSeparator,
   MenuTrigger,
-} from "@coss/ui/components/menu";
-import { Skeleton } from "@coss/ui/components/skeleton";
+} from "@tinji/ui/components/menu";
+import { Skeleton } from "@tinji/ui/components/skeleton";
 import {
   Tooltip,
   TooltipPopup,
   TooltipTrigger,
-} from "@coss/ui/components/tooltip";
+} from "@tinji/ui/components/tooltip";
 import {
   CalendarClockIcon,
   EllipsisIcon,

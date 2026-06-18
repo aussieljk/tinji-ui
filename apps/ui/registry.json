@@ -1,77 +1,77 @@
 {
-  "homepage": "https://coss.com",
+  "homepage": "https://ui.tinji.dev",
   "items": [
     {
       "name": "ui",
       "registryDependencies": [
-        "@coss/accordion",
-        "@coss/alert",
-        "@coss/alert-dialog",
-        "@coss/autocomplete",
-        "@coss/avatar",
-        "@coss/badge",
-        "@coss/breadcrumb",
-        "@coss/button",
-        "@coss/calendar",
-        "@coss/card",
-        "@coss/checkbox",
-        "@coss/checkbox-group",
-        "@coss/collapsible",
-        "@coss/combobox",
-        "@coss/command",
-        "@coss/context-menu",
-        "@coss/dialog",
-        "@coss/drawer",
-        "@coss/empty",
-        "@coss/field",
-        "@coss/fieldset",
-        "@coss/form",
-        "@coss/frame",
-        "@coss/group",
-        "@coss/input",
-        "@coss/otp-field",
-        "@coss/input-group",
-        "@coss/kbd",
-        "@coss/label",
-        "@coss/menu",
-        "@coss/meter",
-        "@coss/number-field",
-        "@coss/pagination",
-        "@coss/popover",
-        "@coss/preview-card",
-        "@coss/progress",
-        "@coss/radio-group",
-        "@coss/scroll-area",
-        "@coss/select",
-        "@coss/separator",
-        "@coss/sheet",
-        "@coss/sidebar",
-        "@coss/skeleton",
-        "@coss/slider",
-        "@coss/spinner",
-        "@coss/switch",
-        "@coss/table",
-        "@coss/tabs",
-        "@coss/textarea",
-        "@coss/toast",
-        "@coss/toggle",
-        "@coss/toggle-group",
-        "@coss/toolbar",
-        "@coss/tooltip",
-        "@coss/avatar-group",
-        "@coss/avatar-stack",
-        "@coss/credit-card",
-        "@coss/widget-stack",
-        "@coss/lightbox",
-        "@coss/scroll-gallery",
-        "@coss/segmented-control",
-        "@coss/tabs-nav",
-        "@coss/filter-chip",
-        "@coss/radio-button-group",
-        "@coss/data-list",
-        "@coss/stacked-horizontal-bar-chart",
-        "@coss/date-field",
-        "@coss/typography"
+        "@tinji/accordion",
+        "@tinji/alert",
+        "@tinji/alert-dialog",
+        "@tinji/autocomplete",
+        "@tinji/avatar",
+        "@tinji/badge",
+        "@tinji/breadcrumb",
+        "@tinji/button",
+        "@tinji/calendar",
+        "@tinji/card",
+        "@tinji/checkbox",
+        "@tinji/checkbox-group",
+        "@tinji/collapsible",
+        "@tinji/combobox",
+        "@tinji/command",
+        "@tinji/context-menu",
+        "@tinji/dialog",
+        "@tinji/drawer",
+        "@tinji/empty",
+        "@tinji/field",
+        "@tinji/fieldset",
+        "@tinji/form",
+        "@tinji/frame",
+        "@tinji/group",
+        "@tinji/input",
+        "@tinji/otp-field",
+        "@tinji/input-group",
+        "@tinji/kbd",
+        "@tinji/label",
+        "@tinji/menu",
+        "@tinji/meter",
+        "@tinji/number-field",
+        "@tinji/pagination",
+        "@tinji/popover",
+        "@tinji/preview-card",
+        "@tinji/progress",
+        "@tinji/radio-group",
+        "@tinji/scroll-area",
+        "@tinji/select",
+        "@tinji/separator",
+        "@tinji/sheet",
+        "@tinji/sidebar",
+        "@tinji/skeleton",
+        "@tinji/slider",
+        "@tinji/spinner",
+        "@tinji/switch",
+        "@tinji/table",
+        "@tinji/tabs",
+        "@tinji/textarea",
+        "@tinji/toast",
+        "@tinji/toggle",
+        "@tinji/toggle-group",
+        "@tinji/toolbar",
+        "@tinji/tooltip",
+        "@tinji/avatar-group",
+        "@tinji/avatar-stack",
+        "@tinji/credit-card",
+        "@tinji/widget-stack",
+        "@tinji/lightbox",
+        "@tinji/scroll-gallery",
+        "@tinji/segmented-control",
+        "@tinji/tabs-nav",
+        "@tinji/filter-chip",
+        "@tinji/radio-button-group",
+        "@tinji/data-list",
+        "@tinji/stacked-horizontal-bar-chart",
+        "@tinji/date-field",
+        "@tinji/typography"
       ],
       "type": "registry:ui"
     },
@@ -143,8 +143,8 @@
       ],
       "name": "autocomplete",
       "registryDependencies": [
-        "@coss/input",
-        "@coss/scroll-area"
+        "@tinji/input",
+        "@tinji/scroll-area"
       ],
       "type": "registry:ui"
     },
@@ -227,7 +227,7 @@
       ],
       "name": "button",
       "registryDependencies": [
-        "@coss/spinner"
+        "@tinji/spinner"
       ],
       "type": "registry:ui"
     },
@@ -310,8 +310,8 @@
       ],
       "name": "combobox",
       "registryDependencies": [
-        "@coss/input",
-        "@coss/scroll-area"
+        "@tinji/input",
+        "@tinji/scroll-area"
       ],
       "type": "registry:ui"
     },
@@ -327,7 +327,7 @@
       ],
       "name": "command",
       "registryDependencies": [
-        "@coss/autocomplete"
+        "@tinji/autocomplete"
       ],
       "type": "registry:ui"
     },
@@ -364,8 +364,8 @@
       ],
       "name": "dialog",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/scroll-area"
+        "@tinji/button",
+        "@tinji/scroll-area"
       ],
       "type": "registry:ui"
     },
@@ -381,8 +381,8 @@
       ],
       "name": "drawer",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/scroll-area"
+        "@tinji/button",
+        "@tinji/scroll-area"
       ],
       "type": "registry:ui"
     },
@@ -465,7 +465,7 @@
       ],
       "name": "group",
       "registryDependencies": [
-        "@coss/separator"
+        "@tinji/separator"
       ],
       "type": "registry:ui"
     },
@@ -509,7 +509,7 @@
       ],
       "name": "otp-field",
       "registryDependencies": [
-        "@coss/separator"
+        "@tinji/separator"
       ],
       "type": "registry:ui"
     },
@@ -522,8 +522,8 @@
       ],
       "name": "input-group",
       "registryDependencies": [
-        "@coss/input",
-        "@coss/textarea"
+        "@tinji/input",
+        "@tinji/textarea"
       ],
       "type": "registry:ui"
     },
@@ -596,7 +596,7 @@
       ],
       "name": "number-field",
       "registryDependencies": [
-        "@coss/label"
+        "@tinji/label"
       ],
       "type": "registry:ui"
     },
@@ -609,7 +609,7 @@
       ],
       "name": "pagination",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:ui"
     },
@@ -716,8 +716,8 @@
       ],
       "name": "sheet",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/scroll-area"
+        "@tinji/button",
+        "@tinji/scroll-area"
       ],
       "type": "registry:ui"
     },
@@ -730,15 +730,15 @@
       ],
       "name": "sidebar",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/input",
-        "@coss/scroll-area",
-        "@coss/separator",
-        "@coss/sheet",
-        "@coss/skeleton",
-        "@coss/tooltip",
-        "@coss/use-media-query",
-        "@coss/utils"
+        "@tinji/button",
+        "@tinji/input",
+        "@tinji/scroll-area",
+        "@tinji/separator",
+        "@tinji/sheet",
+        "@tinji/skeleton",
+        "@tinji/tooltip",
+        "@tinji/use-media-query",
+        "@tinji/utils"
       ],
       "type": "registry:ui"
     },
@@ -923,7 +923,7 @@
       ],
       "name": "toast",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:ui"
     },
@@ -952,8 +952,8 @@
       ],
       "name": "toggle-group",
       "registryDependencies": [
-        "@coss/separator",
-        "@coss/toggle"
+        "@tinji/separator",
+        "@tinji/toggle"
       ],
       "type": "registry:ui"
     },
@@ -992,7 +992,7 @@
       ],
       "name": "avatar-group",
       "registryDependencies": [
-        "@coss/avatar"
+        "@tinji/avatar"
       ],
       "type": "registry:ui"
     },
@@ -1005,7 +1005,7 @@
       ],
       "name": "avatar-stack",
       "registryDependencies": [
-        "@coss/avatar"
+        "@tinji/avatar"
       ],
       "type": "registry:ui"
     },
@@ -1047,8 +1047,8 @@
       ],
       "name": "lightbox",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/dialog"
+        "@tinji/button",
+        "@tinji/dialog"
       ],
       "type": "registry:ui"
     },
@@ -1064,7 +1064,7 @@
       ],
       "name": "scroll-gallery",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:ui"
     },
@@ -1180,7 +1180,7 @@
       },
       "name": "p-accordion-1",
       "registryDependencies": [
-        "@coss/accordion"
+        "@tinji/accordion"
       ],
       "type": "registry:block"
     },
@@ -1200,7 +1200,7 @@
       },
       "name": "p-accordion-2",
       "registryDependencies": [
-        "@coss/accordion"
+        "@tinji/accordion"
       ],
       "type": "registry:block"
     },
@@ -1220,7 +1220,7 @@
       },
       "name": "p-accordion-3",
       "registryDependencies": [
-        "@coss/accordion"
+        "@tinji/accordion"
       ],
       "type": "registry:block"
     },
@@ -1240,8 +1240,8 @@
       },
       "name": "p-accordion-4",
       "registryDependencies": [
-        "@coss/accordion",
-        "@coss/button"
+        "@tinji/accordion",
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -1261,7 +1261,7 @@
       },
       "name": "p-alert-1",
       "registryDependencies": [
-        "@coss/alert"
+        "@tinji/alert"
       ],
       "type": "registry:block"
     },
@@ -1284,7 +1284,7 @@
       },
       "name": "p-alert-2",
       "registryDependencies": [
-        "@coss/alert"
+        "@tinji/alert"
       ],
       "type": "registry:block"
     },
@@ -1307,8 +1307,8 @@
       },
       "name": "p-alert-3",
       "registryDependencies": [
-        "@coss/alert",
-        "@coss/button"
+        "@tinji/alert",
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -1332,7 +1332,7 @@
       },
       "name": "p-alert-4",
       "registryDependencies": [
-        "@coss/alert"
+        "@tinji/alert"
       ],
       "type": "registry:block"
     },
@@ -1356,7 +1356,7 @@
       },
       "name": "p-alert-5",
       "registryDependencies": [
-        "@coss/alert"
+        "@tinji/alert"
       ],
       "type": "registry:block"
     },
@@ -1380,7 +1380,7 @@
       },
       "name": "p-alert-6",
       "registryDependencies": [
-        "@coss/alert"
+        "@tinji/alert"
       ],
       "type": "registry:block"
     },
@@ -1404,7 +1404,7 @@
       },
       "name": "p-alert-7",
       "registryDependencies": [
-        "@coss/alert"
+        "@tinji/alert"
       ],
       "type": "registry:block"
     },
@@ -1422,8 +1422,8 @@
       ],
       "name": "p-alert-dialog-1",
       "registryDependencies": [
-        "@coss/alert-dialog",
-        "@coss/button"
+        "@tinji/alert-dialog",
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -1441,8 +1441,8 @@
       ],
       "name": "p-alert-dialog-2",
       "registryDependencies": [
-        "@coss/alert-dialog",
-        "@coss/button"
+        "@tinji/alert-dialog",
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -1463,7 +1463,7 @@
       },
       "name": "p-autocomplete-1",
       "registryDependencies": [
-        "@coss/autocomplete"
+        "@tinji/autocomplete"
       ],
       "type": "registry:block"
     },
@@ -1485,7 +1485,7 @@
       },
       "name": "p-autocomplete-2",
       "registryDependencies": [
-        "@coss/autocomplete"
+        "@tinji/autocomplete"
       ],
       "type": "registry:block"
     },
@@ -1506,7 +1506,7 @@
       },
       "name": "p-autocomplete-3",
       "registryDependencies": [
-        "@coss/autocomplete"
+        "@tinji/autocomplete"
       ],
       "type": "registry:block"
     },
@@ -1527,7 +1527,7 @@
       },
       "name": "p-autocomplete-4",
       "registryDependencies": [
-        "@coss/autocomplete"
+        "@tinji/autocomplete"
       ],
       "type": "registry:block"
     },
@@ -1548,8 +1548,8 @@
       },
       "name": "p-autocomplete-5",
       "registryDependencies": [
-        "@coss/autocomplete",
-        "@coss/label"
+        "@tinji/autocomplete",
+        "@tinji/label"
       ],
       "type": "registry:block"
     },
@@ -1570,7 +1570,7 @@
       },
       "name": "p-autocomplete-6",
       "registryDependencies": [
-        "@coss/autocomplete"
+        "@tinji/autocomplete"
       ],
       "type": "registry:block"
     },
@@ -1591,7 +1591,7 @@
       },
       "name": "p-autocomplete-7",
       "registryDependencies": [
-        "@coss/autocomplete"
+        "@tinji/autocomplete"
       ],
       "type": "registry:block"
     },
@@ -1612,7 +1612,7 @@
       },
       "name": "p-autocomplete-8",
       "registryDependencies": [
-        "@coss/autocomplete"
+        "@tinji/autocomplete"
       ],
       "type": "registry:block"
     },
@@ -1633,7 +1633,7 @@
       },
       "name": "p-autocomplete-9",
       "registryDependencies": [
-        "@coss/autocomplete"
+        "@tinji/autocomplete"
       ],
       "type": "registry:block"
     },
@@ -1654,7 +1654,7 @@
       },
       "name": "p-autocomplete-10",
       "registryDependencies": [
-        "@coss/autocomplete"
+        "@tinji/autocomplete"
       ],
       "type": "registry:block"
     },
@@ -1675,7 +1675,7 @@
       },
       "name": "p-autocomplete-11",
       "registryDependencies": [
-        "@coss/autocomplete"
+        "@tinji/autocomplete"
       ],
       "type": "registry:block"
     },
@@ -1697,8 +1697,8 @@
       },
       "name": "p-autocomplete-12",
       "registryDependencies": [
-        "@coss/autocomplete",
-        "@coss/spinner"
+        "@tinji/autocomplete",
+        "@tinji/spinner"
       ],
       "type": "registry:block"
     },
@@ -1720,10 +1720,10 @@
       },
       "name": "p-autocomplete-13",
       "registryDependencies": [
-        "@coss/autocomplete",
-        "@coss/button",
-        "@coss/field",
-        "@coss/form"
+        "@tinji/autocomplete",
+        "@tinji/button",
+        "@tinji/field",
+        "@tinji/form"
       ],
       "type": "registry:block"
     },
@@ -1744,7 +1744,7 @@
       },
       "name": "p-autocomplete-14",
       "registryDependencies": [
-        "@coss/autocomplete"
+        "@tinji/autocomplete"
       ],
       "type": "registry:block"
     },
@@ -1765,7 +1765,7 @@
       },
       "name": "p-autocomplete-15",
       "registryDependencies": [
-        "@coss/autocomplete"
+        "@tinji/autocomplete"
       ],
       "type": "registry:block"
     },
@@ -1782,7 +1782,7 @@
       ],
       "name": "p-avatar-1",
       "registryDependencies": [
-        "@coss/avatar"
+        "@tinji/avatar"
       ],
       "type": "registry:block"
     },
@@ -1799,7 +1799,7 @@
       ],
       "name": "p-avatar-2",
       "registryDependencies": [
-        "@coss/avatar"
+        "@tinji/avatar"
       ],
       "type": "registry:block"
     },
@@ -1816,7 +1816,7 @@
       ],
       "name": "p-avatar-3",
       "registryDependencies": [
-        "@coss/avatar"
+        "@tinji/avatar"
       ],
       "type": "registry:block"
     },
@@ -1833,7 +1833,7 @@
       ],
       "name": "p-avatar-4",
       "registryDependencies": [
-        "@coss/avatar"
+        "@tinji/avatar"
       ],
       "type": "registry:block"
     },
@@ -1850,7 +1850,7 @@
       ],
       "name": "p-avatar-5",
       "registryDependencies": [
-        "@coss/avatar"
+        "@tinji/avatar"
       ],
       "type": "registry:block"
     },
@@ -1870,7 +1870,7 @@
       ],
       "name": "p-avatar-6",
       "registryDependencies": [
-        "@coss/avatar"
+        "@tinji/avatar"
       ],
       "type": "registry:block"
     },
@@ -1887,7 +1887,7 @@
       ],
       "name": "p-avatar-7",
       "registryDependencies": [
-        "@coss/avatar"
+        "@tinji/avatar"
       ],
       "type": "registry:block"
     },
@@ -1904,7 +1904,7 @@
       ],
       "name": "p-avatar-8",
       "registryDependencies": [
-        "@coss/avatar"
+        "@tinji/avatar"
       ],
       "type": "registry:block"
     },
@@ -1921,7 +1921,7 @@
       ],
       "name": "p-avatar-9",
       "registryDependencies": [
-        "@coss/avatar"
+        "@tinji/avatar"
       ],
       "type": "registry:block"
     },
@@ -1938,8 +1938,8 @@
       ],
       "name": "p-avatar-10",
       "registryDependencies": [
-        "@coss/avatar",
-        "@coss/badge"
+        "@tinji/avatar",
+        "@tinji/badge"
       ],
       "type": "registry:block"
     },
@@ -1956,8 +1956,8 @@
       ],
       "name": "p-avatar-11",
       "registryDependencies": [
-        "@coss/avatar",
-        "@coss/badge"
+        "@tinji/avatar",
+        "@tinji/badge"
       ],
       "type": "registry:block"
     },
@@ -1974,7 +1974,7 @@
       ],
       "name": "p-avatar-12",
       "registryDependencies": [
-        "@coss/avatar"
+        "@tinji/avatar"
       ],
       "type": "registry:block"
     },
@@ -1991,7 +1991,7 @@
       ],
       "name": "p-avatar-13",
       "registryDependencies": [
-        "@coss/avatar"
+        "@tinji/avatar"
       ],
       "type": "registry:block"
     },
@@ -2008,7 +2008,7 @@
       ],
       "name": "p-avatar-14",
       "registryDependencies": [
-        "@coss/avatar"
+        "@tinji/avatar"
       ],
       "type": "registry:block"
     },
@@ -2025,7 +2025,7 @@
       ],
       "name": "p-badge-1",
       "registryDependencies": [
-        "@coss/badge"
+        "@tinji/badge"
       ],
       "type": "registry:block"
     },
@@ -2042,7 +2042,7 @@
       ],
       "name": "p-badge-2",
       "registryDependencies": [
-        "@coss/badge"
+        "@tinji/badge"
       ],
       "type": "registry:block"
     },
@@ -2059,7 +2059,7 @@
       ],
       "name": "p-badge-3",
       "registryDependencies": [
-        "@coss/badge"
+        "@tinji/badge"
       ],
       "type": "registry:block"
     },
@@ -2077,7 +2077,7 @@
       ],
       "name": "p-badge-4",
       "registryDependencies": [
-        "@coss/badge"
+        "@tinji/badge"
       ],
       "type": "registry:block"
     },
@@ -2095,7 +2095,7 @@
       ],
       "name": "p-badge-5",
       "registryDependencies": [
-        "@coss/badge"
+        "@tinji/badge"
       ],
       "type": "registry:block"
     },
@@ -2113,7 +2113,7 @@
       ],
       "name": "p-badge-6",
       "registryDependencies": [
-        "@coss/badge"
+        "@tinji/badge"
       ],
       "type": "registry:block"
     },
@@ -2131,7 +2131,7 @@
       ],
       "name": "p-badge-7",
       "registryDependencies": [
-        "@coss/badge"
+        "@tinji/badge"
       ],
       "type": "registry:block"
     },
@@ -2149,7 +2149,7 @@
       ],
       "name": "p-badge-8",
       "registryDependencies": [
-        "@coss/badge"
+        "@tinji/badge"
       ],
       "type": "registry:block"
     },
@@ -2166,7 +2166,7 @@
       ],
       "name": "p-badge-9",
       "registryDependencies": [
-        "@coss/badge"
+        "@tinji/badge"
       ],
       "type": "registry:block"
     },
@@ -2183,7 +2183,7 @@
       ],
       "name": "p-badge-10",
       "registryDependencies": [
-        "@coss/badge"
+        "@tinji/badge"
       ],
       "type": "registry:block"
     },
@@ -2203,7 +2203,7 @@
       ],
       "name": "p-badge-11",
       "registryDependencies": [
-        "@coss/badge"
+        "@tinji/badge"
       ],
       "type": "registry:block"
     },
@@ -2220,7 +2220,7 @@
       ],
       "name": "p-badge-12",
       "registryDependencies": [
-        "@coss/badge"
+        "@tinji/badge"
       ],
       "type": "registry:block"
     },
@@ -2237,7 +2237,7 @@
       ],
       "name": "p-badge-13",
       "registryDependencies": [
-        "@coss/badge"
+        "@tinji/badge"
       ],
       "type": "registry:block"
     },
@@ -2254,7 +2254,7 @@
       ],
       "name": "p-badge-14",
       "registryDependencies": [
-        "@coss/badge"
+        "@tinji/badge"
       ],
       "type": "registry:block"
     },
@@ -2271,7 +2271,7 @@
       ],
       "name": "p-badge-15",
       "registryDependencies": [
-        "@coss/badge"
+        "@tinji/badge"
       ],
       "type": "registry:block"
     },
@@ -2288,7 +2288,7 @@
       ],
       "name": "p-badge-16",
       "registryDependencies": [
-        "@coss/badge"
+        "@tinji/badge"
       ],
       "type": "registry:block"
     },
@@ -2305,7 +2305,7 @@
       ],
       "name": "p-badge-17",
       "registryDependencies": [
-        "@coss/badge"
+        "@tinji/badge"
       ],
       "type": "registry:block"
     },
@@ -2322,7 +2322,7 @@
       ],
       "name": "p-badge-18",
       "registryDependencies": [
-        "@coss/badge"
+        "@tinji/badge"
       ],
       "type": "registry:block"
     },
@@ -2343,8 +2343,8 @@
       ],
       "name": "p-badge-19",
       "registryDependencies": [
-        "@coss/badge",
-        "@coss/checkbox"
+        "@tinji/badge",
+        "@tinji/checkbox"
       ],
       "type": "registry:block"
     },
@@ -2364,7 +2364,7 @@
       ],
       "name": "p-badge-20",
       "registryDependencies": [
-        "@coss/badge"
+        "@tinji/badge"
       ],
       "type": "registry:block"
     },
@@ -2383,9 +2383,9 @@
       ],
       "name": "p-breadcrumb-1",
       "registryDependencies": [
-        "@coss/breadcrumb",
-        "@coss/button",
-        "@coss/menu"
+        "@tinji/breadcrumb",
+        "@tinji/button",
+        "@tinji/menu"
       ],
       "type": "registry:block"
     },
@@ -2402,7 +2402,7 @@
       ],
       "name": "p-breadcrumb-2",
       "registryDependencies": [
-        "@coss/breadcrumb"
+        "@tinji/breadcrumb"
       ],
       "type": "registry:block"
     },
@@ -2422,7 +2422,7 @@
       ],
       "name": "p-breadcrumb-3",
       "registryDependencies": [
-        "@coss/breadcrumb"
+        "@tinji/breadcrumb"
       ],
       "type": "registry:block"
     },
@@ -2444,9 +2444,9 @@
       ],
       "name": "p-breadcrumb-4",
       "registryDependencies": [
-        "@coss/breadcrumb",
-        "@coss/button",
-        "@coss/menu"
+        "@tinji/breadcrumb",
+        "@tinji/button",
+        "@tinji/menu"
       ],
       "type": "registry:block"
     },
@@ -2466,7 +2466,7 @@
       ],
       "name": "p-breadcrumb-5",
       "registryDependencies": [
-        "@coss/breadcrumb"
+        "@tinji/breadcrumb"
       ],
       "type": "registry:block"
     },
@@ -2486,7 +2486,7 @@
       ],
       "name": "p-breadcrumb-6",
       "registryDependencies": [
-        "@coss/breadcrumb"
+        "@tinji/breadcrumb"
       ],
       "type": "registry:block"
     },
@@ -2507,8 +2507,8 @@
       ],
       "name": "p-breadcrumb-7",
       "registryDependencies": [
-        "@coss/breadcrumb",
-        "@coss/select"
+        "@tinji/breadcrumb",
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -2525,7 +2525,7 @@
       ],
       "name": "p-button-1",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -2542,7 +2542,7 @@
       ],
       "name": "p-button-2",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -2559,7 +2559,7 @@
       ],
       "name": "p-button-3",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -2576,7 +2576,7 @@
       ],
       "name": "p-button-4",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -2593,7 +2593,7 @@
       ],
       "name": "p-button-5",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -2610,7 +2610,7 @@
       ],
       "name": "p-button-6",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -2627,7 +2627,7 @@
       ],
       "name": "p-button-7",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -2644,7 +2644,7 @@
       ],
       "name": "p-button-8",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -2661,7 +2661,7 @@
       ],
       "name": "p-button-9",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -2678,7 +2678,7 @@
       ],
       "name": "p-button-10",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -2695,7 +2695,7 @@
       ],
       "name": "p-button-11",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -2713,7 +2713,7 @@
       ],
       "name": "p-button-12",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -2733,7 +2733,7 @@
       ],
       "name": "p-button-13",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -2753,7 +2753,7 @@
       ],
       "name": "p-button-14",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -2773,7 +2773,7 @@
       ],
       "name": "p-button-15",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -2793,7 +2793,7 @@
       ],
       "name": "p-button-16",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -2810,7 +2810,7 @@
       ],
       "name": "p-button-17",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -2828,7 +2828,7 @@
       ],
       "name": "p-button-41",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -2846,8 +2846,8 @@
       ],
       "name": "p-button-18",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/spinner"
+        "@tinji/button",
+        "@tinji/spinner"
       ],
       "type": "registry:block"
     },
@@ -2867,7 +2867,7 @@
       ],
       "name": "p-button-19",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -2887,7 +2887,7 @@
       ],
       "name": "p-button-20",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -2907,7 +2907,7 @@
       ],
       "name": "p-button-21",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -2927,7 +2927,7 @@
       ],
       "name": "p-button-22",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -2947,7 +2947,7 @@
       ],
       "name": "p-button-23",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -2967,7 +2967,7 @@
       ],
       "name": "p-button-24",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -2987,7 +2987,7 @@
       ],
       "name": "p-button-26",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -3008,8 +3008,8 @@
       ],
       "name": "p-button-27",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/group"
+        "@tinji/button",
+        "@tinji/group"
       ],
       "type": "registry:block"
     },
@@ -3027,8 +3027,8 @@
       ],
       "name": "p-button-28",
       "registryDependencies": [
-        "@coss/avatar",
-        "@coss/button"
+        "@tinji/avatar",
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -3045,7 +3045,7 @@
       ],
       "name": "p-button-29",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -3065,7 +3065,7 @@
       ],
       "name": "p-button-30",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -3086,8 +3086,8 @@
       ],
       "name": "p-button-31",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/kbd"
+        "@tinji/button",
+        "@tinji/kbd"
       ],
       "type": "registry:block"
     },
@@ -3105,8 +3105,8 @@
       ],
       "name": "p-button-32",
       "registryDependencies": [
-        "@coss/badge",
-        "@coss/button"
+        "@tinji/badge",
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -3123,7 +3123,7 @@
       ],
       "name": "p-button-33",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -3140,7 +3140,7 @@
       ],
       "name": "p-button-34",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -3160,7 +3160,7 @@
       ],
       "name": "p-button-35",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -3180,7 +3180,7 @@
       ],
       "name": "p-button-36",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -3200,7 +3200,7 @@
       ],
       "name": "p-button-37",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -3217,7 +3217,7 @@
       ],
       "name": "p-button-39",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -3240,11 +3240,11 @@
       ],
       "name": "p-button-40",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/group",
-        "@coss/spinner",
-        "@coss/toast",
-        "@coss/tooltip"
+        "@tinji/button",
+        "@tinji/group",
+        "@tinji/spinner",
+        "@tinji/toast",
+        "@tinji/tooltip"
       ],
       "type": "registry:block"
     },
@@ -3267,7 +3267,7 @@
       },
       "name": "p-button-38",
       "registryDependencies": [
-        "@coss/button"
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -3284,7 +3284,7 @@
       ],
       "name": "p-calendar-1",
       "registryDependencies": [
-        "@coss/calendar"
+        "@tinji/calendar"
       ],
       "type": "registry:block"
     },
@@ -3301,7 +3301,7 @@
       ],
       "name": "p-calendar-3",
       "registryDependencies": [
-        "@coss/calendar"
+        "@tinji/calendar"
       ],
       "type": "registry:block"
     },
@@ -3318,7 +3318,7 @@
       ],
       "name": "p-calendar-4",
       "registryDependencies": [
-        "@coss/calendar"
+        "@tinji/calendar"
       ],
       "type": "registry:block"
     },
@@ -3336,8 +3336,8 @@
       ],
       "name": "p-calendar-5",
       "registryDependencies": [
-        "@coss/calendar",
-        "@coss/select"
+        "@tinji/calendar",
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -3358,8 +3358,8 @@
       ],
       "name": "p-calendar-6",
       "registryDependencies": [
-        "@coss/calendar",
-        "@coss/combobox"
+        "@tinji/calendar",
+        "@tinji/combobox"
       ],
       "type": "registry:block"
     },
@@ -3379,7 +3379,7 @@
       ],
       "name": "p-calendar-7",
       "registryDependencies": [
-        "@coss/calendar"
+        "@tinji/calendar"
       ],
       "type": "registry:block"
     },
@@ -3399,7 +3399,7 @@
       ],
       "name": "p-calendar-8",
       "registryDependencies": [
-        "@coss/calendar"
+        "@tinji/calendar"
       ],
       "type": "registry:block"
     },
@@ -3416,7 +3416,7 @@
       ],
       "name": "p-calendar-2",
       "registryDependencies": [
-        "@coss/calendar"
+        "@tinji/calendar"
       ],
       "type": "registry:block"
     },
@@ -3433,7 +3433,7 @@
       ],
       "name": "p-calendar-9",
       "registryDependencies": [
-        "@coss/calendar"
+        "@tinji/calendar"
       ],
       "type": "registry:block"
     },
@@ -3453,7 +3453,7 @@
       ],
       "name": "p-calendar-10",
       "registryDependencies": [
-        "@coss/calendar"
+        "@tinji/calendar"
       ],
       "type": "registry:block"
     },
@@ -3470,7 +3470,7 @@
       ],
       "name": "p-calendar-11",
       "registryDependencies": [
-        "@coss/calendar"
+        "@tinji/calendar"
       ],
       "type": "registry:block"
     },
@@ -3487,7 +3487,7 @@
       ],
       "name": "p-calendar-12",
       "registryDependencies": [
-        "@coss/calendar"
+        "@tinji/calendar"
       ],
       "type": "registry:block"
     },
@@ -3505,8 +3505,8 @@
       ],
       "name": "p-calendar-13",
       "registryDependencies": [
-        "@coss/calendar",
-        "@coss/combobox"
+        "@tinji/calendar",
+        "@tinji/combobox"
       ],
       "type": "registry:block"
     },
@@ -3524,8 +3524,8 @@
       ],
       "name": "p-calendar-14",
       "registryDependencies": [
-        "@coss/calendar",
-        "@coss/select"
+        "@tinji/calendar",
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -3546,8 +3546,8 @@
       ],
       "name": "p-calendar-15",
       "registryDependencies": [
-        "@coss/calendar",
-        "@coss/button"
+        "@tinji/calendar",
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -3568,8 +3568,8 @@
       ],
       "name": "p-calendar-16",
       "registryDependencies": [
-        "@coss/calendar",
-        "@coss/button"
+        "@tinji/calendar",
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -3592,9 +3592,9 @@
       ],
       "name": "p-calendar-17",
       "registryDependencies": [
-        "@coss/calendar",
-        "@coss/field",
-        "@coss/input-group"
+        "@tinji/calendar",
+        "@tinji/field",
+        "@tinji/input-group"
       ],
       "type": "registry:block"
     },
@@ -3616,9 +3616,9 @@
       ],
       "name": "p-calendar-18",
       "registryDependencies": [
-        "@coss/calendar",
-        "@coss/field",
-        "@coss/input-group"
+        "@tinji/calendar",
+        "@tinji/field",
+        "@tinji/input-group"
       ],
       "type": "registry:block"
     },
@@ -3641,10 +3641,10 @@
       ],
       "name": "p-calendar-19",
       "registryDependencies": [
-        "@coss/calendar",
-        "@coss/scroll-area",
-        "@coss/toggle",
-        "@coss/toggle-group"
+        "@tinji/calendar",
+        "@tinji/scroll-area",
+        "@tinji/toggle",
+        "@tinji/toggle-group"
       ],
       "type": "registry:block"
     },
@@ -3665,8 +3665,8 @@
       ],
       "name": "p-calendar-20",
       "registryDependencies": [
-        "@coss/calendar",
-        "@coss/button"
+        "@tinji/calendar",
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -3687,8 +3687,8 @@
       ],
       "name": "p-calendar-21",
       "registryDependencies": [
-        "@coss/calendar",
-        "@coss/button"
+        "@tinji/calendar",
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -3711,7 +3711,7 @@
       },
       "name": "p-calendar-22",
       "registryDependencies": [
-        "@coss/calendar"
+        "@tinji/calendar"
       ],
       "type": "registry:block"
     },
@@ -3734,7 +3734,7 @@
       },
       "name": "p-calendar-23",
       "registryDependencies": [
-        "@coss/calendar"
+        "@tinji/calendar"
       ],
       "type": "registry:block"
     },
@@ -3757,7 +3757,7 @@
       },
       "name": "p-calendar-24",
       "registryDependencies": [
-        "@coss/calendar"
+        "@tinji/calendar"
       ],
       "type": "registry:block"
     },
@@ -3784,9 +3784,9 @@
       },
       "name": "p-date-picker-1",
       "registryDependencies": [
-        "@coss/calendar",
-        "@coss/popover",
-        "@coss/button"
+        "@tinji/calendar",
+        "@tinji/popover",
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -3813,9 +3813,9 @@
       },
       "name": "p-date-picker-2",
       "registryDependencies": [
-        "@coss/calendar",
-        "@coss/popover",
-        "@coss/button"
+        "@tinji/calendar",
+        "@tinji/popover",
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -3842,9 +3842,9 @@
       },
       "name": "p-date-picker-9",
       "registryDependencies": [
-        "@coss/calendar",
-        "@coss/popover",
-        "@coss/button"
+        "@tinji/calendar",
+        "@tinji/popover",
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -3873,11 +3873,11 @@
       },
       "name": "p-date-picker-3",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/calendar",
-        "@coss/combobox",
-        "@coss/field",
-        "@coss/popover"
+        "@tinji/button",
+        "@tinji/calendar",
+        "@tinji/combobox",
+        "@tinji/field",
+        "@tinji/popover"
       ],
       "type": "registry:block"
     },
@@ -3904,9 +3904,9 @@
       },
       "name": "p-date-picker-4",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/calendar",
-        "@coss/popover"
+        "@tinji/button",
+        "@tinji/calendar",
+        "@tinji/popover"
       ],
       "type": "registry:block"
     },
@@ -3934,10 +3934,10 @@
       },
       "name": "p-date-picker-5",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/calendar",
-        "@coss/input-group",
-        "@coss/popover"
+        "@tinji/button",
+        "@tinji/calendar",
+        "@tinji/input-group",
+        "@tinji/popover"
       ],
       "type": "registry:block"
     },
@@ -3964,9 +3964,9 @@
       },
       "name": "p-date-picker-6",
       "registryDependencies": [
-        "@coss/calendar",
-        "@coss/popover",
-        "@coss/button"
+        "@tinji/calendar",
+        "@tinji/popover",
+        "@tinji/button"
       ],
       "type": "registry:block"
     },
@@ -3994,10 +3994,10 @@
       },
       "name": "p-date-picker-7",
       "registryDependencies": [
-        "@coss/badge",
-        "@coss/button",
-        "@coss/calendar",
-        "@coss/popover"
+        "@tinji/badge",
+        "@tinji/button",
+        "@tinji/calendar",
+        "@tinji/popover"
       ],
       "type": "registry:block"
     },
@@ -4024,9 +4024,9 @@
       },
       "name": "p-date-picker-8",
       "registryDependencies": [
-        "@coss/calendar",
-        "@coss/popover",
-        "@coss/select"
+        "@tinji/calendar",
+        "@tinji/popover",
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -4050,12 +4050,12 @@
       },
       "name": "p-card-1",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/card",
-        "@coss/field",
-        "@coss/form",
-        "@coss/input",
-        "@coss/select"
+        "@tinji/button",
+        "@tinji/card",
+        "@tinji/field",
+        "@tinji/form",
+        "@tinji/input",
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -4076,11 +4076,11 @@
       },
       "name": "p-card-2",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/card",
-        "@coss/field",
-        "@coss/form",
-        "@coss/input"
+        "@tinji/button",
+        "@tinji/card",
+        "@tinji/field",
+        "@tinji/form",
+        "@tinji/input"
       ],
       "type": "registry:block"
     },
@@ -4104,11 +4104,11 @@
       },
       "name": "p-card-3",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/card",
-        "@coss/field",
-        "@coss/form",
-        "@coss/input"
+        "@tinji/button",
+        "@tinji/card",
+        "@tinji/field",
+        "@tinji/form",
+        "@tinji/input"
       ],
       "type": "registry:block"
     },
@@ -4132,12 +4132,12 @@
       },
       "name": "p-card-4",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/card",
-        "@coss/field",
-        "@coss/form",
-        "@coss/input",
-        "@coss/select"
+        "@tinji/button",
+        "@tinji/card",
+        "@tinji/field",
+        "@tinji/form",
+        "@tinji/input",
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -4158,12 +4158,12 @@
       },
       "name": "p-card-5",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/card",
-        "@coss/field",
-        "@coss/form",
-        "@coss/input",
-        "@coss/select"
+        "@tinji/button",
+        "@tinji/card",
+        "@tinji/field",
+        "@tinji/form",
+        "@tinji/input",
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -4187,12 +4187,12 @@
       },
       "name": "p-card-6",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/card",
-        "@coss/field",
-        "@coss/form",
-        "@coss/input",
-        "@coss/select"
+        "@tinji/button",
+        "@tinji/card",
+        "@tinji/field",
+        "@tinji/form",
+        "@tinji/input",
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -4216,12 +4216,12 @@
       },
       "name": "p-card-7",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/card",
-        "@coss/field",
-        "@coss/form",
-        "@coss/input",
-        "@coss/select"
+        "@tinji/button",
+        "@tinji/card",
+        "@tinji/field",
+        "@tinji/form",
+        "@tinji/input",
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -4243,13 +4243,13 @@
       },
       "name": "p-card-8",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/card",
-        "@coss/field",
-        "@coss/form",
-        "@coss/frame",
-        "@coss/input",
-        "@coss/select"
+        "@tinji/button",
+        "@tinji/card",
+        "@tinji/field",
+        "@tinji/form",
+        "@tinji/frame",
+        "@tinji/input",
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -4274,13 +4274,13 @@
       },
       "name": "p-card-9",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/card",
-        "@coss/field",
-        "@coss/form",
-        "@coss/frame",
-        "@coss/input",
-        "@coss/select"
+        "@tinji/button",
+        "@tinji/card",
+        "@tinji/field",
+        "@tinji/form",
+        "@tinji/frame",
+        "@tinji/input",
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -4305,13 +4305,13 @@
       },
       "name": "p-card-10",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/card",
-        "@coss/field",
-        "@coss/form",
-        "@coss/frame",
-        "@coss/input",
-        "@coss/select"
+        "@tinji/button",
+        "@tinji/card",
+        "@tinji/field",
+        "@tinji/form",
+        "@tinji/frame",
+        "@tinji/input",
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -4335,9 +4335,9 @@
       },
       "name": "p-card-11",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/card",
-        "@coss/empty"
+        "@tinji/button",
+        "@tinji/card",
+        "@tinji/empty"
       ],
       "type": "registry:block"
     },
@@ -4354,8 +4354,8 @@
       ],
       "name": "p-checkbox-1",
       "registryDependencies": [
-        "@coss/checkbox",
-        "@coss/label"
+        "@tinji/checkbox",
+        "@tinji/label"
       ],
       "type": "registry:block"
     },
@@ -4373,8 +4373,8 @@
       ],
       "name": "p-checkbox-2",
       "registryDependencies": [
-        "@coss/checkbox",
-        "@coss/label"
+        "@tinji/checkbox",
+        "@tinji/label"
       ],
       "type": "registry:block"
     },
@@ -4391,8 +4391,8 @@
       ],
       "name": "p-checkbox-3",
       "registryDependencies": [
-        "@coss/checkbox",
-        "@coss/label"
+        "@tinji/checkbox",
+        "@tinji/label"
       ],
       "type": "registry:block"
     },
@@ -4409,8 +4409,8 @@
       ],
       "name": "p-checkbox-4",
       "registryDependencies": [
-        "@coss/checkbox",
-        "@coss/label"
+        "@tinji/checkbox",
+        "@tinji/label"
       ],
       "type": "registry:block"
     },
@@ -4428,10 +4428,10 @@
       ],
       "name": "p-checkbox-5",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/checkbox",
-        "@coss/field",
-        "@coss/form"
+        "@tinji/button",
+        "@tinji/checkbox",
+        "@tinji/field",
+        "@tinji/form"
       ],
       "type": "registry:block"
     },
@@ -4449,9 +4449,9 @@
       ],
       "name": "p-checkbox-group-1",
       "registryDependencies": [
-        "@coss/checkbox",
-        "@coss/checkbox-group",
-        "@coss/label"
+        "@tinji/checkbox",
+        "@tinji/checkbox-group",
+        "@tinji/label"
       ],
       "type": "registry:block"
     },
@@ -4470,9 +4470,9 @@
       ],
       "name": "p-checkbox-group-2",
       "registryDependencies": [
-        "@coss/checkbox",
-        "@coss/checkbox-group",
-        "@coss/label"
+        "@tinji/checkbox",
+        "@tinji/checkbox-group",
+        "@tinji/label"
       ],
       "type": "registry:block"
     },
@@ -4490,9 +4490,9 @@
       ],
       "name": "p-checkbox-group-3",
       "registryDependencies": [
-        "@coss/checkbox",
-        "@coss/checkbox-group",
-        "@coss/label"
+        "@tinji/checkbox",
+        "@tinji/checkbox-group",
+        "@tinji/label"
       ],
       "type": "registry:block"
     },
@@ -4510,9 +4510,9 @@
       ],
       "name": "p-checkbox-group-4",
       "registryDependencies": [
-        "@coss/checkbox",
-        "@coss/checkbox-group",
-        "@coss/label"
+        "@tinji/checkbox",
+        "@tinji/checkbox-group",
+        "@tinji/label"
       ],
       "type": "registry:block"
     },
@@ -4531,12 +4531,12 @@
       ],
       "name": "p-checkbox-group-5",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/checkbox",
-        "@coss/checkbox-group",
-        "@coss/field",
-        "@coss/fieldset",
-        "@coss/form"
+        "@tinji/button",
+        "@tinji/checkbox",
+        "@tinji/checkbox-group",
+        "@tinji/field",
+        "@tinji/fieldset",
+        "@tinji/form"
       ],
       "type": "registry:block"
     },
@@ -4556,7 +4556,7 @@
       ],
       "name": "p-collapsible-1",
       "registryDependencies": [
-        "@coss/collapsible"
+        "@tinji/collapsible"
       ],
       "type": "registry:block"
     },
@@ -4577,7 +4577,7 @@
       },
       "name": "p-combobox-1",
       "registryDependencies": [
-        "@coss/combobox"
+        "@tinji/combobox"
       ],
       "type": "registry:block"
     },
@@ -4599,7 +4599,7 @@
       },
       "name": "p-combobox-2",
       "registryDependencies": [
-        "@coss/combobox"
+        "@tinji/combobox"
       ],
       "type": "registry:block"
     },
@@ -4620,7 +4620,7 @@
       },
       "name": "p-combobox-3",
       "registryDependencies": [
-        "@coss/combobox"
+        "@tinji/combobox"
       ],
       "type": "registry:block"
     },
@@ -4641,7 +4641,7 @@
       },
       "name": "p-combobox-4",
       "registryDependencies": [
-        "@coss/combobox"
+        "@tinji/combobox"
       ],
       "type": "registry:block"
     },
@@ -4662,8 +4662,8 @@
       },
       "name": "p-combobox-5",
       "registryDependencies": [
-        "@coss/combobox",
-        "@coss/label"
+        "@tinji/combobox",
+        "@tinji/label"
       ],
       "type": "registry:block"
     },
@@ -4684,7 +4684,7 @@
       },
       "name": "p-combobox-6",
       "registryDependencies": [
-        "@coss/combobox"
+        "@tinji/combobox"
       ],
       "type": "registry:block"
     },
@@ -4705,7 +4705,7 @@
       },
       "name": "p-combobox-7",
       "registryDependencies": [
-        "@coss/combobox"
+        "@tinji/combobox"
       ],
       "type": "registry:block"
     },
@@ -4726,7 +4726,7 @@
       },
       "name": "p-combobox-8",
       "registryDependencies": [
-        "@coss/combobox"
+        "@tinji/combobox"
       ],
       "type": "registry:block"
     },
@@ -4747,7 +4747,7 @@
       },
       "name": "p-combobox-9",
       "registryDependencies": [
-        "@coss/combobox"
+        "@tinji/combobox"
       ],
       "type": "registry:block"
     },
@@ -4771,8 +4771,8 @@
       },
       "name": "p-combobox-10",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/combobox"
+        "@tinji/button",
+        "@tinji/combobox"
       ],
       "type": "registry:block"
     },
@@ -4794,10 +4794,10 @@
       },
       "name": "p-combobox-11",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/combobox",
-        "@coss/field",
-        "@coss/form"
+        "@tinji/button",
+        "@tinji/combobox",
+        "@tinji/field",
+        "@tinji/form"
       ],
       "type": "registry:block"
     },
@@ -4819,10 +4819,10 @@
       },
       "name": "p-combobox-12",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/combobox",
-        "@coss/field",
-        "@coss/form"
+        "@tinji/button",
+        "@tinji/combobox",
+        "@tinji/field",
+        "@tinji/form"
       ],
       "type": "registry:block"
     },
@@ -4846,7 +4846,7 @@
       },
       "name": "p-combobox-13",
       "registryDependencies": [
-        "@coss/combobox"
+        "@tinji/combobox"
       ],
       "type": "registry:block"
     },
@@ -4870,7 +4870,7 @@
       },
       "name": "p-combobox-14",
       "registryDependencies": [
-        "@coss/combobox"
+        "@tinji/combobox"
       ],
       "type": "registry:block"
     },
@@ -4891,7 +4891,7 @@
       },
       "name": "p-combobox-15",
       "registryDependencies": [
-        "@coss/combobox"
+        "@tinji/combobox"
       ],
       "type": "registry:block"
     },
@@ -4913,7 +4913,7 @@
       },
       "name": "p-combobox-16",
       "registryDependencies": [
-        "@coss/combobox"
+        "@tinji/combobox"
       ],
       "type": "registry:block"
     },
@@ -4938,8 +4938,8 @@
       },
       "name": "p-combobox-17",
       "registryDependencies": [
-        "@coss/combobox",
-        "@coss/select"
+        "@tinji/combobox",
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -4960,8 +4960,8 @@
       },
       "name": "p-combobox-18",
       "registryDependencies": [
-        "@coss/combobox",
-        "@coss/select"
+        "@tinji/combobox",
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -4982,9 +4982,9 @@
       ],
       "name": "p-command-1",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/command",
-        "@coss/kbd"
+        "@tinji/button",
+        "@tinji/command",
+        "@tinji/kbd"
       ],
       "type": "registry:block"
     },
@@ -5005,15 +5005,15 @@
       ],
       "name": "p-command-2",
       "registryDependencies": [
-        "@coss/autocomplete",
-        "@coss/button",
-        "@coss/command",
-        "@coss/empty",
-        "@coss/input",
-        "@coss/kbd",
-        "@coss/scroll-area",
-        "@coss/skeleton",
-        "@coss/spinner"
+        "@tinji/autocomplete",
+        "@tinji/button",
+        "@tinji/command",
+        "@tinji/empty",
+        "@tinji/input",
+        "@tinji/kbd",
+        "@tinji/scroll-area",
+        "@tinji/skeleton",
+        "@tinji/spinner"
       ],
       "type": "registry:block"
     },
@@ -5030,11 +5030,11 @@
       ],
       "name": "p-dialog-1",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/dialog",
-        "@coss/field",
-        "@coss/form",
-        "@coss/input"
+        "@tinji/button",
+        "@tinji/dialog",
+        "@tinji/field",
+        "@tinji/form",
+        "@tinji/input"
       ],
       "type": "registry:block"
     },
@@ -5051,11 +5051,11 @@
       ],
       "name": "p-dialog-6",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/dialog",
-        "@coss/field",
-        "@coss/form",
-        "@coss/input"
+        "@tinji/button",
+        "@tinji/dialog",
+        "@tinji/field",
+        "@tinji/form",
+        "@tinji/input"
       ],
       "type": "registry:block"
     },
@@ -5074,9 +5074,9 @@
       ],
       "name": "p-dialog-2",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/dialog",
-        "@coss/menu"
+        "@tinji/button",
+        "@tinji/dialog",
+        "@tinji/menu"
       ],
       "type": "registry:block"
     },
@@ -5093,10 +5093,10 @@
       ],
       "name": "p-dialog-3",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/dialog",
-        "@coss/field",
-        "@coss/input"
+        "@tinji/button",
+        "@tinji/dialog",
+        "@tinji/field",
+        "@tinji/input"
       ],
       "type": "registry:block"
     },
@@ -5114,12 +5114,12 @@
       ],
       "name": "p-dialog-4",
       "registryDependencies": [
-        "@coss/alert-dialog",
-        "@coss/button",
-        "@coss/dialog",
-        "@coss/field",
-        "@coss/form",
-        "@coss/textarea"
+        "@tinji/alert-dialog",
+        "@tinji/button",
+        "@tinji/dialog",
+        "@tinji/field",
+        "@tinji/form",
+        "@tinji/textarea"
       ],
       "type": "registry:block"
     },
@@ -5136,8 +5136,8 @@
       ],
       "name": "p-dialog-5",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/dialog"
+        "@tinji/button",
+        "@tinji/dialog"
       ],
       "type": "registry:block"
     },
@@ -5154,8 +5154,8 @@
       ],
       "name": "p-drawer-1",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/drawer"
+        "@tinji/button",
+        "@tinji/drawer"
       ],
       "type": "registry:block"
     },
@@ -5172,8 +5172,8 @@
       ],
       "name": "p-drawer-2",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/drawer"
+        "@tinji/button",
+        "@tinji/drawer"
       ],
       "type": "registry:block"
     },
@@ -5190,8 +5190,8 @@
       ],
       "name": "p-drawer-3",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/drawer"
+        "@tinji/button",
+        "@tinji/drawer"
       ],
       "type": "registry:block"
     },
@@ -5208,8 +5208,8 @@
       ],
       "name": "p-drawer-4",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/drawer"
+        "@tinji/button",
+        "@tinji/drawer"
       ],
       "type": "registry:block"
     },
@@ -5226,8 +5226,8 @@
       ],
       "name": "p-drawer-5",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/drawer"
+        "@tinji/button",
+        "@tinji/drawer"
       ],
       "type": "registry:block"
     },
@@ -5244,8 +5244,8 @@
       ],
       "name": "p-drawer-6",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/drawer"
+        "@tinji/button",
+        "@tinji/drawer"
       ],
       "type": "registry:block"
     },
@@ -5262,8 +5262,8 @@
       ],
       "name": "p-drawer-7",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/drawer"
+        "@tinji/button",
+        "@tinji/drawer"
       ],
       "type": "registry:block"
     },
@@ -5280,10 +5280,10 @@
       ],
       "name": "p-drawer-8",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/drawer",
-        "@coss/field",
-        "@coss/input"
+        "@tinji/button",
+        "@tinji/drawer",
+        "@tinji/field",
+        "@tinji/input"
       ],
       "type": "registry:block"
     },
@@ -5300,8 +5300,8 @@
       ],
       "name": "p-drawer-9",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/drawer"
+        "@tinji/button",
+        "@tinji/drawer"
       ],
       "type": "registry:block"
     },
@@ -5318,11 +5318,11 @@
       ],
       "name": "p-drawer-10",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/drawer",
-        "@coss/field",
-        "@coss/form",
-        "@coss/input"
+        "@tinji/button",
+        "@tinji/drawer",
+        "@tinji/field",
+        "@tinji/form",
+        "@tinji/input"
       ],
       "type": "registry:block"
     },
@@ -5339,8 +5339,8 @@
       ],
       "name": "p-drawer-11",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/drawer"
+        "@tinji/button",
+        "@tinji/drawer"
       ],
       "type": "registry:block"
     },
@@ -5358,13 +5358,13 @@
       ],
       "name": "p-drawer-12",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/dialog",
-        "@coss/drawer",
-        "@coss/field",
-        "@coss/form",
-        "@coss/input",
-        "@coss/use-media-query"
+        "@tinji/button",
+        "@tinji/dialog",
+        "@tinji/drawer",
+        "@tinji/field",
+        "@tinji/form",
+        "@tinji/input",
+        "@tinji/use-media-query"
       ],
       "type": "registry:block"
     },
@@ -5385,10 +5385,10 @@
       ],
       "name": "p-drawer-13",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/drawer",
-        "@coss/menu",
-        "@coss/use-media-query"
+        "@tinji/button",
+        "@tinji/drawer",
+        "@tinji/menu",
+        "@tinji/use-media-query"
       ],
       "type": "registry:block"
     },
@@ -5408,8 +5408,8 @@
       },
       "name": "p-drawer-14",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/drawer"
+        "@tinji/button",
+        "@tinji/drawer"
       ],
       "type": "registry:block"
     },
@@ -5429,8 +5429,8 @@
       ],
       "name": "p-empty-1",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/empty"
+        "@tinji/button",
+        "@tinji/empty"
       ],
       "type": "registry:block"
     },
@@ -5452,8 +5452,8 @@
       },
       "name": "p-field-1",
       "registryDependencies": [
-        "@coss/field",
-        "@coss/input"
+        "@tinji/field",
+        "@tinji/input"
       ],
       "type": "registry:block"
     },
@@ -5475,8 +5475,8 @@
       },
       "name": "p-field-2",
       "registryDependencies": [
-        "@coss/field",
-        "@coss/input"
+        "@tinji/field",
+        "@tinji/input"
       ],
       "type": "registry:block"
     },
@@ -5499,8 +5499,8 @@
       },
       "name": "p-field-3",
       "registryDependencies": [
-        "@coss/field",
-        "@coss/input"
+        "@tinji/field",
+        "@tinji/input"
       ],
       "type": "registry:block"
     },
@@ -5523,8 +5523,8 @@
       },
       "name": "p-field-4",
       "registryDependencies": [
-        "@coss/field",
-        "@coss/input"
+        "@tinji/field",
+        "@tinji/input"
       ],
       "type": "registry:block"
     },
@@ -5545,8 +5545,8 @@
       },
       "name": "p-field-5",
       "registryDependencies": [
-        "@coss/field",
-        "@coss/input"
+        "@tinji/field",
+        "@tinji/input"
       ],
       "type": "registry:block"
     },
@@ -5569,9 +5569,9 @@
       },
       "name": "p-field-6",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/field",
-        "@coss/input-group"
+        "@tinji/button",
+        "@tinji/field",
+        "@tinji/input-group"
       ],
       "type": "registry:block"
     },
@@ -5594,8 +5594,8 @@
       },
       "name": "p-field-7",
       "registryDependencies": [
-        "@coss/autocomplete",
-        "@coss/field"
+        "@tinji/autocomplete",
+        "@tinji/field"
       ],
       "type": "registry:block"
     },
@@ -5618,8 +5618,8 @@
       },
       "name": "p-field-8",
       "registryDependencies": [
-        "@coss/combobox",
-        "@coss/field"
+        "@tinji/combobox",
+        "@tinji/field"
       ],
       "type": "registry:block"
     },
@@ -5642,8 +5642,8 @@
       },
       "name": "p-field-9",
       "registryDependencies": [
-        "@coss/combobox",
-        "@coss/field"
+        "@tinji/combobox",
+        "@tinji/field"
       ],
       "type": "registry:block"
     },
@@ -5665,8 +5665,8 @@
       },
       "name": "p-field-10",
       "registryDependencies": [
-        "@coss/field",
-        "@coss/textarea"
+        "@tinji/field",
+        "@tinji/textarea"
       ],
       "type": "registry:block"
     },
@@ -5688,8 +5688,8 @@
       },
       "name": "p-field-11",
       "registryDependencies": [
-        "@coss/field",
-        "@coss/select"
+        "@tinji/field",
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -5711,8 +5711,8 @@
       },
       "name": "p-field-12",
       "registryDependencies": [
-        "@coss/checkbox",
-        "@coss/field"
+        "@tinji/checkbox",
+        "@tinji/field"
       ],
       "type": "registry:block"
     },
@@ -5733,10 +5733,10 @@
       ],
       "name": "p-field-13",
       "registryDependencies": [
-        "@coss/checkbox",
-        "@coss/checkbox-group",
-        "@coss/field",
-        "@coss/fieldset"
+        "@tinji/checkbox",
+        "@tinji/checkbox-group",
+        "@tinji/field",
+        "@tinji/fieldset"
       ],
       "type": "registry:block"
     },
@@ -5759,9 +5759,9 @@
       },
       "name": "p-field-14",
       "registryDependencies": [
-        "@coss/field",
-        "@coss/fieldset",
-        "@coss/radio-group"
+        "@tinji/field",
+        "@tinji/fieldset",
+        "@tinji/radio-group"
       ],
       "type": "registry:block"
     },
@@ -5780,8 +5780,8 @@
       ],
       "name": "p-field-15",
       "registryDependencies": [
-        "@coss/field",
-        "@coss/switch"
+        "@tinji/field",
+        "@tinji/switch"
       ],
       "type": "registry:block"
     },
@@ -5803,8 +5803,8 @@
       },
       "name": "p-field-16",
       "registryDependencies": [
-        "@coss/field",
-        "@coss/slider"
+        "@tinji/field",
+        "@tinji/slider"
       ],
       "type": "registry:block"
     },
@@ -5827,8 +5827,8 @@
       },
       "name": "p-field-17",
       "registryDependencies": [
-        "@coss/field",
-        "@coss/number-field"
+        "@tinji/field",
+        "@tinji/number-field"
       ],
       "type": "registry:block"
     },
@@ -5854,12 +5854,12 @@
       },
       "name": "p-field-18",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/checkbox",
-        "@coss/field",
-        "@coss/form",
-        "@coss/input",
-        "@coss/select"
+        "@tinji/button",
+        "@tinji/checkbox",
+        "@tinji/field",
+        "@tinji/form",
+        "@tinji/input",
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -5880,9 +5880,9 @@
       },
       "name": "p-fieldset-1",
       "registryDependencies": [
-        "@coss/field",
-        "@coss/fieldset",
-        "@coss/input"
+        "@tinji/field",
+        "@tinji/fieldset",
+        "@tinji/input"
       ],
       "type": "registry:block"
     },
@@ -5905,10 +5905,10 @@
       },
       "name": "p-form-1",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/field",
-        "@coss/form",
-        "@coss/input"
+        "@tinji/button",
+        "@tinji/field",
+        "@tinji/form",
+        "@tinji/input"
       ],
       "type": "registry:block"
     },
@@ -5936,10 +5936,10 @@
       },
       "name": "p-form-2",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/field",
-        "@coss/form",
-        "@coss/input"
+        "@tinji/button",
+        "@tinji/field",
+        "@tinji/form",
+        "@tinji/input"
       ],
       "type": "registry:block"
     },
@@ -5959,7 +5959,7 @@
       },
       "name": "p-frame-1",
       "registryDependencies": [
-        "@coss/frame"
+        "@tinji/frame"
       ],
       "type": "registry:block"
     },
@@ -5979,7 +5979,7 @@
       },
       "name": "p-frame-3",
       "registryDependencies": [
-        "@coss/frame"
+        "@tinji/frame"
       ],
       "type": "registry:block"
     },
@@ -5999,8 +5999,8 @@
       },
       "name": "p-frame-4",
       "registryDependencies": [
-        "@coss/frame",
-        "@coss/separator"
+        "@tinji/frame",
+        "@tinji/separator"
       ],
       "type": "registry:block"
     },
@@ -6024,9 +6024,9 @@
       },
       "name": "p-frame-2",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/collapsible",
-        "@coss/frame"
+        "@tinji/button",
+        "@tinji/collapsible",
+        "@tinji/frame"
       ],
       "type": "registry:block"
     },
@@ -6043,7 +6043,7 @@
       ],
       "name": "p-kbd-1",
       "registryDependencies": [
-        "@coss/kbd"
+        "@tinji/kbd"
       ],
       "type": "registry:block"
     },
@@ -6060,9 +6060,9 @@
       ],
       "name": "p-group-1",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/group",
-        "@coss/menu"
+        "@tinji/button",
+        "@tinji/group",
+        "@tinji/menu"
       ],
       "type": "registry:block"
     },
@@ -6080,11 +6080,11 @@
       ],
       "name": "p-group-2",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/group",
-        "@coss/input",
-        "@coss/tooltip",
-        "@coss/use-copy-to-clipboard"
+        "@tinji/button",
+        "@tinji/group",
+        "@tinji/input",
+        "@tinji/tooltip",
+        "@tinji/use-copy-to-clipboard"
       ],
       "type": "registry:block"
     },
@@ -6101,9 +6101,9 @@
       ],
       "name": "p-group-3",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/group",
-        "@coss/menu"
+        "@tinji/button",
+        "@tinji/group",
+        "@tinji/menu"
       ],
       "type": "registry:block"
     },
@@ -6120,9 +6120,9 @@
       ],
       "name": "p-group-4",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/group",
-        "@coss/menu"
+        "@tinji/button",
+        "@tinji/group",
+        "@tinji/menu"
       ],
       "type": "registry:block"
     },
@@ -6140,9 +6140,9 @@
       ],
       "name": "p-group-5",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/group",
-        "@coss/menu"
+        "@tinji/button",
+        "@tinji/group",
+        "@tinji/menu"
       ],
       "type": "registry:block"
     },
@@ -6160,9 +6160,9 @@
       ],
       "name": "p-group-6",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/group",
-        "@coss/menu"
+        "@tinji/button",
+        "@tinji/group",
+        "@tinji/menu"
       ],
       "type": "registry:block"
     },
@@ -6179,9 +6179,9 @@
       ],
       "name": "p-group-7",
       "registryDependencies": [
-        "@coss/group",
-        "@coss/input",
-        "@coss/label"
+        "@tinji/group",
+        "@tinji/input",
+        "@tinji/label"
       ],
       "type": "registry:block"
     },
@@ -6198,9 +6198,9 @@
       ],
       "name": "p-group-8",
       "registryDependencies": [
-        "@coss/group",
-        "@coss/input",
-        "@coss/label"
+        "@tinji/group",
+        "@tinji/input",
+        "@tinji/label"
       ],
       "type": "registry:block"
     },
@@ -6217,8 +6217,8 @@
       ],
       "name": "p-group-9",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/group"
+        "@tinji/button",
+        "@tinji/group"
       ],
       "type": "registry:block"
     },
@@ -6235,8 +6235,8 @@
       ],
       "name": "p-group-10",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/group"
+        "@tinji/button",
+        "@tinji/group"
       ],
       "type": "registry:block"
     },
@@ -6253,10 +6253,10 @@
       ],
       "name": "p-group-11",
       "registryDependencies": [
-        "@coss/badge",
-        "@coss/button",
-        "@coss/group",
-        "@coss/popover"
+        "@tinji/badge",
+        "@tinji/button",
+        "@tinji/group",
+        "@tinji/popover"
       ],
       "type": "registry:block"
     },
@@ -6274,10 +6274,10 @@
       ],
       "name": "p-group-12",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/group",
-        "@coss/input-group",
-        "@coss/tooltip"
+        "@tinji/button",
+        "@tinji/group",
+        "@tinji/input-group",
+        "@tinji/tooltip"
       ],
       "type": "registry:block"
     },
@@ -6296,9 +6296,9 @@
       ],
       "name": "p-group-13",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/group",
-        "@coss/menu"
+        "@tinji/button",
+        "@tinji/group",
+        "@tinji/menu"
       ],
       "type": "registry:block"
     },
@@ -6317,10 +6317,10 @@
       ],
       "name": "p-group-14",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/group",
-        "@coss/number-field",
-        "@coss/select"
+        "@tinji/button",
+        "@tinji/group",
+        "@tinji/number-field",
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -6338,10 +6338,10 @@
       ],
       "name": "p-group-15",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/group",
-        "@coss/input",
-        "@coss/select"
+        "@tinji/button",
+        "@tinji/group",
+        "@tinji/input",
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -6363,9 +6363,9 @@
       ],
       "name": "p-group-16",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/group",
-        "@coss/input"
+        "@tinji/button",
+        "@tinji/group",
+        "@tinji/input"
       ],
       "type": "registry:block"
     },
@@ -6383,9 +6383,9 @@
       ],
       "name": "p-group-17",
       "registryDependencies": [
-        "@coss/group",
-        "@coss/input",
-        "@coss/label"
+        "@tinji/group",
+        "@tinji/input",
+        "@tinji/label"
       ],
       "type": "registry:block"
     },
@@ -6404,9 +6404,9 @@
       ],
       "name": "p-group-18",
       "registryDependencies": [
-        "@coss/group",
-        "@coss/input",
-        "@coss/select"
+        "@tinji/group",
+        "@tinji/input",
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -6425,9 +6425,9 @@
       ],
       "name": "p-group-19",
       "registryDependencies": [
-        "@coss/group",
-        "@coss/input",
-        "@coss/select"
+        "@tinji/group",
+        "@tinji/input",
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -6446,9 +6446,9 @@
       ],
       "name": "p-group-20",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/group",
-        "@coss/input"
+        "@tinji/button",
+        "@tinji/group",
+        "@tinji/input"
       ],
       "type": "registry:block"
     },
@@ -6467,9 +6467,9 @@
       ],
       "name": "p-group-22",
       "registryDependencies": [
-        "@coss/group",
-        "@coss/label",
-        "@coss/number-field"
+        "@tinji/group",
+        "@tinji/label",
+        "@tinji/number-field"
       ],
       "type": "registry:block"
     },
@@ -6490,11 +6490,11 @@
       ],
       "name": "p-group-23",
       "registryDependencies": [
-        "@coss/avatar",
-        "@coss/badge",
-        "@coss/button",
-        "@coss/combobox",
-        "@coss/group"
+        "@tinji/avatar",
+        "@tinji/badge",
+        "@tinji/button",
+        "@tinji/combobox",
+        "@tinji/group"
       ],
       "type": "registry:block"
     },
@@ -6514,7 +6514,7 @@
       },
       "name": "p-input-1",
       "registryDependencies": [
-        "@coss/input"
+        "@tinji/input"
       ],
       "type": "registry:block"
     },
@@ -6534,7 +6534,7 @@
       },
       "name": "p-input-2",
       "registryDependencies": [
-        "@coss/input"
+        "@tinji/input"
       ],
       "type": "registry:block"
     },
@@ -6554,7 +6554,7 @@
       },
       "name": "p-input-3",
       "registryDependencies": [
-        "@coss/input"
+        "@tinji/input"
       ],
       "type": "registry:block"
     },
@@ -6574,7 +6574,7 @@
       },
       "name": "p-input-4",
       "registryDependencies": [
-        "@coss/input"
+        "@tinji/input"
       ],
       "type": "registry:block"
     },
@@ -6594,7 +6594,7 @@
       },
       "name": "p-input-5",
       "registryDependencies": [
-        "@coss/input"
+        "@tinji/input"
       ],
       "type": "registry:block"
     },
@@ -6615,8 +6615,8 @@
       },
       "name": "p-input-6",
       "registryDependencies": [
-        "@coss/input",
-        "@coss/label"
+        "@tinji/input",
+        "@tinji/label"
       ],
       "type": "registry:block"
     },
@@ -6638,9 +6638,9 @@
       },
       "name": "p-input-7",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/group",
-        "@coss/input"
+        "@tinji/button",
+        "@tinji/group",
+        "@tinji/input"
       ],
       "type": "registry:block"
     },
@@ -6663,9 +6663,9 @@
       },
       "name": "p-input-8",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/input-group",
-        "@coss/popover"
+        "@tinji/button",
+        "@tinji/input-group",
+        "@tinji/popover"
       ],
       "type": "registry:block"
     },
@@ -6688,9 +6688,9 @@
       },
       "name": "p-input-9",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/input-group",
-        "@coss/tooltip"
+        "@tinji/button",
+        "@tinji/input-group",
+        "@tinji/tooltip"
       ],
       "type": "registry:block"
     },
@@ -6713,9 +6713,9 @@
       },
       "name": "p-input-10",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/input-group",
-        "@coss/popover"
+        "@tinji/button",
+        "@tinji/input-group",
+        "@tinji/popover"
       ],
       "type": "registry:block"
     },
@@ -6738,8 +6738,8 @@
       },
       "name": "p-input-11",
       "registryDependencies": [
-        "@coss/input-group",
-        "@coss/kbd"
+        "@tinji/input-group",
+        "@tinji/kbd"
       ],
       "type": "registry:block"
     },
@@ -6762,8 +6762,8 @@
       },
       "name": "p-input-12",
       "registryDependencies": [
-        "@coss/input-group",
-        "@coss/spinner"
+        "@tinji/input-group",
+        "@tinji/spinner"
       ],
       "type": "registry:block"
     },
@@ -6784,8 +6784,8 @@
       },
       "name": "p-input-13",
       "registryDependencies": [
-        "@coss/input",
-        "@coss/label"
+        "@tinji/input",
+        "@tinji/label"
       ],
       "type": "registry:block"
     },
@@ -6806,8 +6806,8 @@
       },
       "name": "p-input-14",
       "registryDependencies": [
-        "@coss/input",
-        "@coss/label"
+        "@tinji/input",
+        "@tinji/label"
       ],
       "type": "registry:block"
     },
@@ -6827,7 +6827,7 @@
       },
       "name": "p-input-15",
       "registryDependencies": [
-        "@coss/input"
+        "@tinji/input"
       ],
       "type": "registry:block"
     },
@@ -6850,8 +6850,8 @@
       },
       "name": "p-input-16",
       "registryDependencies": [
-        "@coss/input-group",
-        "@coss/spinner"
+        "@tinji/input-group",
+        "@tinji/spinner"
       ],
       "type": "registry:block"
     },
@@ -6871,7 +6871,7 @@
       },
       "name": "p-input-17",
       "registryDependencies": [
-        "@coss/input"
+        "@tinji/input"
       ],
       "type": "registry:block"
     },
@@ -6889,7 +6889,7 @@
       ],
       "name": "p-otp-field-1",
       "registryDependencies": [
-        "@coss/otp-field"
+        "@tinji/otp-field"
       ],
       "type": "registry:block"
     },
@@ -6907,7 +6907,7 @@
       ],
       "name": "p-otp-field-2",
       "registryDependencies": [
-        "@coss/otp-field"
+        "@tinji/otp-field"
       ],
       "type": "registry:block"
     },
@@ -6925,7 +6925,7 @@
       ],
       "name": "p-otp-field-3",
       "registryDependencies": [
-        "@coss/otp-field"
+        "@tinji/otp-field"
       ],
       "type": "registry:block"
     },
@@ -6944,8 +6944,8 @@
       ],
       "name": "p-otp-field-4",
       "registryDependencies": [
-        "@coss/otp-field",
-        "@coss/field"
+        "@tinji/otp-field",
+        "@tinji/field"
       ],
       "type": "registry:block"
     },
@@ -6965,8 +6965,8 @@
       ],
       "name": "p-otp-field-6",
       "registryDependencies": [
-        "@coss/otp-field",
-        "@coss/field"
+        "@tinji/otp-field",
+        "@tinji/field"
       ],
       "type": "registry:block"
     },
@@ -6985,8 +6985,8 @@
       ],
       "name": "p-otp-field-7",
       "registryDependencies": [
-        "@coss/otp-field",
-        "@coss/field"
+        "@tinji/otp-field",
+        "@tinji/field"
       ],
       "type": "registry:block"
     },
@@ -7005,8 +7005,8 @@
       ],
       "name": "p-otp-field-8",
       "registryDependencies": [
-        "@coss/otp-field",
-        "@coss/field"
+        "@tinji/otp-field",
+        "@tinji/field"
       ],
       "type": "registry:block"
     },
@@ -7025,8 +7025,8 @@
       ],
       "name": "p-otp-field-9",
       "registryDependencies": [
-        "@coss/otp-field",
-        "@coss/field"
+        "@tinji/otp-field",
+        "@tinji/field"
       ],
       "type": "registry:block"
     },
@@ -7045,8 +7045,8 @@
       ],
       "name": "p-otp-field-10",
       "registryDependencies": [
-        "@coss/otp-field",
-        "@coss/field"
+        "@tinji/otp-field",
+        "@tinji/field"
       ],
       "type": "registry:block"
     },
@@ -7066,7 +7066,7 @@
       },
       "name": "p-input-group-1",
       "registryDependencies": [
-        "@coss/input-group"
+        "@tinji/input-group"
       ],
       "type": "registry:block"
     },
@@ -7089,7 +7089,7 @@
       },
       "name": "p-input-group-2",
       "registryDependencies": [
-        "@coss/input-group"
+        "@tinji/input-group"
       ],
       "type": "registry:block"
     },
@@ -7109,7 +7109,7 @@
       },
       "name": "p-input-group-3",
       "registryDependencies": [
-        "@coss/input-group"
+        "@tinji/input-group"
       ],
       "type": "registry:block"
     },
@@ -7129,7 +7129,7 @@
       },
       "name": "p-input-group-4",
       "registryDependencies": [
-        "@coss/input-group"
+        "@tinji/input-group"
       ],
       "type": "registry:block"
     },
@@ -7149,7 +7149,7 @@
       },
       "name": "p-input-group-5",
       "registryDependencies": [
-        "@coss/input-group"
+        "@tinji/input-group"
       ],
       "type": "registry:block"
     },
@@ -7170,8 +7170,8 @@
       },
       "name": "p-input-group-6",
       "registryDependencies": [
-        "@coss/input-group",
-        "@coss/number-field"
+        "@tinji/input-group",
+        "@tinji/number-field"
       ],
       "type": "registry:block"
     },
@@ -7195,9 +7195,9 @@
       },
       "name": "p-input-group-7",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/input-group",
-        "@coss/popover"
+        "@tinji/button",
+        "@tinji/input-group",
+        "@tinji/popover"
       ],
       "type": "registry:block"
     },
@@ -7221,10 +7221,10 @@
       },
       "name": "p-input-group-8",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/input-group",
-        "@coss/tooltip",
-        "@coss/use-copy-to-clipboard"
+        "@tinji/button",
+        "@tinji/input-group",
+        "@tinji/tooltip",
+        "@tinji/use-copy-to-clipboard"
       ],
       "type": "registry:block"
     },
@@ -7245,8 +7245,8 @@
       },
       "name": "p-input-group-9",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/input-group"
+        "@tinji/button",
+        "@tinji/input-group"
       ],
       "type": "registry:block"
     },
@@ -7267,8 +7267,8 @@
       },
       "name": "p-input-group-10",
       "registryDependencies": [
-        "@coss/badge",
-        "@coss/input-group"
+        "@tinji/badge",
+        "@tinji/input-group"
       ],
       "type": "registry:block"
     },
@@ -7289,8 +7289,8 @@
       },
       "name": "p-input-group-11",
       "registryDependencies": [
-        "@coss/input-group",
-        "@coss/kbd"
+        "@tinji/input-group",
+        "@tinji/kbd"
       ],
       "type": "registry:block"
     },
@@ -7311,10 +7311,10 @@
       },
       "name": "p-input-group-12",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/input-group",
-        "@coss/label",
-        "@coss/popover"
+        "@tinji/button",
+        "@tinji/input-group",
+        "@tinji/label",
+        "@tinji/popover"
       ],
       "type": "registry:block"
     },
@@ -7334,7 +7334,7 @@
       },
       "name": "p-input-group-13",
       "registryDependencies": [
-        "@coss/input-group"
+        "@tinji/input-group"
       ],
       "type": "registry:block"
     },
@@ -7354,7 +7354,7 @@
       },
       "name": "p-input-group-14",
       "registryDependencies": [
-        "@coss/input-group"
+        "@tinji/input-group"
       ],
       "type": "registry:block"
     },
@@ -7374,8 +7374,8 @@
       },
       "name": "p-input-group-15",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/input-group"
+        "@tinji/button",
+        "@tinji/input-group"
       ],
       "type": "registry:block"
     },
@@ -7396,8 +7396,8 @@
       },
       "name": "p-input-group-16",
       "registryDependencies": [
-        "@coss/input-group",
-        "@coss/spinner"
+        "@tinji/input-group",
+        "@tinji/spinner"
       ],
       "type": "registry:block"
     },
@@ -7418,10 +7418,10 @@
       },
       "name": "p-input-group-17",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/input-group",
-        "@coss/menu",
-        "@coss/tooltip"
+        "@tinji/button",
+        "@tinji/input-group",
+        "@tinji/menu",
+        "@tinji/tooltip"
       ],
       "type": "registry:block"
     },
@@ -7447,10 +7447,10 @@
       },
       "name": "p-input-group-18",
       "registryDependencies": [
-        "@coss/badge",
-        "@coss/button",
-        "@coss/input-group",
-        "@coss/menu"
+        "@tinji/badge",
+        "@tinji/button",
+        "@tinji/input-group",
+        "@tinji/menu"
       ],
       "type": "registry:block"
     },
@@ -7476,9 +7476,9 @@
       },
       "name": "p-input-group-19",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/input-group",
-        "@coss/toggle"
+        "@tinji/button",
+        "@tinji/input-group",
+        "@tinji/toggle"
       ],
       "type": "registry:block"
     },
@@ -7503,7 +7503,7 @@
       },
       "name": "p-input-group-20",
       "registryDependencies": [
-        "@coss/input-group"
+        "@tinji/input-group"
       ],
       "type": "registry:block"
     },
@@ -7529,9 +7529,9 @@
       },
       "name": "p-input-group-21",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/input-group",
-        "@coss/tooltip"
+        "@tinji/button",
+        "@tinji/input-group",
+        "@tinji/tooltip"
       ],
       "type": "registry:block"
     },
@@ -7556,8 +7556,8 @@
       },
       "name": "p-input-group-22",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/input-group"
+        "@tinji/button",
+        "@tinji/input-group"
       ],
       "type": "registry:block"
     },
@@ -7584,9 +7584,9 @@
       },
       "name": "p-input-group-23",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/input-group",
-        "@coss/tooltip"
+        "@tinji/button",
+        "@tinji/input-group",
+        "@tinji/tooltip"
       ],
       "type": "registry:block"
     },
@@ -7607,7 +7607,7 @@
       },
       "name": "p-input-group-24",
       "registryDependencies": [
-        "@coss/input-group"
+        "@tinji/input-group"
       ],
       "type": "registry:block"
     },
@@ -7628,8 +7628,8 @@
       },
       "name": "p-input-18",
       "registryDependencies": [
-        "@coss/field",
-        "@coss/input"
+        "@tinji/field",
+        "@tinji/input"
       ],
       "type": "registry:block"
     },
@@ -7649,7 +7649,7 @@
       },
       "name": "p-input-19",
       "registryDependencies": [
-        "@coss/input"
+        "@tinji/input"
       ],
       "type": "registry:block"
     },
@@ -7675,9 +7675,9 @@
       },
       "name": "p-input-group-26",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/input-group",
-        "@coss/label"
+        "@tinji/button",
+        "@tinji/input-group",
+        "@tinji/label"
       ],
       "type": "registry:block"
     },
@@ -7704,10 +7704,10 @@
       },
       "name": "p-input-group-27",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/input-group",
-        "@coss/select",
-        "@coss/tooltip"
+        "@tinji/button",
+        "@tinji/input-group",
+        "@tinji/select",
+        "@tinji/tooltip"
       ],
       "type": "registry:block"
     },
@@ -7733,9 +7733,9 @@
       },
       "name": "p-input-group-28",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/input-group",
-        "@coss/tooltip"
+        "@tinji/button",
+        "@tinji/input-group",
+        "@tinji/tooltip"
       ],
       "type": "registry:block"
     },
@@ -7761,9 +7761,9 @@
       },
       "name": "p-input-group-29",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/input-group",
-        "@coss/tooltip"
+        "@tinji/button",
+        "@tinji/input-group",
+        "@tinji/tooltip"
       ],
       "type": "registry:block"
     },
@@ -7783,7 +7783,7 @@
       },
       "name": "p-meter-1",
       "registryDependencies": [
-        "@coss/meter"
+        "@tinji/meter"
       ],
       "type": "registry:block"
     },
@@ -7803,7 +7803,7 @@
       },
       "name": "p-meter-2",
       "registryDependencies": [
-        "@coss/meter"
+        "@tinji/meter"
       ],
       "type": "registry:block"
     },
@@ -7823,7 +7823,7 @@
       },
       "name": "p-meter-3",
       "registryDependencies": [
-        "@coss/meter"
+        "@tinji/meter"
       ],
       "type": "registry:block"
     },
@@ -7843,7 +7843,7 @@
       },
       "name": "p-meter-4",
       "registryDependencies": [
-        "@coss/meter"
+        "@tinji/meter"
       ],
       "type": "registry:block"
     },
@@ -7861,8 +7861,8 @@
       ],
       "name": "p-menu-1",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/menu"
+        "@tinji/button",
+        "@tinji/menu"
       ],
       "type": "registry:block"
     },
@@ -7880,8 +7880,8 @@
       ],
       "name": "p-menu-2",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/menu"
+        "@tinji/button",
+        "@tinji/menu"
       ],
       "type": "registry:block"
     },
@@ -7899,8 +7899,8 @@
       ],
       "name": "p-menu-3",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/menu"
+        "@tinji/button",
+        "@tinji/menu"
       ],
       "type": "registry:block"
     },
@@ -7919,8 +7919,8 @@
       ],
       "name": "p-menu-9",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/menu"
+        "@tinji/button",
+        "@tinji/menu"
       ],
       "type": "registry:block"
     },
@@ -7938,8 +7938,8 @@
       ],
       "name": "p-menu-4",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/menu"
+        "@tinji/button",
+        "@tinji/menu"
       ],
       "type": "registry:block"
     },
@@ -7957,8 +7957,8 @@
       ],
       "name": "p-menu-5",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/menu"
+        "@tinji/button",
+        "@tinji/menu"
       ],
       "type": "registry:block"
     },
@@ -7976,8 +7976,8 @@
       ],
       "name": "p-menu-6",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/menu"
+        "@tinji/button",
+        "@tinji/menu"
       ],
       "type": "registry:block"
     },
@@ -7995,8 +7995,8 @@
       ],
       "name": "p-menu-7",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/menu"
+        "@tinji/button",
+        "@tinji/menu"
       ],
       "type": "registry:block"
     },
@@ -8014,8 +8014,8 @@
       ],
       "name": "p-menu-8",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/menu"
+        "@tinji/button",
+        "@tinji/menu"
       ],
       "type": "registry:block"
     },
@@ -8036,7 +8036,7 @@
       },
       "name": "p-context-menu-1",
       "registryDependencies": [
-        "@coss/context-menu"
+        "@tinji/context-menu"
       ],
       "type": "registry:block"
     },
@@ -8057,7 +8057,7 @@
       },
       "name": "p-context-menu-2",
       "registryDependencies": [
-        "@coss/context-menu"
+        "@tinji/context-menu"
       ],
       "type": "registry:block"
     },
@@ -8078,7 +8078,7 @@
       },
       "name": "p-context-menu-3",
       "registryDependencies": [
-        "@coss/context-menu"
+        "@tinji/context-menu"
       ],
       "type": "registry:block"
     },
@@ -8099,7 +8099,7 @@
       },
       "name": "p-context-menu-4",
       "registryDependencies": [
-        "@coss/context-menu"
+        "@tinji/context-menu"
       ],
       "type": "registry:block"
     },
@@ -8120,7 +8120,7 @@
       },
       "name": "p-context-menu-5",
       "registryDependencies": [
-        "@coss/context-menu"
+        "@tinji/context-menu"
       ],
       "type": "registry:block"
     },
@@ -8144,7 +8144,7 @@
       },
       "name": "p-context-menu-6",
       "registryDependencies": [
-        "@coss/context-menu"
+        "@tinji/context-menu"
       ],
       "type": "registry:block"
     },
@@ -8165,7 +8165,7 @@
       },
       "name": "p-context-menu-7",
       "registryDependencies": [
-        "@coss/context-menu"
+        "@tinji/context-menu"
       ],
       "type": "registry:block"
     },
@@ -8187,7 +8187,7 @@
       },
       "name": "p-context-menu-8",
       "registryDependencies": [
-        "@coss/context-menu"
+        "@tinji/context-menu"
       ],
       "type": "registry:block"
     },
@@ -8208,7 +8208,7 @@
       },
       "name": "p-number-field-1",
       "registryDependencies": [
-        "@coss/number-field"
+        "@tinji/number-field"
       ],
       "type": "registry:block"
     },
@@ -8229,7 +8229,7 @@
       },
       "name": "p-number-field-2",
       "registryDependencies": [
-        "@coss/number-field"
+        "@tinji/number-field"
       ],
       "type": "registry:block"
     },
@@ -8250,7 +8250,7 @@
       },
       "name": "p-number-field-3",
       "registryDependencies": [
-        "@coss/number-field"
+        "@tinji/number-field"
       ],
       "type": "registry:block"
     },
@@ -8271,7 +8271,7 @@
       },
       "name": "p-number-field-4",
       "registryDependencies": [
-        "@coss/number-field"
+        "@tinji/number-field"
       ],
       "type": "registry:block"
     },
@@ -8292,8 +8292,8 @@
       },
       "name": "p-number-field-5",
       "registryDependencies": [
-        "@coss/label",
-        "@coss/number-field"
+        "@tinji/label",
+        "@tinji/number-field"
       ],
       "type": "registry:block"
     },
@@ -8314,7 +8314,7 @@
       },
       "name": "p-number-field-6",
       "registryDependencies": [
-        "@coss/number-field"
+        "@tinji/number-field"
       ],
       "type": "registry:block"
     },
@@ -8335,7 +8335,7 @@
       },
       "name": "p-number-field-7",
       "registryDependencies": [
-        "@coss/number-field"
+        "@tinji/number-field"
       ],
       "type": "registry:block"
     },
@@ -8356,7 +8356,7 @@
       },
       "name": "p-number-field-8",
       "registryDependencies": [
-        "@coss/number-field"
+        "@tinji/number-field"
       ],
       "type": "registry:block"
     },
@@ -8377,7 +8377,7 @@
       },
       "name": "p-number-field-9",
       "registryDependencies": [
-        "@coss/number-field"
+        "@tinji/number-field"
       ],
       "type": "registry:block"
     },
@@ -8404,10 +8404,10 @@
       },
       "name": "p-number-field-10",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/field",
-        "@coss/form",
-        "@coss/number-field"
+        "@tinji/button",
+        "@tinji/field",
+        "@tinji/form",
+        "@tinji/number-field"
       ],
       "type": "registry:block"
     },
@@ -8428,7 +8428,7 @@
       },
       "name": "p-number-field-11",
       "registryDependencies": [
-        "@coss/number-field"
+        "@tinji/number-field"
       ],
       "type": "registry:block"
     },
@@ -8445,7 +8445,7 @@
       ],
       "name": "p-pagination-1",
       "registryDependencies": [
-        "@coss/pagination"
+        "@tinji/pagination"
       ],
       "type": "registry:block"
     },
@@ -8465,8 +8465,8 @@
       },
       "name": "p-pagination-2",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/pagination"
+        "@tinji/button",
+        "@tinji/pagination"
       ],
       "type": "registry:block"
     },
@@ -8487,9 +8487,9 @@
       },
       "name": "p-pagination-3",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/pagination",
-        "@coss/select"
+        "@tinji/button",
+        "@tinji/pagination",
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -8510,11 +8510,11 @@
       ],
       "name": "p-popover-1",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/field",
-        "@coss/form",
-        "@coss/popover",
-        "@coss/textarea"
+        "@tinji/button",
+        "@tinji/field",
+        "@tinji/form",
+        "@tinji/popover",
+        "@tinji/textarea"
       ],
       "type": "registry:block"
     },
@@ -8535,8 +8535,8 @@
       ],
       "name": "p-popover-2",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/popover"
+        "@tinji/button",
+        "@tinji/popover"
       ],
       "type": "registry:block"
     },
@@ -8558,9 +8558,9 @@
       ],
       "name": "p-popover-3",
       "registryDependencies": [
-        "@coss/avatar",
-        "@coss/button",
-        "@coss/popover"
+        "@tinji/avatar",
+        "@tinji/button",
+        "@tinji/popover"
       ],
       "type": "registry:block"
     },
@@ -8580,8 +8580,8 @@
       ],
       "name": "p-preview-card-1",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/preview-card"
+        "@tinji/button",
+        "@tinji/preview-card"
       ],
       "type": "registry:block"
     },
@@ -8601,7 +8601,7 @@
       },
       "name": "p-progress-1",
       "registryDependencies": [
-        "@coss/progress"
+        "@tinji/progress"
       ],
       "type": "registry:block"
     },
@@ -8621,7 +8621,7 @@
       },
       "name": "p-progress-2",
       "registryDependencies": [
-        "@coss/progress"
+        "@tinji/progress"
       ],
       "type": "registry:block"
     },
@@ -8641,7 +8641,7 @@
       },
       "name": "p-progress-3",
       "registryDependencies": [
-        "@coss/progress"
+        "@tinji/progress"
       ],
       "type": "registry:block"
     },
@@ -8658,8 +8658,8 @@
       ],
       "name": "p-radio-group-1",
       "registryDependencies": [
-        "@coss/label",
-        "@coss/radio-group"
+        "@tinji/label",
+        "@tinji/radio-group"
       ],
       "type": "registry:block"
     },
@@ -8676,8 +8676,8 @@
       ],
       "name": "p-radio-group-2",
       "registryDependencies": [
-        "@coss/label",
-        "@coss/radio-group"
+        "@tinji/label",
+        "@tinji/radio-group"
       ],
       "type": "registry:block"
     },
@@ -8694,8 +8694,8 @@
       ],
       "name": "p-radio-group-3",
       "registryDependencies": [
-        "@coss/label",
-        "@coss/radio-group"
+        "@tinji/label",
+        "@tinji/radio-group"
       ],
       "type": "registry:block"
     },
@@ -8712,8 +8712,8 @@
       ],
       "name": "p-radio-group-4",
       "registryDependencies": [
-        "@coss/label",
-        "@coss/radio-group"
+        "@tinji/label",
+        "@tinji/radio-group"
       ],
       "type": "registry:block"
     },
@@ -8731,11 +8731,11 @@
       ],
       "name": "p-radio-group-5",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/field",
-        "@coss/fieldset",
-        "@coss/form",
-        "@coss/radio-group"
+        "@tinji/button",
+        "@tinji/field",
+        "@tinji/fieldset",
+        "@tinji/form",
+        "@tinji/radio-group"
       ],
       "type": "registry:block"
     },
@@ -8759,9 +8759,9 @@
       },
       "name": "p-radio-group-6",
       "registryDependencies": [
-        "@coss/field",
-        "@coss/fieldset",
-        "@coss/radio-group"
+        "@tinji/field",
+        "@tinji/fieldset",
+        "@tinji/radio-group"
       ],
       "type": "registry:block"
     },
@@ -8781,7 +8781,7 @@
       },
       "name": "p-scroll-area-1",
       "registryDependencies": [
-        "@coss/scroll-area"
+        "@tinji/scroll-area"
       ],
       "type": "registry:block"
     },
@@ -8798,7 +8798,7 @@
       ],
       "name": "p-scroll-area-2",
       "registryDependencies": [
-        "@coss/scroll-area"
+        "@tinji/scroll-area"
       ],
       "type": "registry:block"
     },
@@ -8815,7 +8815,7 @@
       ],
       "name": "p-scroll-area-3",
       "registryDependencies": [
-        "@coss/scroll-area"
+        "@tinji/scroll-area"
       ],
       "type": "registry:block"
     },
@@ -8835,7 +8835,7 @@
       },
       "name": "p-scroll-area-4",
       "registryDependencies": [
-        "@coss/scroll-area"
+        "@tinji/scroll-area"
       ],
       "type": "registry:block"
     },
@@ -8852,7 +8852,7 @@
       ],
       "name": "p-scroll-area-5",
       "registryDependencies": [
-        "@coss/scroll-area"
+        "@tinji/scroll-area"
       ],
       "type": "registry:block"
     },
@@ -8872,7 +8872,7 @@
       },
       "name": "p-select-1",
       "registryDependencies": [
-        "@coss/select"
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -8892,7 +8892,7 @@
       },
       "name": "p-select-2",
       "registryDependencies": [
-        "@coss/select"
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -8912,7 +8912,7 @@
       },
       "name": "p-select-3",
       "registryDependencies": [
-        "@coss/select"
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -8932,7 +8932,7 @@
       },
       "name": "p-select-4",
       "registryDependencies": [
-        "@coss/select"
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -8952,7 +8952,7 @@
       },
       "name": "p-select-5",
       "registryDependencies": [
-        "@coss/select"
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -8972,7 +8972,7 @@
       },
       "name": "p-select-6",
       "registryDependencies": [
-        "@coss/select"
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -8992,7 +8992,7 @@
       },
       "name": "p-select-7",
       "registryDependencies": [
-        "@coss/select"
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -9015,7 +9015,7 @@
       },
       "name": "p-select-8",
       "registryDependencies": [
-        "@coss/select"
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -9038,7 +9038,7 @@
       },
       "name": "p-select-9",
       "registryDependencies": [
-        "@coss/select"
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -9058,7 +9058,7 @@
       },
       "name": "p-select-10",
       "registryDependencies": [
-        "@coss/select"
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -9079,7 +9079,7 @@
       },
       "name": "p-select-12",
       "registryDependencies": [
-        "@coss/select"
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -9101,7 +9101,7 @@
       },
       "name": "p-select-13",
       "registryDependencies": [
-        "@coss/select"
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -9121,7 +9121,7 @@
       },
       "name": "p-select-14",
       "registryDependencies": [
-        "@coss/select"
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -9141,7 +9141,7 @@
       },
       "name": "p-select-15",
       "registryDependencies": [
-        "@coss/select"
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -9161,7 +9161,7 @@
       },
       "name": "p-select-16",
       "registryDependencies": [
-        "@coss/select"
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -9181,7 +9181,7 @@
       },
       "name": "p-select-17",
       "registryDependencies": [
-        "@coss/select"
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -9201,7 +9201,7 @@
       },
       "name": "p-select-18",
       "registryDependencies": [
-        "@coss/select"
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -9222,8 +9222,8 @@
       },
       "name": "p-select-19",
       "registryDependencies": [
-        "@coss/avatar",
-        "@coss/select"
+        "@tinji/avatar",
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -9244,8 +9244,8 @@
       },
       "name": "p-select-20",
       "registryDependencies": [
-        "@coss/avatar",
-        "@coss/select"
+        "@tinji/avatar",
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -9262,7 +9262,7 @@
       ],
       "name": "p-select-21",
       "registryDependencies": [
-        "@coss/select"
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -9282,7 +9282,7 @@
       },
       "name": "p-select-22",
       "registryDependencies": [
-        "@coss/select"
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -9302,7 +9302,7 @@
       },
       "name": "p-select-23",
       "registryDependencies": [
-        "@coss/select"
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -9322,10 +9322,10 @@
       },
       "name": "p-select-11",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/field",
-        "@coss/form",
-        "@coss/select"
+        "@tinji/button",
+        "@tinji/field",
+        "@tinji/form",
+        "@tinji/select"
       ],
       "type": "registry:block"
     },
@@ -9342,7 +9342,7 @@
       ],
       "name": "p-separator-1",
       "registryDependencies": [
-        "@coss/separator"
+        "@tinji/separator"
       ],
       "type": "registry:block"
     },
@@ -9359,11 +9359,11 @@
       ],
       "name": "p-sheet-1",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/field",
-        "@coss/form",
-        "@coss/input",
-        "@coss/sheet"
+        "@tinji/button",
+        "@tinji/field",
+        "@tinji/form",
+        "@tinji/input",
+        "@tinji/sheet"
       ],
       "type": "registry:block"
     },
@@ -9380,11 +9380,11 @@
       ],
       "name": "p-sheet-2",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/field",
-        "@coss/form",
-        "@coss/input",
-        "@coss/sheet"
+        "@tinji/button",
+        "@tinji/field",
+        "@tinji/form",
+        "@tinji/input",
+        "@tinji/sheet"
       ],
       "type": "registry:block"
     },
@@ -9401,8 +9401,8 @@
       ],
       "name": "p-sheet-3",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/sheet"
+        "@tinji/button",
+        "@tinji/sheet"
       ],
       "type": "registry:block"
     },
@@ -9422,9 +9422,9 @@
       },
       "name": "p-skeleton-1",
       "registryDependencies": [
-        "@coss/avatar",
-        "@coss/button",
-        "@coss/skeleton"
+        "@tinji/avatar",
+        "@tinji/button",
+        "@tinji/skeleton"
       ],
       "type": "registry:block"
     },
@@ -9444,7 +9444,7 @@
       },
       "name": "p-skeleton-2",
       "registryDependencies": [
-        "@coss/skeleton"
+        "@tinji/skeleton"
       ],
       "type": "registry:block"
     },
@@ -9464,7 +9464,7 @@
       },
       "name": "p-slider-1",
       "registryDependencies": [
-        "@coss/slider"
+        "@tinji/slider"
       ],
       "type": "registry:block"
     },
@@ -9484,8 +9484,8 @@
       },
       "name": "p-slider-2",
       "registryDependencies": [
-        "@coss/field",
-        "@coss/slider"
+        "@tinji/field",
+        "@tinji/slider"
       ],
       "type": "registry:block"
     },
@@ -9506,7 +9506,7 @@
       },
       "name": "p-slider-3",
       "registryDependencies": [
-        "@coss/slider"
+        "@tinji/slider"
       ],
       "type": "registry:block"
     },
@@ -9526,7 +9526,7 @@
       },
       "name": "p-slider-4",
       "registryDependencies": [
-        "@coss/slider"
+        "@tinji/slider"
       ],
       "type": "registry:block"
     },
@@ -9546,7 +9546,7 @@
       },
       "name": "p-slider-5",
       "registryDependencies": [
-        "@coss/slider"
+        "@tinji/slider"
       ],
       "type": "registry:block"
     },
@@ -9566,7 +9566,7 @@
       },
       "name": "p-slider-6",
       "registryDependencies": [
-        "@coss/slider"
+        "@tinji/slider"
       ],
       "type": "registry:block"
     },
@@ -9586,7 +9586,7 @@
       },
       "name": "p-slider-7",
       "registryDependencies": [
-        "@coss/slider"
+        "@tinji/slider"
       ],
       "type": "registry:block"
     },
@@ -9606,7 +9606,7 @@
       },
       "name": "p-slider-8",
       "registryDependencies": [
-        "@coss/slider"
+        "@tinji/slider"
       ],
       "type": "registry:block"
     },
@@ -9626,7 +9626,7 @@
       },
       "name": "p-slider-9",
       "registryDependencies": [
-        "@coss/slider"
+        "@tinji/slider"
       ],
       "type": "registry:block"
     },
@@ -9646,7 +9646,7 @@
       },
       "name": "p-slider-10",
       "registryDependencies": [
-        "@coss/slider"
+        "@tinji/slider"
       ],
       "type": "registry:block"
     },
@@ -9669,8 +9669,8 @@
       },
       "name": "p-slider-11",
       "registryDependencies": [
-        "@coss/field",
-        "@coss/slider"
+        "@tinji/field",
+        "@tinji/slider"
       ],
       "type": "registry:block"
     },
@@ -9691,8 +9691,8 @@
       },
       "name": "p-slider-12",
       "registryDependencies": [
-        "@coss/number-field",
-        "@coss/slider"
+        "@tinji/number-field",
+        "@tinji/slider"
       ],
       "type": "registry:block"
     },
@@ -9713,8 +9713,8 @@
       },
       "name": "p-slider-13",
       "registryDependencies": [
-        "@coss/number-field",
-        "@coss/slider"
+        "@tinji/number-field",
+        "@tinji/slider"
       ],
       "type": "registry:block"
     },
@@ -9738,9 +9738,9 @@
       },
       "name": "p-slider-14",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/field",
-        "@coss/slider"
+        "@tinji/button",
+        "@tinji/field",
+        "@tinji/slider"
       ],
       "type": "registry:block"
     },
@@ -9760,8 +9760,8 @@
       },
       "name": "p-slider-15",
       "registryDependencies": [
-        "@coss/fieldset",
-        "@coss/slider"
+        "@tinji/fieldset",
+        "@tinji/slider"
       ],
       "type": "registry:block"
     },
@@ -9781,8 +9781,8 @@
       },
       "name": "p-slider-16",
       "registryDependencies": [
-        "@coss/field",
-        "@coss/slider"
+        "@tinji/field",
+        "@tinji/slider"
       ],
       "type": "registry:block"
     },
@@ -9799,7 +9799,7 @@
       ],
       "name": "p-slider-17",
       "registryDependencies": [
-        "@coss/slider"
+        "@tinji/slider"
       ],
       "type": "registry:block"
     },
@@ -9816,7 +9816,7 @@
       ],
       "name": "p-slider-18",
       "registryDependencies": [
-        "@coss/slider"
+        "@tinji/slider"
       ],
       "type": "registry:block"
     },
@@ -9834,8 +9834,8 @@
       ],
       "name": "p-slider-19",
       "registryDependencies": [
-        "@coss/number-field",
-        "@coss/slider"
+        "@tinji/number-field",
+        "@tinji/slider"
       ],
       "type": "registry:block"
     },
@@ -9852,7 +9852,7 @@
       ],
       "name": "p-slider-20",
       "registryDependencies": [
-        "@coss/slider"
+        "@tinji/slider"
       ],
       "type": "registry:block"
     },
@@ -9877,11 +9877,11 @@
       },
       "name": "p-slider-21",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/fieldset",
-        "@coss/label",
-        "@coss/number-field",
-        "@coss/slider"
+        "@tinji/button",
+        "@tinji/fieldset",
+        "@tinji/label",
+        "@tinji/number-field",
+        "@tinji/slider"
       ],
       "type": "registry:block"
     },
@@ -9905,10 +9905,10 @@
       },
       "name": "p-slider-22",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/input-group",
-        "@coss/number-field",
-        "@coss/slider"
+        "@tinji/button",
+        "@tinji/input-group",
+        "@tinji/number-field",
+        "@tinji/slider"
       ],
       "type": "registry:block"
     },
@@ -9929,11 +9929,11 @@
       },
       "name": "p-slider-23",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/field",
-        "@coss/fieldset",
-        "@coss/form",
-        "@coss/slider"
+        "@tinji/button",
+        "@tinji/field",
+        "@tinji/fieldset",
+        "@tinji/form",
+        "@tinji/slider"
       ],
       "type": "registry:block"
     },
@@ -9950,7 +9950,7 @@
       ],
       "name": "p-spinner-1",
       "registryDependencies": [
-        "@coss/spinner"
+        "@tinji/spinner"
       ],
       "type": "registry:block"
     },
@@ -9967,8 +9967,8 @@
       ],
       "name": "p-switch-1",
       "registryDependencies": [
-        "@coss/label",
-        "@coss/switch"
+        "@tinji/label",
+        "@tinji/switch"
       ],
       "type": "registry:block"
     },
@@ -9985,8 +9985,8 @@
       ],
       "name": "p-switch-2",
       "registryDependencies": [
-        "@coss/label",
-        "@coss/switch"
+        "@tinji/label",
+        "@tinji/switch"
       ],
       "type": "registry:block"
     },
@@ -10003,8 +10003,8 @@
       ],
       "name": "p-switch-3",
       "registryDependencies": [
-        "@coss/label",
-        "@coss/switch"
+        "@tinji/label",
+        "@tinji/switch"
       ],
       "type": "registry:block"
     },
@@ -10021,8 +10021,8 @@
       ],
       "name": "p-switch-4",
       "registryDependencies": [
-        "@coss/label",
-        "@coss/switch"
+        "@tinji/label",
+        "@tinji/switch"
       ],
       "type": "registry:block"
     },
@@ -10039,10 +10039,10 @@
       ],
       "name": "p-switch-5",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/field",
-        "@coss/form",
-        "@coss/switch"
+        "@tinji/button",
+        "@tinji/field",
+        "@tinji/form",
+        "@tinji/switch"
       ],
       "type": "registry:block"
     },
@@ -10059,7 +10059,7 @@
       ],
       "name": "p-switch-6",
       "registryDependencies": [
-        "@coss/switch"
+        "@tinji/switch"
       ],
       "type": "registry:block"
     },
@@ -10080,8 +10080,8 @@
       },
       "name": "p-table-1",
       "registryDependencies": [
-        "@coss/badge",
-        "@coss/table"
+        "@tinji/badge",
+        "@tinji/table"
       ],
       "type": "registry:block"
     },
@@ -10103,9 +10103,9 @@
       },
       "name": "p-table-2",
       "registryDependencies": [
-        "@coss/badge",
-        "@coss/frame",
-        "@coss/table"
+        "@tinji/badge",
+        "@tinji/frame",
+        "@tinji/table"
       ],
       "type": "registry:block"
     },
@@ -10131,10 +10131,10 @@
       },
       "name": "p-table-3",
       "registryDependencies": [
-        "@coss/badge",
-        "@coss/checkbox",
-        "@coss/frame",
-        "@coss/table"
+        "@tinji/badge",
+        "@tinji/checkbox",
+        "@tinji/frame",
+        "@tinji/table"
       ],
       "type": "registry:block"
     },
@@ -10163,13 +10163,13 @@
       },
       "name": "p-table-4",
       "registryDependencies": [
-        "@coss/badge",
-        "@coss/button",
-        "@coss/checkbox",
-        "@coss/frame",
-        "@coss/pagination",
-        "@coss/select",
-        "@coss/table"
+        "@tinji/badge",
+        "@tinji/button",
+        "@tinji/checkbox",
+        "@tinji/frame",
+        "@tinji/pagination",
+        "@tinji/select",
+        "@tinji/table"
       ],
       "type": "registry:block"
     },
@@ -10190,8 +10190,8 @@
       },
       "name": "p-table-5",
       "registryDependencies": [
-        "@coss/badge",
-        "@coss/table"
+        "@tinji/badge",
+        "@tinji/table"
       ],
       "type": "registry:block"
     },
@@ -10213,9 +10213,9 @@
       },
       "name": "p-table-7",
       "registryDependencies": [
-        "@coss/badge",
-        "@coss/card",
-        "@coss/table"
+        "@tinji/badge",
+        "@tinji/card",
+        "@tinji/table"
       ],
       "type": "registry:block"
     },
@@ -10242,10 +10242,10 @@
       },
       "name": "p-table-6",
       "registryDependencies": [
-        "@coss/badge",
-        "@coss/card",
-        "@coss/checkbox",
-        "@coss/table"
+        "@tinji/badge",
+        "@tinji/card",
+        "@tinji/checkbox",
+        "@tinji/table"
       ],
       "type": "registry:block"
     },
@@ -10275,13 +10275,13 @@
       },
       "name": "p-table-8",
       "registryDependencies": [
-        "@coss/badge",
-        "@coss/button",
-        "@coss/card",
-        "@coss/checkbox",
-        "@coss/pagination",
-        "@coss/select",
-        "@coss/table"
+        "@tinji/badge",
+        "@tinji/button",
+        "@tinji/card",
+        "@tinji/checkbox",
+        "@tinji/pagination",
+        "@tinji/select",
+        "@tinji/table"
       ],
       "type": "registry:block"
     },
@@ -10298,7 +10298,7 @@
       ],
       "name": "p-tabs-1",
       "registryDependencies": [
-        "@coss/tabs"
+        "@tinji/tabs"
       ],
       "type": "registry:block"
     },
@@ -10315,7 +10315,7 @@
       ],
       "name": "p-tabs-2",
       "registryDependencies": [
-        "@coss/tabs"
+        "@tinji/tabs"
       ],
       "type": "registry:block"
     },
@@ -10335,7 +10335,7 @@
       },
       "name": "p-tabs-3",
       "registryDependencies": [
-        "@coss/tabs"
+        "@tinji/tabs"
       ],
       "type": "registry:block"
     },
@@ -10355,7 +10355,7 @@
       },
       "name": "p-tabs-4",
       "registryDependencies": [
-        "@coss/tabs"
+        "@tinji/tabs"
       ],
       "type": "registry:block"
     },
@@ -10372,7 +10372,7 @@
       ],
       "name": "p-tabs-5",
       "registryDependencies": [
-        "@coss/tabs"
+        "@tinji/tabs"
       ],
       "type": "registry:block"
     },
@@ -10392,7 +10392,7 @@
       ],
       "name": "p-tabs-6",
       "registryDependencies": [
-        "@coss/tabs"
+        "@tinji/tabs"
       ],
       "type": "registry:block"
     },
@@ -10412,7 +10412,7 @@
       ],
       "name": "p-tabs-7",
       "registryDependencies": [
-        "@coss/tabs"
+        "@tinji/tabs"
       ],
       "type": "registry:block"
     },
@@ -10432,7 +10432,7 @@
       ],
       "name": "p-tabs-8",
       "registryDependencies": [
-        "@coss/tabs"
+        "@tinji/tabs"
       ],
       "type": "registry:block"
     },
@@ -10452,7 +10452,7 @@
       ],
       "name": "p-tabs-9",
       "registryDependencies": [
-        "@coss/tabs"
+        "@tinji/tabs"
       ],
       "type": "registry:block"
     },
@@ -10470,8 +10470,8 @@
       ],
       "name": "p-tabs-10",
       "registryDependencies": [
-        "@coss/badge",
-        "@coss/tabs"
+        "@tinji/badge",
+        "@tinji/tabs"
       ],
       "type": "registry:block"
     },
@@ -10494,7 +10494,7 @@
       },
       "name": "p-tabs-11",
       "registryDependencies": [
-        "@coss/tabs"
+        "@tinji/tabs"
       ],
       "type": "registry:block"
     },
@@ -10515,8 +10515,8 @@
       ],
       "name": "p-tabs-12",
       "registryDependencies": [
-        "@coss/badge",
-        "@coss/tabs"
+        "@tinji/badge",
+        "@tinji/tabs"
       ],
       "type": "registry:block"
     },
@@ -10537,8 +10537,8 @@
       ],
       "name": "p-tabs-13",
       "registryDependencies": [
-        "@coss/tabs",
-        "@coss/tooltip"
+        "@tinji/tabs",
+        "@tinji/tooltip"
       ],
       "type": "registry:block"
     },
@@ -10558,7 +10558,7 @@
       },
       "name": "p-textarea-1",
       "registryDependencies": [
-        "@coss/textarea"
+        "@tinji/textarea"
       ],
       "type": "registry:block"
     },
@@ -10578,7 +10578,7 @@
       },
       "name": "p-textarea-2",
       "registryDependencies": [
-        "@coss/textarea"
+        "@tinji/textarea"
       ],
       "type": "registry:block"
     },
@@ -10598,7 +10598,7 @@
       },
       "name": "p-textarea-3",
       "registryDependencies": [
-        "@coss/textarea"
+        "@tinji/textarea"
       ],
       "type": "registry:block"
     },
@@ -10618,7 +10618,7 @@
       },
       "name": "p-textarea-4",
       "registryDependencies": [
-        "@coss/textarea"
+        "@tinji/textarea"
       ],
       "type": "registry:block"
     },
@@ -10638,8 +10638,8 @@
       },
       "name": "p-textarea-5",
       "registryDependencies": [
-        "@coss/label",
-        "@coss/textarea"
+        "@tinji/label",
+        "@tinji/textarea"
       ],
       "type": "registry:block"
     },
@@ -10659,10 +10659,10 @@
       },
       "name": "p-textarea-6",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/field",
-        "@coss/form",
-        "@coss/textarea"
+        "@tinji/button",
+        "@tinji/field",
+        "@tinji/form",
+        "@tinji/textarea"
       ],
       "type": "registry:block"
     },
@@ -10683,8 +10683,8 @@
       },
       "name": "p-textarea-7",
       "registryDependencies": [
-        "@coss/label",
-        "@coss/textarea"
+        "@tinji/label",
+        "@tinji/textarea"
       ],
       "type": "registry:block"
     },
@@ -10705,8 +10705,8 @@
       },
       "name": "p-textarea-8",
       "registryDependencies": [
-        "@coss/label",
-        "@coss/textarea"
+        "@tinji/label",
+        "@tinji/textarea"
       ],
       "type": "registry:block"
     },
@@ -10726,7 +10726,7 @@
       },
       "name": "p-textarea-9",
       "registryDependencies": [
-        "@coss/textarea"
+        "@tinji/textarea"
       ],
       "type": "registry:block"
     },
@@ -10746,7 +10746,7 @@
       },
       "name": "p-textarea-10",
       "registryDependencies": [
-        "@coss/textarea"
+        "@tinji/textarea"
       ],
       "type": "registry:block"
     },
@@ -10767,8 +10767,8 @@
       },
       "name": "p-textarea-11",
       "registryDependencies": [
-        "@coss/field",
-        "@coss/textarea"
+        "@tinji/field",
+        "@tinji/textarea"
       ],
       "type": "registry:block"
     },
@@ -10790,8 +10790,8 @@
       },
       "name": "p-textarea-12",
       "registryDependencies": [
-        "@coss/field",
-        "@coss/textarea"
+        "@tinji/field",
+        "@tinji/textarea"
       ],
       "type": "registry:block"
     },
@@ -10811,7 +10811,7 @@
       },
       "name": "p-textarea-13",
       "registryDependencies": [
-        "@coss/textarea"
+        "@tinji/textarea"
       ],
       "type": "registry:block"
     },
@@ -10832,8 +10832,8 @@
       },
       "name": "p-textarea-14",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/textarea"
+        "@tinji/button",
+        "@tinji/textarea"
       ],
       "type": "registry:block"
     },
@@ -10854,8 +10854,8 @@
       },
       "name": "p-textarea-15",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/textarea"
+        "@tinji/button",
+        "@tinji/textarea"
       ],
       "type": "registry:block"
     },
@@ -10872,8 +10872,8 @@
       ],
       "name": "p-toast-1",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/toast"
+        "@tinji/button",
+        "@tinji/toast"
       ],
       "type": "registry:block"
     },
@@ -10890,8 +10890,8 @@
       ],
       "name": "p-toast-2",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/toast"
+        "@tinji/button",
+        "@tinji/toast"
       ],
       "type": "registry:block"
     },
@@ -10908,8 +10908,8 @@
       ],
       "name": "p-toast-3",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/toast"
+        "@tinji/button",
+        "@tinji/toast"
       ],
       "type": "registry:block"
     },
@@ -10926,8 +10926,8 @@
       ],
       "name": "p-toast-4",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/toast"
+        "@tinji/button",
+        "@tinji/toast"
       ],
       "type": "registry:block"
     },
@@ -10944,8 +10944,8 @@
       ],
       "name": "p-toast-5",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/toast"
+        "@tinji/button",
+        "@tinji/toast"
       ],
       "type": "registry:block"
     },
@@ -10962,8 +10962,8 @@
       ],
       "name": "p-toast-6",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/toast"
+        "@tinji/button",
+        "@tinji/toast"
       ],
       "type": "registry:block"
     },
@@ -10980,10 +10980,10 @@
       ],
       "name": "p-toast-7",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/toast",
-        "@coss/tooltip",
-        "@coss/use-copy-to-clipboard"
+        "@tinji/button",
+        "@tinji/toast",
+        "@tinji/tooltip",
+        "@tinji/use-copy-to-clipboard"
       ],
       "type": "registry:block"
     },
@@ -11000,9 +11000,9 @@
       ],
       "name": "p-toast-8",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/spinner",
-        "@coss/toast"
+        "@tinji/button",
+        "@tinji/spinner",
+        "@tinji/toast"
       ],
       "type": "registry:block"
     },
@@ -11023,8 +11023,8 @@
       ],
       "name": "p-toast-9",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/toast"
+        "@tinji/button",
+        "@tinji/toast"
       ],
       "type": "registry:block"
     },
@@ -11042,8 +11042,8 @@
       ],
       "name": "p-toast-10",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/toast"
+        "@tinji/button",
+        "@tinji/toast"
       ],
       "type": "registry:block"
     },
@@ -11062,8 +11062,8 @@
       ],
       "name": "p-toast-11",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/toast"
+        "@tinji/button",
+        "@tinji/toast"
       ],
       "type": "registry:block"
     },
@@ -11084,9 +11084,9 @@
       ],
       "name": "p-toast-12",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/toast",
-        "@coss/tooltip"
+        "@tinji/button",
+        "@tinji/toast",
+        "@tinji/tooltip"
       ],
       "type": "registry:block"
     },
@@ -11108,9 +11108,9 @@
       ],
       "name": "p-toast-13",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/toast",
-        "@coss/tooltip"
+        "@tinji/button",
+        "@tinji/toast",
+        "@tinji/tooltip"
       ],
       "type": "registry:block"
     },
@@ -11128,7 +11128,7 @@
       ],
       "name": "p-toggle-group-1",
       "registryDependencies": [
-        "@coss/toggle-group"
+        "@tinji/toggle-group"
       ],
       "type": "registry:block"
     },
@@ -11146,7 +11146,7 @@
       ],
       "name": "p-toggle-group-2",
       "registryDependencies": [
-        "@coss/toggle-group"
+        "@tinji/toggle-group"
       ],
       "type": "registry:block"
     },
@@ -11164,7 +11164,7 @@
       ],
       "name": "p-toggle-group-3",
       "registryDependencies": [
-        "@coss/toggle-group"
+        "@tinji/toggle-group"
       ],
       "type": "registry:block"
     },
@@ -11182,7 +11182,7 @@
       ],
       "name": "p-toggle-group-4",
       "registryDependencies": [
-        "@coss/toggle-group"
+        "@tinji/toggle-group"
       ],
       "type": "registry:block"
     },
@@ -11200,7 +11200,7 @@
       ],
       "name": "p-toggle-group-5",
       "registryDependencies": [
-        "@coss/toggle-group"
+        "@tinji/toggle-group"
       ],
       "type": "registry:block"
     },
@@ -11218,7 +11218,7 @@
       ],
       "name": "p-toggle-group-6",
       "registryDependencies": [
-        "@coss/toggle-group"
+        "@tinji/toggle-group"
       ],
       "type": "registry:block"
     },
@@ -11236,7 +11236,7 @@
       ],
       "name": "p-toggle-group-7",
       "registryDependencies": [
-        "@coss/toggle-group"
+        "@tinji/toggle-group"
       ],
       "type": "registry:block"
     },
@@ -11254,7 +11254,7 @@
       ],
       "name": "p-toggle-group-8",
       "registryDependencies": [
-        "@coss/toggle-group"
+        "@tinji/toggle-group"
       ],
       "type": "registry:block"
     },
@@ -11272,8 +11272,8 @@
       ],
       "name": "p-toggle-group-9",
       "registryDependencies": [
-        "@coss/toggle-group",
-        "@coss/tooltip"
+        "@tinji/toggle-group",
+        "@tinji/tooltip"
       ],
       "type": "registry:block"
     },
@@ -11290,7 +11290,7 @@
       ],
       "name": "p-toggle-1",
       "registryDependencies": [
-        "@coss/toggle"
+        "@tinji/toggle"
       ],
       "type": "registry:block"
     },
@@ -11307,7 +11307,7 @@
       ],
       "name": "p-toggle-2",
       "registryDependencies": [
-        "@coss/toggle"
+        "@tinji/toggle"
       ],
       "type": "registry:block"
     },
@@ -11327,7 +11327,7 @@
       ],
       "name": "p-toggle-3",
       "registryDependencies": [
-        "@coss/toggle"
+        "@tinji/toggle"
       ],
       "type": "registry:block"
     },
@@ -11344,7 +11344,7 @@
       ],
       "name": "p-toggle-4",
       "registryDependencies": [
-        "@coss/toggle"
+        "@tinji/toggle"
       ],
       "type": "registry:block"
     },
@@ -11361,7 +11361,7 @@
       ],
       "name": "p-toggle-5",
       "registryDependencies": [
-        "@coss/toggle"
+        "@tinji/toggle"
       ],
       "type": "registry:block"
     },
@@ -11378,7 +11378,7 @@
       ],
       "name": "p-toggle-6",
       "registryDependencies": [
-        "@coss/toggle"
+        "@tinji/toggle"
       ],
       "type": "registry:block"
     },
@@ -11398,7 +11398,7 @@
       ],
       "name": "p-toggle-7",
       "registryDependencies": [
-        "@coss/toggle"
+        "@tinji/toggle"
       ],
       "type": "registry:block"
     },
@@ -11420,9 +11420,9 @@
       ],
       "name": "p-toggle-8",
       "registryDependencies": [
-        "@coss/toggle",
-        "@coss/tooltip",
-        "@coss/toast"
+        "@tinji/toggle",
+        "@tinji/tooltip",
+        "@tinji/toast"
       ],
       "type": "registry:block"
     },
@@ -11442,11 +11442,11 @@
       ],
       "name": "p-toolbar-1",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/select",
-        "@coss/toggle-group",
-        "@coss/toolbar",
-        "@coss/tooltip"
+        "@tinji/button",
+        "@tinji/select",
+        "@tinji/toggle-group",
+        "@tinji/toolbar",
+        "@tinji/tooltip"
       ],
       "type": "registry:block"
     },
@@ -11463,8 +11463,8 @@
       ],
       "name": "p-tooltip-1",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/tooltip"
+        "@tinji/button",
+        "@tinji/tooltip"
       ],
       "type": "registry:block"
     },
@@ -11481,8 +11481,8 @@
       ],
       "name": "p-tooltip-2",
       "registryDependencies": [
-        "@coss/toggle-group",
-        "@coss/tooltip"
+        "@tinji/toggle-group",
+        "@tinji/tooltip"
       ],
       "type": "registry:block"
     },
@@ -11499,8 +11499,8 @@
       ],
       "name": "p-tooltip-3",
       "registryDependencies": [
-        "@coss/toggle-group",
-        "@coss/tooltip"
+        "@tinji/toggle-group",
+        "@tinji/tooltip"
       ],
       "type": "registry:block"
     },
@@ -11517,9 +11517,9 @@
       ],
       "name": "p-tooltip-4",
       "registryDependencies": [
-        "@coss/button",
-        "@coss/group",
-        "@coss/tooltip"
+        "@tinji/button",
+        "@tinji/group",
+        "@tinji/tooltip"
       ],
       "type": "registry:block"
     },
@@ -11536,7 +11536,7 @@
       ],
       "name": "p-typography-1",
       "registryDependencies": [
-        "@coss/typography"
+        "@tinji/typography"
       ],
       "type": "registry:block"
     },
@@ -11553,7 +11553,7 @@
       ],
       "name": "p-typography-2",
       "registryDependencies": [
-        "@coss/typography"
+        "@tinji/typography"
       ],
       "type": "registry:block"
     },
@@ -11570,8 +11570,8 @@
       ],
       "name": "p-avatar-group-1",
       "registryDependencies": [
-        "@coss/avatar",
-        "@coss/avatar-group"
+        "@tinji/avatar",
+        "@tinji/avatar-group"
       ],
       "type": "registry:block"
     },
@@ -11588,8 +11588,8 @@
       ],
       "name": "p-avatar-stack-1",
       "registryDependencies": [
-        "@coss/avatar",
-        "@coss/avatar-stack"
+        "@tinji/avatar",
+        "@tinji/avatar-stack"
       ],
       "type": "registry:block"
     },
@@ -11606,7 +11606,7 @@
       ],
       "name": "p-credit-card-1",
       "registryDependencies": [
-        "@coss/credit-card"
+        "@tinji/credit-card"
       ],
       "type": "registry:block"
     },
@@ -11623,7 +11623,7 @@
       ],
       "name": "p-widget-stack-1",
       "registryDependencies": [
-        "@coss/widget-stack"
+        "@tinji/widget-stack"
       ],
       "type": "registry:block"
     },
@@ -11643,7 +11643,7 @@
       ],
       "name": "p-lightbox-1",
       "registryDependencies": [
-        "@coss/lightbox"
+        "@tinji/lightbox"
       ],
       "type": "registry:block"
     },
@@ -11663,7 +11663,7 @@
       ],
       "name": "p-scroll-gallery-1",
       "registryDependencies": [
-        "@coss/scroll-gallery"
+        "@tinji/scroll-gallery"
       ],
       "type": "registry:block"
     },
@@ -11680,7 +11680,7 @@
       ],
       "name": "p-segmented-control-1",
       "registryDependencies": [
-        "@coss/segmented-control"
+        "@tinji/segmented-control"
       ],
       "type": "registry:block"
     },
@@ -11697,7 +11697,7 @@
       ],
       "name": "p-segmented-control-2",
       "registryDependencies": [
-        "@coss/segmented-control"
+        "@tinji/segmented-control"
       ],
       "type": "registry:block"
     },
@@ -11714,7 +11714,7 @@
       ],
       "name": "p-segmented-control-3",
       "registryDependencies": [
-        "@coss/segmented-control"
+        "@tinji/segmented-control"
       ],
       "type": "registry:block"
     },
@@ -11731,7 +11731,7 @@
       ],
       "name": "p-tabs-nav-1",
       "registryDependencies": [
-        "@coss/tabs-nav"
+        "@tinji/tabs-nav"
       ],
       "type": "registry:block"
     },
@@ -11751,7 +11751,7 @@
       ],
       "name": "p-filter-chip-1",
       "registryDependencies": [
-        "@coss/filter-chip"
+        "@tinji/filter-chip"
       ],
       "type": "registry:block"
     },
@@ -11768,7 +11768,7 @@
       ],
       "name": "p-radio-button-group-1",
       "registryDependencies": [
-        "@coss/radio-button-group"
+        "@tinji/radio-button-group"
       ],
       "type": "registry:block"
     },
@@ -11785,7 +11785,7 @@
       ],
       "name": "p-data-list-1",
       "registryDependencies": [
-        "@coss/data-list"
+        "@tinji/data-list"
       ],
       "type": "registry:block"
     },
@@ -11802,7 +11802,7 @@
       ],
       "name": "p-stacked-horizontal-bar-chart-1",
       "registryDependencies": [
-        "@coss/stacked-horizontal-bar-chart"
+        "@tinji/stacked-horizontal-bar-chart"
       ],
       "type": "registry:block"
     },
@@ -11819,7 +11819,7 @@
       ],
       "name": "p-date-field-1",
       "registryDependencies": [
-        "@coss/date-field"
+        "@tinji/date-field"
       ],
       "type": "registry:block"
     },
@@ -11936,7 +11936,7 @@
         "class-variance-authority",
         "lucide-react"
       ],
-      "description": "Complete coss theme: colors, sidebar, fonts, and base styles. Use with `npx shadcn init @coss/style` for full project setup.",
+      "description": "Complete tinji theme: colors, sidebar, fonts, and base styles. Use with `npx shadcn init @tinji/style` for full project setup.",
       "devDependencies": [
         "tw-animate-css"
       ],
@@ -11944,8 +11944,8 @@
       "name": "style",
       "registryDependencies": [
         "utils",
-        "@coss/ui",
-        "@coss/fonts"
+        "@tinji/ui",
+        "@tinji/fonts"
       ],
       "type": "registry:style"
     },
@@ -12013,9 +12013,9 @@
       "name": "fonts",
       "type": "registry:ui",
       "registryDependencies": [
-        "@coss/font-sans",
-        "@coss/font-heading",
-        "@coss/font-mono"
+        "@tinji/font-sans",
+        "@tinji/font-heading",
+        "@tinji/font-mono"
       ],
       "files": []
     },
@@ -12148,5 +12148,5 @@
       "type": "registry:hook"
     }
   ],
-  "name": "coss ui"
+  "name": "tinji ui"
 }

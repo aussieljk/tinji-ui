@@ -22,8 +22,8 @@ import {
 
 const organizations = [
   {
-    label: "coss.com",
-    value: "coss",
+    label: "ui.tinji.dev",
+    value: "tinji",
   },
   {
     label: "Cruip",
@@ -34,7 +34,7 @@ const organizations = [
 export default function Component() {
   const id = useId();
   const [open, setOpen] = useState<boolean>(false);
-  const [value, setValue] = useState<string>("coss");
+  const [value, setValue] = useState<string>("tinji");
 
   return (
     <div className="*:not-first:mt-2">

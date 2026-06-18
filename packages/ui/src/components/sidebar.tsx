@@ -2,25 +2,25 @@
 
 import { mergeProps } from "@base-ui/react/merge-props";
 import { useRender } from "@base-ui/react/use-render";
-import { Button } from "@coss/ui/components/button";
-import { Input } from "@coss/ui/components/input";
-import { ScrollArea } from "@coss/ui/components/scroll-area";
-import { Separator } from "@coss/ui/components/separator";
+import { Button } from "@tinji/ui/components/button";
+import { Input } from "@tinji/ui/components/input";
+import { ScrollArea } from "@tinji/ui/components/scroll-area";
+import { Separator } from "@tinji/ui/components/separator";
 import {
   Sheet,
   SheetDescription,
   SheetHeader,
   SheetPopup,
   SheetTitle,
-} from "@coss/ui/components/sheet";
-import { Skeleton } from "@coss/ui/components/skeleton";
+} from "@tinji/ui/components/sheet";
+import { Skeleton } from "@tinji/ui/components/skeleton";
 import {
   Tooltip,
   TooltipPopup,
   TooltipTrigger,
-} from "@coss/ui/components/tooltip";
-import { useMediaQuery } from "@coss/ui/hooks/use-media-query";
-import { cn } from "@coss/ui/lib/utils";
+} from "@tinji/ui/components/tooltip";
+import { useMediaQuery } from "@tinji/ui/hooks/use-media-query";
+import { cn } from "@tinji/ui/lib/utils";
 import { cva, type VariantProps } from "class-variance-authority";
 import { PanelLeftIcon } from "lucide-react";
 import * as React from "react";

@@ -45,7 +45,7 @@ export default function Component() {
             Keith Kennedy
           </span>
           <span className="truncate font-normal text-muted-foreground text-xs">
-            k.kennedy@coss.com
+            k.kennedy@ui.tinji.dev
           </span>
         </DropdownMenuLabel>
         <DropdownMenuSeparator />

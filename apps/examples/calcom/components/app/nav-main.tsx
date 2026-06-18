@@ -4,7 +4,7 @@ import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
-} from "@coss/ui/components/collapsible";
+} from "@tinji/ui/components/collapsible";
 import {
   Menu,
   MenuGroup,
@@ -12,8 +12,8 @@ import {
   MenuItem,
   MenuPopup,
   MenuTrigger,
-} from "@coss/ui/components/menu";
-import { useMediaQuery } from "@coss/ui/hooks/use-media-query";
+} from "@tinji/ui/components/menu";
+import { useMediaQuery } from "@tinji/ui/hooks/use-media-query";
 import { ChevronRightIcon, type LucideIcon } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";

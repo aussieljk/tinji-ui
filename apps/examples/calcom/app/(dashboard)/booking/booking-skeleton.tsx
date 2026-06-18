@@ -1,6 +1,6 @@
-import { Card, CardFrame, CardPanel } from "@coss/ui/components/card";
-import { FrameFooter } from "@coss/ui/components/frame";
-import { Skeleton } from "@coss/ui/components/skeleton";
+import { Card, CardFrame, CardPanel } from "@tinji/ui/components/card";
+import { FrameFooter } from "@tinji/ui/components/frame";
+import { Skeleton } from "@tinji/ui/components/skeleton";
 import { BookingActionsSkeleton } from "./booking-actions";
 import {
   ListItem,

@@ -6,9 +6,9 @@ import {
   CardFrameHeader,
   CardFrameTitle,
   CardPanel,
-} from "@coss/ui/components/card";
-import { Skeleton } from "@coss/ui/components/skeleton";
-import { Switch } from "@coss/ui/components/switch";
+} from "@tinji/ui/components/card";
+import { Skeleton } from "@tinji/ui/components/skeleton";
+import { Switch } from "@tinji/ui/components/switch";
 import type * as React from "react";
 
 interface SettingsToggleProps {

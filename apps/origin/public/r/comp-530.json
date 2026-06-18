@@ -3,7 +3,7 @@
   "name": "comp-530",
   "type": "registry:component",
   "registryDependencies": [
-    "https://coss.com/origin/r/timeline.json"
+    "https://ui.tinji.dev/origin/r/timeline.json"
   ],
   "files": [
     {

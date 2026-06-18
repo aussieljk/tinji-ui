@@ -3,10 +3,10 @@
   "name": "p-combobox-12",
   "description": "Combobox multiple form",
   "registryDependencies": [
-    "@coss/button",
-    "@coss/combobox",
-    "@coss/field",
-    "@coss/form"
+    "@tinji/button",
+    "@tinji/combobox",
+    "@tinji/field",
+    "@tinji/form"
   ],
   "files": [
     {

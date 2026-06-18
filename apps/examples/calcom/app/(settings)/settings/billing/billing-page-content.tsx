@@ -1,7 +1,7 @@
 "use client";
 
-import { Button } from "@coss/ui/components/button";
-import { Calendar } from "@coss/ui/components/calendar";
+import { Button } from "@tinji/ui/components/button";
+import { Calendar } from "@tinji/ui/components/calendar";
 import {
   Card,
   CardFrame,
@@ -9,7 +9,7 @@ import {
   CardFrameHeader,
   CardFrameTitle,
   CardPanel,
-} from "@coss/ui/components/card";
+} from "@tinji/ui/components/card";
 import {
   Combobox,
   ComboboxEmpty,
@@ -19,32 +19,36 @@ import {
   ComboboxPopup,
   ComboboxTrigger,
   ComboboxValue,
-} from "@coss/ui/components/combobox";
+} from "@tinji/ui/components/combobox";
 import {
   Empty,
   EmptyDescription,
   EmptyHeader,
   EmptyMedia,
   EmptyTitle,
-} from "@coss/ui/components/empty";
-import { Field, FieldDescription, FieldLabel } from "@coss/ui/components/field";
-import { FieldsetLegend } from "@coss/ui/components/fieldset";
-import { Group } from "@coss/ui/components/group";
+} from "@tinji/ui/components/empty";
+import {
+  Field,
+  FieldDescription,
+  FieldLabel,
+} from "@tinji/ui/components/field";
+import { FieldsetLegend } from "@tinji/ui/components/fieldset";
+import { Group } from "@tinji/ui/components/group";
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupText,
-} from "@coss/ui/components/input-group";
+} from "@tinji/ui/components/input-group";
 import {
   NumberField,
   NumberFieldInput,
-} from "@coss/ui/components/number-field";
+} from "@tinji/ui/components/number-field";
 import {
   Popover,
   PopoverPopup,
   PopoverTrigger,
-} from "@coss/ui/components/popover";
-import { SelectButton } from "@coss/ui/components/select";
+} from "@tinji/ui/components/popover";
+import { SelectButton } from "@tinji/ui/components/select";
 import { ExternalLinkIcon, FileTextIcon, SearchIcon } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";

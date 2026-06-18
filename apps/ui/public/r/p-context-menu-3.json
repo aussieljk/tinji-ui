@@ -3,7 +3,7 @@
   "name": "p-context-menu-3",
   "description": "Nested context menu",
   "registryDependencies": [
-    "@coss/context-menu"
+    "@tinji/context-menu"
   ],
   "files": [
     {

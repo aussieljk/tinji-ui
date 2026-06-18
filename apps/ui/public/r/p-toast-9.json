@@ -6,8 +6,8 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "@coss/button",
-    "@coss/toast"
+    "@tinji/button",
+    "@tinji/toast"
   ],
   "files": [
     {

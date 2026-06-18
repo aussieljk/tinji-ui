@@ -1,7 +1,7 @@
 "use client";
 
-import { useAutocompleteFilter } from "@coss/ui/components/autocomplete";
-import { Button } from "@coss/ui/components/button";
+import { useAutocompleteFilter } from "@tinji/ui/components/autocomplete";
+import { Button } from "@tinji/ui/components/button";
 import {
   Command,
   CommandCollection,
@@ -18,13 +18,13 @@ import {
   CommandPanel,
   CommandSeparator,
   CommandShortcut,
-} from "@coss/ui/components/command";
-import { EmptyMedia } from "@coss/ui/components/empty";
-import { Input } from "@coss/ui/components/input";
-import { Kbd, KbdGroup } from "@coss/ui/components/kbd";
-import { ScrollArea } from "@coss/ui/components/scroll-area";
-import { Skeleton } from "@coss/ui/components/skeleton";
-import { Spinner } from "@coss/ui/components/spinner";
+} from "@tinji/ui/components/command";
+import { EmptyMedia } from "@tinji/ui/components/empty";
+import { Input } from "@tinji/ui/components/input";
+import { Kbd, KbdGroup } from "@tinji/ui/components/kbd";
+import { ScrollArea } from "@tinji/ui/components/scroll-area";
+import { Skeleton } from "@tinji/ui/components/skeleton";
+import { Spinner } from "@tinji/ui/components/spinner";
 import {
   ArrowDownIcon,
   ArrowLeftIcon,

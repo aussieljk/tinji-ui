@@ -1,11 +1,11 @@
-import { Button } from "@coss/ui/components/button";
+import { Button } from "@tinji/ui/components/button";
 import {
   CardFrame,
   CardFrameDescription,
   CardFrameFooter,
   CardFrameHeader,
   CardFrameTitle,
-} from "@coss/ui/components/card";
+} from "@tinji/ui/components/card";
 
 interface DangerZoneProps {
   description: string;

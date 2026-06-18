@@ -1,5 +1,5 @@
-import { Skeleton } from "@coss/ui/components/skeleton";
-import { GitHubLinkClient } from "@coss/ui/shared/github-link-client";
+import { Skeleton } from "@tinji/ui/components/skeleton";
+import { GitHubLinkClient } from "@tinji/ui/shared/github-link-client";
 import * as React from "react";
 
 export function GitHubLink() {
@@ -16,9 +16,12 @@ export function GitHubLink() {
 
 export async function StarsCount() {
   try {
-    const data = await fetch("https://api.github.com/repos/cosscom/coss", {
-      next: { revalidate: 86400 }, // Cache for 1 day (86400 seconds)
-    });
+    const data = await fetch(
+      "https://api.github.com/repos/aussieljk/tinji-ui",
+      {
+        next: { revalidate: 86400 }, // Cache for 1 day (86400 seconds)
+      },
+    );
 
     if (!data.ok) {
       throw new Error(`GitHub API error: ${data.status}`);

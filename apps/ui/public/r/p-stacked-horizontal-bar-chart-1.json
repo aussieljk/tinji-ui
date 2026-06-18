@@ -3,7 +3,7 @@
   "name": "p-stacked-horizontal-bar-chart-1",
   "description": "Stacked horizontal bar chart with a legend",
   "registryDependencies": [
-    "@coss/stacked-horizontal-bar-chart"
+    "@tinji/stacked-horizontal-bar-chart"
   ],
   "files": [
     {

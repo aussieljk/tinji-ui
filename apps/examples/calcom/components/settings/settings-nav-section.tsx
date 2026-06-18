@@ -4,13 +4,13 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@coss/ui/components/avatar";
-import { Badge } from "@coss/ui/components/badge";
+} from "@tinji/ui/components/avatar";
+import { Badge } from "@tinji/ui/components/badge";
 import {
   Collapsible,
   CollapsiblePanel,
   CollapsibleTrigger,
-} from "@coss/ui/components/collapsible";
+} from "@tinji/ui/components/collapsible";
 import {
   ChevronRightIcon,
   ExternalLinkIcon,

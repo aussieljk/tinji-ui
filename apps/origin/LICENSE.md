@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2025 coss.com
+Copyright (c) 2025 ui.tinji.dev
 Originally Copyright (c) 2025 Origin UI
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

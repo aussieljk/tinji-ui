@@ -3,8 +3,8 @@
   "name": "p-toast-3",
   "description": "Loading-state stacked toast",
   "registryDependencies": [
-    "@coss/button",
-    "@coss/toast"
+    "@tinji/button",
+    "@tinji/toast"
   ],
   "files": [
     {

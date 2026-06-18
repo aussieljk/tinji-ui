@@ -1,14 +1,14 @@
 "use client";
 
-import { Button } from "@coss/ui/components/button";
+import { Button } from "@tinji/ui/components/button";
 import {
   Card,
   CardFrame,
   CardFrameHeader,
   CardFrameTitle,
   CardPanel,
-} from "@coss/ui/components/card";
-import { EmptyMedia } from "@coss/ui/components/empty";
+} from "@tinji/ui/components/card";
+import { EmptyMedia } from "@tinji/ui/components/empty";
 import { DownloadIcon, FileTextIcon, LockIcon } from "lucide-react";
 import {
   ListItem,

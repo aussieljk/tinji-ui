@@ -4,8 +4,8 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@coss/ui/components/avatar";
-import { useMediaQuery } from "@coss/ui/hooks/use-media-query";
+} from "@tinji/ui/components/avatar";
+import { useMediaQuery } from "@tinji/ui/hooks/use-media-query";
 import {
   GaugeIcon,
   LogOutIcon,

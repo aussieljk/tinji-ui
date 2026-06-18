@@ -1,8 +1,8 @@
 "use client";
 
-import { Checkbox } from "@coss/ui/components/checkbox";
-import { CheckboxGroup } from "@coss/ui/components/checkbox-group";
-import { FieldItem, FieldLabel } from "@coss/ui/components/field";
+import { Checkbox } from "@tinji/ui/components/checkbox";
+import { CheckboxGroup } from "@tinji/ui/components/checkbox-group";
+import { FieldItem, FieldLabel } from "@tinji/ui/components/field";
 import Image from "next/image";
 
 export interface ImageCheckboxOptionItem {

@@ -3,8 +3,8 @@
   "name": "p-toast-2",
   "description": "Stacked toasts by semantic type (success, error, info, warning)",
   "registryDependencies": [
-    "@coss/button",
-    "@coss/toast"
+    "@tinji/button",
+    "@tinji/toast"
   ],
   "files": [
     {

@@ -1,10 +1,10 @@
 "use client";
 
-import { mergeProps } from "@coss/ui/base-ui/merge-props";
-import { useRender } from "@coss/ui/base-ui/use-render";
-import { Button } from "@coss/ui/components/button";
-import { cn } from "@coss/ui/lib/utils";
 import type { SyntheticListenerMap } from "@dnd-kit/core/dist/hooks/utilities";
+import { mergeProps } from "@tinji/ui/base-ui/merge-props";
+import { useRender } from "@tinji/ui/base-ui/use-render";
+import { Button } from "@tinji/ui/components/button";
+import { cn } from "@tinji/ui/lib/utils";
 import { GripVerticalIcon } from "lucide-react";
 import React, {
   type ComponentPropsWithoutRef,

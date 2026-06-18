@@ -3,8 +3,8 @@
   "name": "p-menu-8",
   "description": "Menu close on click",
   "registryDependencies": [
-    "@coss/button",
-    "@coss/menu"
+    "@tinji/button",
+    "@tinji/menu"
   ],
   "files": [
     {

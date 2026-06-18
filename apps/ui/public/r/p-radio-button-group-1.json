@@ -3,7 +3,7 @@
   "name": "p-radio-button-group-1",
   "description": "Radio group styled as selectable cards",
   "registryDependencies": [
-    "@coss/radio-button-group"
+    "@tinji/radio-button-group"
   ],
   "files": [
     {

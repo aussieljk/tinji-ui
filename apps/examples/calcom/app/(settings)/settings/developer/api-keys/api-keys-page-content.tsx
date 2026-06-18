@@ -8,9 +8,9 @@ import {
   AlertDialogHeader,
   AlertDialogPopup,
   AlertDialogTitle,
-} from "@coss/ui/components/alert-dialog";
-import { Button } from "@coss/ui/components/button";
-import { Card, CardPanel } from "@coss/ui/components/card";
+} from "@tinji/ui/components/alert-dialog";
+import { Button } from "@tinji/ui/components/button";
+import { Card, CardPanel } from "@tinji/ui/components/card";
 import { PlusIcon } from "lucide-react";
 import { useState } from "react";
 import { ApiKeysEmpty } from "./api-keys-empty";

@@ -17,7 +17,7 @@ export default function Particle() {
       <InputGroupInput
         aria-label="Set your URL"
         className="*:[input]:ps-0!"
-        placeholder="coss.com"
+        placeholder="ui.tinji.dev"
         type="text"
       />
       <InputGroupAddon>https://</InputGroupAddon>

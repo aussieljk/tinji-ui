@@ -3,9 +3,9 @@
   "name": "p-fieldset-1",
   "description": "Fieldset with multiple fields",
   "registryDependencies": [
-    "@coss/field",
-    "@coss/fieldset",
-    "@coss/input"
+    "@tinji/field",
+    "@tinji/fieldset",
+    "@tinji/input"
   ],
   "files": [
     {

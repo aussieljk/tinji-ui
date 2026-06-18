@@ -3,8 +3,8 @@
   "name": "p-otp-field-7",
   "description": "OTP field with auto validation",
   "registryDependencies": [
-    "@coss/otp-field",
-    "@coss/field"
+    "@tinji/otp-field",
+    "@tinji/field"
   ],
   "files": [
     {

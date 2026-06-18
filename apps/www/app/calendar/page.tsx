@@ -1,45 +1,45 @@
-import { CodeBlock } from "@coss/ui/shared/code-block";
+import { CodeBlock } from "@tinji/ui/shared/code-block";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   description: "open source is the foundation of all modern software",
-  title: "coss.com calendar",
+  title: "ui.tinji.dev calendar",
 };
 
 export default function Page() {
-  const initialization = `import { coss } from '@coss';
+  const initialization = `import { tinji } from '@tinji';
 
-coss.calendar.init({
-  apiKey: process.env.COSS_KEY,
+tinji.calendar.init({
+  apiKey: process.env.TINJI_KEY,
   environment: 'production', // or 'sandbox'
 });`;
 
   const authorization = `// Generate an OAuth link for Google Calendar
-const authUrl = coss.calendar.auth.getAuthUrl({
+const authUrl = tinji.calendar.auth.getAuthUrl({
   provider: 'google',
   redirectUri: 'https://yourapp.com/callback',
 });
 
 // Exchange authorization code for access tokens
-await coss.calendar.auth.exchangeCode({
+await tinji.calendar.auth.exchangeCode({
   provider: 'google',
   code: 'authorization_code_here',
   redirectUri: 'https://yourapp.com/callback',
 });`;
 
   const calendars = `// List calendars
-await coss.calendar.calendars.list({
+await tinji.calendar.calendars.list({
   provider: 'google',
 });
 
 // Retrieve a calendar
-await coss.calendar.calendars.retrieve({
+await tinji.calendar.calendars.retrieve({
   provider: 'google',
   calendarId: 'primary',
 });`;
 
   const events = `// Create an event
-await coss.calendar.events.create({
+await tinji.calendar.events.create({
   provider: 'google',
   calendarId: 'primary',
   event: {
@@ -51,13 +51,13 @@ await coss.calendar.events.create({
 });
 
 // List events
-await coss.calendar.events.list({
+await tinji.calendar.events.list({
   provider: 'google',
   calendarId: 'primary',
 });
 
 // Update an event
-await coss.calendar.events.update({
+await tinji.calendar.events.update({
   provider: 'google',
   calendarId: 'primary',
   eventId: 'event_abc123',
@@ -67,29 +67,29 @@ await coss.calendar.events.update({
 });
 
 // Delete an event
-await coss.calendar.events.delete({
+await tinji.calendar.events.delete({
   provider: 'google',
   calendarId: 'primary',
   eventId: 'event_abc123',
 });`;
 
   const webhooks = `// Webhook events
-coss.calendar.webhooks.on('event.created', (event) => {
+tinji.calendar.webhooks.on('event.created', (event) => {
   console.log('Event created:', event.data);
 });
 
-coss.calendar.webhooks.on('event.updated', (event) => {
+tinji.calendar.webhooks.on('event.updated', (event) => {
   console.log('Event updated:', event.data);
 });
 
-coss.calendar.webhooks.on('event.deleted', (event) => {
+tinji.calendar.webhooks.on('event.deleted', (event) => {
   console.log('Event deleted:', event.data);
 });`;
 
   const utilities = `// Validate webhook signature
-const isValid = coss.calendar.utils.verifySignature({
+const isValid = tinji.calendar.utils.verifySignature({
   payload: req.body,
-  signature: req.headers['coss-calendar-signature'],
+  signature: req.headers['tinji-calendar-signature'],
   secret: 'whsec_calendar_123',
 });`;
 

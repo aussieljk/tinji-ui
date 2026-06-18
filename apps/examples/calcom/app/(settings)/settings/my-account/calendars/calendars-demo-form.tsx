@@ -1,6 +1,10 @@
 "use client";
 
-import { Field, FieldDescription, FieldLabel } from "@coss/ui/components/field";
+import {
+  Field,
+  FieldDescription,
+  FieldLabel,
+} from "@tinji/ui/components/field";
 import {
   Select,
   SelectGroup,
@@ -9,7 +13,7 @@ import {
   SelectPopup,
   SelectTrigger,
   SelectValue,
-} from "@coss/ui/components/select";
+} from "@tinji/ui/components/select";
 import { FieldGrid } from "@/components/particles/field-grid";
 
 const addEventsToGroups = [

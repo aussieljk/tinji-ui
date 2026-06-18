@@ -3,7 +3,7 @@
   "name": "p-segmented-control-3",
   "description": "Segmented control backed by a radio group",
   "registryDependencies": [
-    "@coss/segmented-control"
+    "@tinji/segmented-control"
   ],
   "files": [
     {

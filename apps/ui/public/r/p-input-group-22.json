@@ -6,8 +6,8 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "@coss/button",
-    "@coss/input-group"
+    "@tinji/button",
+    "@tinji/input-group"
   ],
   "files": [
     {

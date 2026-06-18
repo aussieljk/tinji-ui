@@ -7,10 +7,10 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "@coss/badge",
-    "@coss/button",
-    "@coss/calendar",
-    "@coss/popover"
+    "@tinji/badge",
+    "@tinji/button",
+    "@tinji/calendar",
+    "@tinji/popover"
   ],
   "files": [
     {

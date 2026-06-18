@@ -1,7 +1,7 @@
 "use client";
 
-import { Button } from "@coss/ui/components/button";
-import { Card, CardPanel } from "@coss/ui/components/card";
+import { Button } from "@tinji/ui/components/button";
+import { Card, CardPanel } from "@tinji/ui/components/card";
 import { PlusIcon } from "lucide-react";
 import { useState } from "react";
 import {

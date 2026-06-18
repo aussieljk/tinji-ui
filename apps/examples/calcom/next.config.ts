@@ -10,7 +10,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  transpilePackages: ["@coss/ui"],
+  transpilePackages: ["@tinji/ui"],
 };
 
 export default nextConfig;

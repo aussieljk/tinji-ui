@@ -1,5 +1,5 @@
-import { Badge } from "@coss/ui/components/badge";
-import { cn } from "@coss/ui/lib/utils";
+import { Badge } from "@tinji/ui/components/badge";
+import { cn } from "@tinji/ui/lib/utils";
 import { SparklesIcon } from "lucide-react";
 import type * as React from "react";
 

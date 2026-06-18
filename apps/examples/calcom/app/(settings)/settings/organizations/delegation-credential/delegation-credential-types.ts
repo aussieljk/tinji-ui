@@ -8,7 +8,7 @@ export type DelegationCredentialItem = {
   /** Workspace platform label (warning badge). */
   platformLabel: string;
   platformValue: string;
-  /** Domain label (outline badge), e.g. coss.com */
+  /** Domain label (outline badge), e.g. ui.tinji.dev */
   domain: string;
   /** Stored JSON from the form (prototype). */
   serviceAccountKeyJson?: string;

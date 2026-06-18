@@ -10,9 +10,9 @@
     "@tanstack/react-table"
   ],
   "registryDependencies": [
-    "https://coss.com/origin/r/button.json",
-    "https://coss.com/origin/r/dropdown-menu.json",
-    "https://coss.com/origin/r/table.json"
+    "https://ui.tinji.dev/origin/r/button.json",
+    "https://ui.tinji.dev/origin/r/dropdown-menu.json",
+    "https://ui.tinji.dev/origin/r/table.json"
   ],
   "files": [
     {

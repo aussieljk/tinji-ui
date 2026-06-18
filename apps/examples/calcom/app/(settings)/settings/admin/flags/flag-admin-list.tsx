@@ -4,16 +4,16 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@coss/ui/components/avatar";
-import { Button } from "@coss/ui/components/button";
+} from "@tinji/ui/components/avatar";
+import { Button } from "@tinji/ui/components/button";
 import {
   Collapsible,
   CollapsiblePanel,
   CollapsibleTrigger,
-} from "@coss/ui/components/collapsible";
-import { Frame, FrameHeader, FramePanel } from "@coss/ui/components/frame";
-import { Input } from "@coss/ui/components/input";
-import { Label } from "@coss/ui/components/label";
+} from "@tinji/ui/components/collapsible";
+import { Frame, FrameHeader, FramePanel } from "@tinji/ui/components/frame";
+import { Input } from "@tinji/ui/components/input";
+import { Label } from "@tinji/ui/components/label";
 import {
   Sheet,
   SheetClose,
@@ -23,14 +23,14 @@ import {
   SheetPanel,
   SheetPopup,
   SheetTitle,
-} from "@coss/ui/components/sheet";
-import { Switch } from "@coss/ui/components/switch";
-import { toastManager } from "@coss/ui/components/toast";
+} from "@tinji/ui/components/sheet";
+import { Switch } from "@tinji/ui/components/switch";
+import { toastManager } from "@tinji/ui/components/toast";
 import {
   Tooltip,
   TooltipPopup,
   TooltipTrigger,
-} from "@coss/ui/components/tooltip";
+} from "@tinji/ui/components/tooltip";
 import { ChevronDownIcon, UsersIcon } from "lucide-react";
 import { useMemo, useState } from "react";
 import {

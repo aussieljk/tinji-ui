@@ -26,7 +26,7 @@ const items = [
       },
     ],
     id: "1",
-    title: "What makes coss ui different?",
+    title: "What makes tinji ui different?",
   },
   {
     collapsibles: [
@@ -59,7 +59,7 @@ const items = [
       },
     ],
     id: "3",
-    title: "Is coss ui optimized for performance?",
+    title: "Is tinji ui optimized for performance?",
   },
   {
     collapsibles: [

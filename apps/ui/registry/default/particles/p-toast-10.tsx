@@ -3,7 +3,7 @@
 import { Button } from "@/registry/default/ui/button";
 import { toastManager } from "@/registry/default/ui/toast";
 
-const DEDUP_ID = "coss-demo-dedup-toast";
+const DEDUP_ID = "tinji-demo-dedup-toast";
 
 export default function Particle() {
   return (

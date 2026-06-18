@@ -3,7 +3,7 @@
   "name": "p-tabs-nav-1",
   "description": "Navigation tabs rendered as links with active state",
   "registryDependencies": [
-    "@coss/tabs-nav"
+    "@tinji/tabs-nav"
   ],
   "files": [
     {

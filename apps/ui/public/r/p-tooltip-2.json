@@ -3,8 +3,8 @@
   "name": "p-tooltip-2",
   "description": "Grouped tooltips",
   "registryDependencies": [
-    "@coss/toggle-group",
-    "@coss/tooltip"
+    "@tinji/toggle-group",
+    "@tinji/tooltip"
   ],
   "files": [
     {

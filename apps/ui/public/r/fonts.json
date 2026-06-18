@@ -2,9 +2,9 @@
   "$schema": "https://ui.shadcn.com/schema/registry-item.json",
   "name": "fonts",
   "registryDependencies": [
-    "@coss/font-sans",
-    "@coss/font-heading",
-    "@coss/font-mono"
+    "@tinji/font-sans",
+    "@tinji/font-heading",
+    "@tinji/font-mono"
   ],
   "files": [],
   "type": "registry:ui"

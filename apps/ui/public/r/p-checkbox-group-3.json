@@ -3,9 +3,9 @@
   "name": "p-checkbox-group-3",
   "description": "Checkbox group with parent checkbox",
   "registryDependencies": [
-    "@coss/checkbox",
-    "@coss/checkbox-group",
-    "@coss/label"
+    "@tinji/checkbox",
+    "@tinji/checkbox-group",
+    "@tinji/label"
   ],
   "files": [
     {

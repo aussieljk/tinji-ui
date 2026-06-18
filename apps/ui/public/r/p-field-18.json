@@ -3,12 +3,12 @@
   "name": "p-field-18",
   "description": "Complete form built with field",
   "registryDependencies": [
-    "@coss/button",
-    "@coss/checkbox",
-    "@coss/field",
-    "@coss/form",
-    "@coss/input",
-    "@coss/select"
+    "@tinji/button",
+    "@tinji/checkbox",
+    "@tinji/field",
+    "@tinji/form",
+    "@tinji/input",
+    "@tinji/select"
   ],
   "files": [
     {

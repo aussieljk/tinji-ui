@@ -3,8 +3,8 @@
   "name": "p-avatar-stack-1",
   "description": "Overlapping avatar stack with an overflow count",
   "registryDependencies": [
-    "@coss/avatar",
-    "@coss/avatar-stack"
+    "@tinji/avatar",
+    "@tinji/avatar-stack"
   ],
   "files": [
     {

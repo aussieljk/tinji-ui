@@ -1,8 +1,12 @@
 "use client";
 
-import { Field, FieldDescription, FieldLabel } from "@coss/ui/components/field";
-import { Switch } from "@coss/ui/components/switch";
-import { toastManager } from "@coss/ui/components/toast";
+import {
+  Field,
+  FieldDescription,
+  FieldLabel,
+} from "@tinji/ui/components/field";
+import { Switch } from "@tinji/ui/components/switch";
+import { toastManager } from "@tinji/ui/components/toast";
 import { useState } from "react";
 
 export function ImpersonationToggle() {

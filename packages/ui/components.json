@@ -1,11 +1,11 @@
 {
   "$schema": "https://ui.shadcn.com/schema.json",
   "aliases": {
-    "components": "@coss/ui/components",
-    "hooks": "@coss/ui/hooks",
-    "lib": "@coss/ui/lib",
-    "ui": "@coss/ui/components",
-    "utils": "@coss/ui/lib/utils"
+    "components": "@tinji/ui/components",
+    "hooks": "@tinji/ui/hooks",
+    "lib": "@tinji/ui/lib",
+    "ui": "@tinji/ui/components",
+    "utils": "@tinji/ui/lib/utils"
   },
   "iconLibrary": "lucide",
   "rsc": true,

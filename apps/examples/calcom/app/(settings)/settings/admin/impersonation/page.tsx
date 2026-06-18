@@ -1,19 +1,19 @@
-import { Button } from "@coss/ui/components/button";
+import { Button } from "@tinji/ui/components/button";
 import {
   Card,
   CardFrame,
   CardFrameHeader,
   CardFrameTitle,
   CardPanel,
-} from "@coss/ui/components/card";
-import { Field, FieldDescription } from "@coss/ui/components/field";
-import { Group } from "@coss/ui/components/group";
+} from "@tinji/ui/components/card";
+import { Field, FieldDescription } from "@tinji/ui/components/field";
+import { Group } from "@tinji/ui/components/group";
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
   InputGroupText,
-} from "@coss/ui/components/input-group";
+} from "@tinji/ui/components/input-group";
 import {
   AppHeader,
   AppHeaderContent,

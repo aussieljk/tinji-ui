@@ -1,16 +1,16 @@
 import "./globals.css";
 
-import { fontHeading, fontMono, fontSans } from "@coss/ui/fonts";
-import { SiteCta } from "@coss/ui/shared/site-cta";
-import { SiteFooter } from "@coss/ui/shared/site-footer";
-import { SiteHeader } from "@coss/ui/shared/site-header";
-import { ThemeProvider } from "@coss/ui/shared/theme-provider";
+import { fontHeading, fontMono, fontSans } from "@tinji/ui/fonts";
+import { SiteCta } from "@tinji/ui/shared/site-cta";
+import { SiteFooter } from "@tinji/ui/shared/site-footer";
+import { SiteHeader } from "@tinji/ui/shared/site-header";
+import { ThemeProvider } from "@tinji/ui/shared/theme-provider";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  description: "coss.com - the everything but AI company",
-  metadataBase: new URL("https://coss.com"),
-  title: "coss.com",
+  description: "ui.tinji.dev - the everything but AI company",
+  metadataBase: new URL("https://ui.tinji.dev"),
+  title: "ui.tinji.dev",
 };
 
 export default function RootLayout({

@@ -1,7 +1,7 @@
 "use client";
 
-import { Button } from "@coss/ui/components/button";
-import { cn } from "@coss/ui/lib/utils";
+import { Button } from "@tinji/ui/components/button";
+import { cn } from "@tinji/ui/lib/utils";
 import type * as React from "react";
 
 export function FilterBarActions({

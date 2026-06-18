@@ -3,10 +3,10 @@
   "name": "p-field-13",
   "description": "Field with checkbox group",
   "registryDependencies": [
-    "@coss/checkbox",
-    "@coss/checkbox-group",
-    "@coss/field",
-    "@coss/fieldset"
+    "@tinji/checkbox",
+    "@tinji/checkbox-group",
+    "@tinji/field",
+    "@tinji/fieldset"
   ],
   "files": [
     {

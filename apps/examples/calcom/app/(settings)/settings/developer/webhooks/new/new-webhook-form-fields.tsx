@@ -1,11 +1,11 @@
 "use client";
 
-import { Button } from "@coss/ui/components/button";
+import { Button } from "@tinji/ui/components/button";
 import {
   Collapsible,
   CollapsiblePanel,
   CollapsibleTrigger,
-} from "@coss/ui/components/collapsible";
+} from "@tinji/ui/components/collapsible";
 import {
   Combobox,
   ComboboxChip,
@@ -16,25 +16,29 @@ import {
   ComboboxList,
   ComboboxPopup,
   ComboboxValue,
-} from "@coss/ui/components/combobox";
-import { Field, FieldDescription, FieldLabel } from "@coss/ui/components/field";
-import { Group, GroupSeparator } from "@coss/ui/components/group";
-import { Input } from "@coss/ui/components/input";
+} from "@tinji/ui/components/combobox";
+import {
+  Field,
+  FieldDescription,
+  FieldLabel,
+} from "@tinji/ui/components/field";
+import { Group, GroupSeparator } from "@tinji/ui/components/group";
+import { Input } from "@tinji/ui/components/input";
 import {
   NumberField,
   NumberFieldGroup,
   NumberFieldInput,
-} from "@coss/ui/components/number-field";
-import { ScrollArea } from "@coss/ui/components/scroll-area";
+} from "@tinji/ui/components/number-field";
+import { ScrollArea } from "@tinji/ui/components/scroll-area";
 import {
   Select,
   SelectItem,
   SelectPopup,
   SelectTrigger,
   SelectValue,
-} from "@coss/ui/components/select";
-import { Switch } from "@coss/ui/components/switch";
-import { Textarea } from "@coss/ui/components/textarea";
+} from "@tinji/ui/components/select";
+import { Switch } from "@tinji/ui/components/switch";
+import { Textarea } from "@tinji/ui/components/textarea";
 import { ExternalLinkIcon } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";

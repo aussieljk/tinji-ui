@@ -3,8 +3,8 @@
   "name": "p-table-5",
   "description": "Card-style table variant",
   "registryDependencies": [
-    "@coss/badge",
-    "@coss/table"
+    "@tinji/badge",
+    "@tinji/table"
   ],
   "files": [
     {

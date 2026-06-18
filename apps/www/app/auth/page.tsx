@@ -1,72 +1,72 @@
-import { CodeBlock } from "@coss/ui/shared/code-block";
+import { CodeBlock } from "@tinji/ui/shared/code-block";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   description: "open source is the foundation of all modern software",
-  title: "coss.com auth",
+  title: "ui.tinji.dev auth",
 };
 
 export default function Page() {
-  const initialization = `import { coss } from '@coss';
+  const initialization = `import { tinji } from '@tinji';
 
-coss.auth.init({
-  apiKey: process.env.COSS_KEY,
+tinji.auth.init({
+  apiKey: process.env.TINJI_KEY,
   environment: 'production', // or 'sandbox'
 });`;
 
   const users = `// Register a new user
-await coss.auth.users.register({
+await tinji.auth.users.register({
   email: 'jane@example.com',
   password: 'securePassword123',
 });
 
 // Log in a user
-await coss.auth.users.login({
+await tinji.auth.users.login({
   email: 'jane@example.com',
   password: 'securePassword123',
 });
 
 // Retrieve user profile
-await coss.auth.users.retrieve('user_abc123');
+await tinji.auth.users.retrieve('user_abc123');
 
 // Update user profile
-await coss.auth.users.update('user_abc123', {
+await tinji.auth.users.update('user_abc123', {
   name: 'Jane Doe',
 });
 
 // Delete user
-await coss.auth.users.delete('user_abc123');`;
+await tinji.auth.users.delete('user_abc123');`;
 
   const sessions = `// Validate session token
-const session = await coss.auth.sessions.validate('session_token_123');
+const session = await tinji.auth.sessions.validate('session_token_123');
 
 // Log out
-await coss.auth.sessions.logout('session_token_123');`;
+await tinji.auth.sessions.logout('session_token_123');`;
 
   const passwordReset = `// Request password reset email
-await coss.auth.passwords.requestReset({
+await tinji.auth.passwords.requestReset({
   email: 'jane@example.com',
 });
 
 // Confirm password reset
-await coss.auth.passwords.confirmReset({
+await tinji.auth.passwords.confirmReset({
   token: 'reset_token_123',
   newPassword: 'newSecurePassword456',
 });`;
 
   const webhooks = `// Webhook events
-coss.auth.webhooks.on('user.registered', (event) => {
+tinji.auth.webhooks.on('user.registered', (event) => {
   console.log('New user registered:', event.data);
 });
 
-coss.auth.webhooks.on('user.deleted', (event) => {
+tinji.auth.webhooks.on('user.deleted', (event) => {
   console.log('User deleted:', event.data);
 });`;
 
   const utilities = `// Validate webhook signature
-const isValid = coss.auth.utils.verifySignature({
+const isValid = tinji.auth.utils.verifySignature({
   payload: req.body,
-  signature: req.headers['coss-auth-signature'],
+  signature: req.headers['tinji-auth-signature'],
   secret: 'whsec_auth_123',
 });`;
 

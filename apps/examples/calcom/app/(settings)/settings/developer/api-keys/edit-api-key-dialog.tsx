@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@coss/ui/components/button";
+import { Button } from "@tinji/ui/components/button";
 import {
   Dialog,
   DialogClose,
@@ -9,10 +9,10 @@ import {
   DialogPanel,
   DialogPopup,
   DialogTitle,
-} from "@coss/ui/components/dialog";
-import { Field, FieldLabel } from "@coss/ui/components/field";
-import { Form } from "@coss/ui/components/form";
-import { Input } from "@coss/ui/components/input";
+} from "@tinji/ui/components/dialog";
+import { Field, FieldLabel } from "@tinji/ui/components/field";
+import { Form } from "@tinji/ui/components/form";
+import { Input } from "@tinji/ui/components/input";
 import type { ApiKeyItem } from "./api-keys-list";
 
 interface EditApiKeyDialogProps {

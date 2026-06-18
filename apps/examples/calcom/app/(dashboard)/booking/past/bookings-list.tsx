@@ -1,29 +1,29 @@
 "use client";
 
-import { Badge } from "@coss/ui/components/badge";
-import { Button } from "@coss/ui/components/button";
+import { Badge } from "@tinji/ui/components/badge";
+import { Button } from "@tinji/ui/components/button";
 import {
   Card,
   CardFrame,
   CardFrameFooter,
   CardPanel,
-} from "@coss/ui/components/card";
+} from "@tinji/ui/components/card";
 import {
   Pagination,
   PaginationContent,
   PaginationItem,
   PaginationNext,
   PaginationPrevious,
-} from "@coss/ui/components/pagination";
+} from "@tinji/ui/components/pagination";
 import {
   Select,
   SelectItem,
   SelectPopup,
   SelectTrigger,
   SelectValue,
-} from "@coss/ui/components/select";
-import { TooltipProvider } from "@coss/ui/components/tooltip";
-import { cn } from "@coss/ui/lib/utils";
+} from "@tinji/ui/components/select";
+import { TooltipProvider } from "@tinji/ui/components/tooltip";
+import { cn } from "@tinji/ui/lib/utils";
 import {
   BanknoteIcon,
   CircleDashedIcon,

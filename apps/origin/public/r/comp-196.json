@@ -3,8 +3,8 @@
   "name": "comp-196",
   "type": "registry:component",
   "registryDependencies": [
-    "https://coss.com/origin/r/select-native.json",
-    "https://coss.com/origin/r/label.json"
+    "https://ui.tinji.dev/origin/r/select-native.json",
+    "https://ui.tinji.dev/origin/r/label.json"
   ],
   "files": [
     {

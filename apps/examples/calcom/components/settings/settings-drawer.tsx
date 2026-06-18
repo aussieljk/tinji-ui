@@ -7,7 +7,7 @@ import {
   DrawerPopup,
   DrawerTitle,
   DrawerTrigger,
-} from "@coss/ui/components/drawer";
+} from "@tinji/ui/components/drawer";
 import { MenuIcon } from "lucide-react";
 import * as React from "react";
 import { SettingsNavContent } from "@/components/settings/settings-nav-section";

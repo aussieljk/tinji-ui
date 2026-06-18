@@ -6,10 +6,10 @@
     "@tanstack/react-table"
   ],
   "registryDependencies": [
-    "@coss/badge",
-    "@coss/checkbox",
-    "@coss/frame",
-    "@coss/table"
+    "@tinji/badge",
+    "@tinji/checkbox",
+    "@tinji/frame",
+    "@tinji/table"
   ],
   "files": [
     {

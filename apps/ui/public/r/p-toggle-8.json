@@ -6,9 +6,9 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "@coss/toggle",
-    "@coss/tooltip",
-    "@coss/toast"
+    "@tinji/toggle",
+    "@tinji/tooltip",
+    "@tinji/toast"
   ],
   "files": [
     {

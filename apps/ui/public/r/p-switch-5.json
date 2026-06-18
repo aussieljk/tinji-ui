@@ -3,10 +3,10 @@
   "name": "p-switch-5",
   "description": "Switch in form",
   "registryDependencies": [
-    "@coss/button",
-    "@coss/field",
-    "@coss/form",
-    "@coss/switch"
+    "@tinji/button",
+    "@tinji/field",
+    "@tinji/form",
+    "@tinji/switch"
   ],
   "files": [
     {

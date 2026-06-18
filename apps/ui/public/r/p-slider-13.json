@@ -3,8 +3,8 @@
   "name": "p-slider-13",
   "description": "Range slider with inputs",
   "registryDependencies": [
-    "@coss/number-field",
-    "@coss/slider"
+    "@tinji/number-field",
+    "@tinji/slider"
   ],
   "files": [
     {

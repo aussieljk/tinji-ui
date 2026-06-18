@@ -3,7 +3,7 @@
   "name": "p-typography-1",
   "description": "Headings and body text with strong and emphasis",
   "registryDependencies": [
-    "@coss/typography"
+    "@tinji/typography"
   ],
   "files": [
     {

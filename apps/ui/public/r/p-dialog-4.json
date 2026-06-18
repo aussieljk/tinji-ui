@@ -3,12 +3,12 @@
   "name": "p-dialog-4",
   "description": "Dialog with close confirmation",
   "registryDependencies": [
-    "@coss/alert-dialog",
-    "@coss/button",
-    "@coss/dialog",
-    "@coss/field",
-    "@coss/form",
-    "@coss/textarea"
+    "@tinji/alert-dialog",
+    "@tinji/button",
+    "@tinji/dialog",
+    "@tinji/field",
+    "@tinji/form",
+    "@tinji/textarea"
   ],
   "files": [
     {

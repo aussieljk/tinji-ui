@@ -4,33 +4,37 @@ import {
   Avatar,
   AvatarFallback,
   AvatarImage,
-} from "@coss/ui/components/avatar";
-import { Badge } from "@coss/ui/components/badge";
-import { Button } from "@coss/ui/components/button";
-import { Field, FieldDescription, FieldLabel } from "@coss/ui/components/field";
-import { Fieldset, FieldsetLegend } from "@coss/ui/components/fieldset";
-import { Input } from "@coss/ui/components/input";
+} from "@tinji/ui/components/avatar";
+import { Badge } from "@tinji/ui/components/badge";
+import { Button } from "@tinji/ui/components/button";
+import {
+  Field,
+  FieldDescription,
+  FieldLabel,
+} from "@tinji/ui/components/field";
+import { Fieldset, FieldsetLegend } from "@tinji/ui/components/fieldset";
+import { Input } from "@tinji/ui/components/input";
 import {
   InputGroup,
   InputGroupAddon,
   InputGroupInput,
   InputGroupText,
   InputGroupTextarea,
-} from "@coss/ui/components/input-group";
-import { Label } from "@coss/ui/components/label";
+} from "@tinji/ui/components/input-group";
+import { Label } from "@tinji/ui/components/label";
 import {
   Menu,
   MenuItem,
   MenuPopup,
   MenuTrigger,
-} from "@coss/ui/components/menu";
-import { Toggle } from "@coss/ui/components/toggle";
+} from "@tinji/ui/components/menu";
+import { Toggle } from "@tinji/ui/components/toggle";
 import {
   Tooltip,
   TooltipPopup,
   TooltipTrigger,
-} from "@coss/ui/components/tooltip";
-import { useCopyToClipboard } from "@coss/ui/hooks/use-copy-to-clipboard";
+} from "@tinji/ui/components/tooltip";
+import { useCopyToClipboard } from "@tinji/ui/hooks/use-copy-to-clipboard";
 import {
   BoldIcon,
   CheckIcon,

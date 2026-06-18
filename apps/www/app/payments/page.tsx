@@ -1,41 +1,41 @@
-import { CodeBlock } from "@coss/ui/shared/code-block";
+import { CodeBlock } from "@tinji/ui/shared/code-block";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   description: "open source is the foundation of all modern software",
-  title: "coss.com payments",
+  title: "ui.tinji.dev payments",
 };
 
 export default function Page() {
-  const initialization = `import { coss } from '@coss';
+  const initialization = `import { tinji } from '@tinji';
 
-coss.payments.init({
-  apiKey: process.env.COSS_KEY,
+tinji.payments.init({
+  apiKey: process.env.TINJI_KEY,
   environment: 'production', // or 'sandbox'
 });`;
 
   const products = `// Create a product
-await coss.payments.products.create({
+await tinji.payments.products.create({
   name: 'Pro Plan',
   description: 'Access to premium features',
 });
 
 // List products
-await coss.payments.products.list();
+await tinji.payments.products.list();
 
 // Retrieve a product
-await coss.payments.products.retrieve('prod_abc123');
+await tinji.payments.products.retrieve('prod_abc123');
 
 // Update a product
-await coss.payments.products.update('prod_abc123', {
+await tinji.payments.products.update('prod_abc123', {
   description: 'Updated description',
 });
 
 // Delete a product
-await coss.payments.products.delete('prod_abc123');`;
+await tinji.payments.products.delete('prod_abc123');`;
 
   const prices = `// Create a price for a product
-await coss.payments.prices.create({
+await tinji.payments.prices.create({
   productId: 'prod_abc123',
   unitAmount: 2000, // in cents
   currency: 'usd',
@@ -43,36 +43,36 @@ await coss.payments.prices.create({
 });
 
 // List prices
-await coss.payments.prices.list();`;
+await tinji.payments.prices.list();`;
 
   const customers = `// Create a customer
-await coss.payments.customers.create({
+await tinji.payments.customers.create({
   email: 'jane@example.com',
   name: 'Jane Doe',
 });
 
 // Retrieve a customer
-await coss.payments.customers.retrieve('cus_abc123');`;
+await tinji.payments.customers.retrieve('cus_abc123');`;
 
   const subscriptions = `// Create a subscription
-await coss.payments.subscriptions.create({
+await tinji.payments.subscriptions.create({
   customerId: 'cus_abc123',
   priceId: 'price_abc123',
 });
 
 // Retrieve a subscription
-await coss.payments.subscriptions.retrieve('sub_abc123');
+await tinji.payments.subscriptions.retrieve('sub_abc123');
 
 // Update a subscription (e.g., upgrade plan)
-await coss.payments.subscriptions.update('sub_abc123', {
+await tinji.payments.subscriptions.update('sub_abc123', {
   priceId: 'price_def456',
 });
 
 // Cancel a subscription
-await coss.payments.subscriptions.cancel('sub_abc123');`;
+await tinji.payments.subscriptions.cancel('sub_abc123');`;
 
   const invoices = `// Create an invoice manually
-await coss.payments.invoices.create({
+await tinji.payments.invoices.create({
   customerId: 'cus_abc123',
   items: [
     { priceId: 'price_abc123', quantity: 1 },
@@ -80,24 +80,24 @@ await coss.payments.invoices.create({
 });
 
 // Finalize and send the invoice
-await coss.payments.invoices.finalize('inv_abc123');
+await tinji.payments.invoices.finalize('inv_abc123');
 
 // Pay an invoice
-await coss.payments.invoices.pay('inv_abc123');`;
+await tinji.payments.invoices.pay('inv_abc123');`;
 
   const webhooks = `// Webhook events
-coss.payments.webhooks.on('invoice.paid', (event) => {
+tinji.payments.webhooks.on('invoice.paid', (event) => {
   console.log('Invoice paid:', event.data);
 });
 
-coss.payments.webhooks.on('subscription.created', (event) => {
+tinji.payments.webhooks.on('subscription.created', (event) => {
   console.log('Subscription created:', event.data);
 });`;
 
   const utilities = `// Validate webhook signature
-const isValid = coss.payments.utils.verifySignature({
+const isValid = tinji.payments.utils.verifySignature({
   payload: req.body,
-  signature: req.headers['coss-payments-signature'],
+  signature: req.headers['tinji-payments-signature'],
   secret: 'whsec_payments_123',
 });`;
 

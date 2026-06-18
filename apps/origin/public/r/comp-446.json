@@ -3,8 +3,8 @@
   "name": "comp-446",
   "type": "registry:component",
   "registryDependencies": [
-    "https://coss.com/origin/r/breadcrumb.json",
-    "https://coss.com/origin/r/dropdown-menu.json"
+    "https://ui.tinji.dev/origin/r/breadcrumb.json",
+    "https://ui.tinji.dev/origin/r/dropdown-menu.json"
   ],
   "files": [
     {

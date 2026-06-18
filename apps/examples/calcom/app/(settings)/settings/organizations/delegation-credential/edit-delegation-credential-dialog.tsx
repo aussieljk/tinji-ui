@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@coss/ui/components/button";
+import { Button } from "@tinji/ui/components/button";
 import {
   Combobox,
   ComboboxEmpty,
@@ -10,7 +10,7 @@ import {
   ComboboxPopup,
   ComboboxTrigger,
   ComboboxValue,
-} from "@coss/ui/components/combobox";
+} from "@tinji/ui/components/combobox";
 import {
   Dialog,
   DialogClose,
@@ -19,11 +19,11 @@ import {
   DialogPanel,
   DialogPopup,
   DialogTitle,
-} from "@coss/ui/components/dialog";
-import { Field, FieldLabel } from "@coss/ui/components/field";
-import { Form } from "@coss/ui/components/form";
-import { Input } from "@coss/ui/components/input";
-import { SelectButton } from "@coss/ui/components/select";
+} from "@tinji/ui/components/dialog";
+import { Field, FieldLabel } from "@tinji/ui/components/field";
+import { Form } from "@tinji/ui/components/form";
+import { Input } from "@tinji/ui/components/input";
+import { SelectButton } from "@tinji/ui/components/select";
 import { SearchIcon } from "lucide-react";
 import { type FormEvent, useEffect, useState } from "react";
 import type { DelegationCredentialItem } from "./delegation-credential-types";

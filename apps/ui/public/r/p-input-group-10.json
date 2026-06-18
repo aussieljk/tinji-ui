@@ -3,8 +3,8 @@
   "name": "p-input-group-10",
   "description": "Input group with badge",
   "registryDependencies": [
-    "@coss/badge",
-    "@coss/input-group"
+    "@tinji/badge",
+    "@tinji/input-group"
   ],
   "files": [
     {

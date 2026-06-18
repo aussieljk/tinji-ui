@@ -5,7 +5,7 @@
     "@base-ui/react"
   ],
   "registryDependencies": [
-    "@coss/spinner"
+    "@tinji/spinner"
   ],
   "files": [
     {

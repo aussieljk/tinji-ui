@@ -6,9 +6,9 @@
     "lucide-react"
   ],
   "registryDependencies": [
-    "@coss/button",
-    "@coss/card",
-    "@coss/empty"
+    "@tinji/button",
+    "@tinji/card",
+    "@tinji/empty"
   ],
   "files": [
     {

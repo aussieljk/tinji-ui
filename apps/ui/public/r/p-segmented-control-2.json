@@ -3,7 +3,7 @@
   "name": "p-segmented-control-2",
   "description": "Segmented control rendered as navigation links",
   "registryDependencies": [
-    "@coss/segmented-control"
+    "@tinji/segmented-control"
   ],
   "files": [
     {

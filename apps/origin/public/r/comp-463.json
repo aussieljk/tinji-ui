@@ -3,9 +3,9 @@
   "name": "comp-463",
   "type": "registry:component",
   "registryDependencies": [
-    "https://coss.com/origin/r/label.json",
-    "https://coss.com/origin/r/pagination.json",
-    "https://coss.com/origin/r/select.json"
+    "https://ui.tinji.dev/origin/r/label.json",
+    "https://ui.tinji.dev/origin/r/pagination.json",
+    "https://ui.tinji.dev/origin/r/select.json"
   ],
   "files": [
     {

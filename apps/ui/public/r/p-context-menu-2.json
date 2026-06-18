@@ -3,7 +3,7 @@
   "name": "p-context-menu-2",
   "description": "Context menu with link items",
   "registryDependencies": [
-    "@coss/context-menu"
+    "@tinji/context-menu"
   ],
   "files": [
     {

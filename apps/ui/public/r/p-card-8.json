@@ -3,13 +3,13 @@
   "name": "p-card-8",
   "description": "Card within a frame and footer",
   "registryDependencies": [
-    "@coss/button",
-    "@coss/card",
-    "@coss/field",
-    "@coss/form",
-    "@coss/frame",
-    "@coss/input",
-    "@coss/select"
+    "@tinji/button",
+    "@tinji/card",
+    "@tinji/field",
+    "@tinji/form",
+    "@tinji/frame",
+    "@tinji/input",
+    "@tinji/select"
   ],
   "files": [
     {
