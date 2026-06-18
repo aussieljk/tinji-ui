@@ -22,6 +22,7 @@
     "data-list",
     "date-field",
     "date-picker",
+    "date-range-picker",
     "dialog",
     "drawer",
     "empty",

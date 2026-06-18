@@ -1,0 +1,36 @@
+{
+  "name": "@tinji/mcp",
+  "version": "0.1.0",
+  "description": "MCP server for discovering, previewing, and installing tinji ui components.",
+  "type": "module",
+  "license": "AGPL-3.0-or-later",
+  "bin": {
+    "tinji-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "bun src/index.ts",
+    "clean": "rm -rf dist node_modules",
+    "lint": "biome lint src",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.22.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@tinji/typescript-config": "workspace:*",
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3"
+  }
+}

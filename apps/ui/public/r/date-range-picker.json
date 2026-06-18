@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "date-range-picker",
+  "dependencies": [
+    "date-fns",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@tinji/button",
+    "@tinji/calendar",
+    "@tinji/popover"
+  ],
+  "files": [
+    {
+      "path": "registry/default/ui/date-range-picker.tsx",
+      "content": "\"use client\";\n\nimport { format } from \"date-fns\";\nimport { CalendarIcon } from \"lucide-react\";\nimport * as React from \"react\";\nimport type { DateRange } from \"react-day-picker\";\nimport { cn } from \"@/registry/default/lib/utils\";\nimport { Button } from \"@/registry/default/ui/button\";\nimport { Calendar } from \"@/registry/default/ui/calendar\";\nimport {\n  Popover,\n  PopoverPopup,\n  PopoverTrigger,\n} from \"@/registry/default/ui/popover\";\n\nexport type DateRangePickerProps = {\n  value?: DateRange;\n  defaultValue?: DateRange;\n  onValueChange?: (range: DateRange | undefined) => void;\n  placeholder?: string;\n  formatStr?: string;\n  disabled?: boolean;\n  className?: string;\n  numberOfMonths?: number;\n  open?: boolean;\n  defaultOpen?: boolean;\n  onOpenChange?: (open: boolean) => void;\n};\n\nexport function DateRangePicker({\n  value: valueProp,\n  defaultValue,\n  onValueChange,\n  placeholder = \"Pick a date range\",\n  formatStr = \"LLL dd, y\",\n  disabled,\n  className,\n  numberOfMonths = 2,\n  open: openProp,\n  defaultOpen,\n  onOpenChange,\n}: DateRangePickerProps): React.ReactElement {\n  const [uncontrolled, setUncontrolled] = React.useState<DateRange | undefined>(\n    defaultValue,\n  );\n  const value = valueProp ?? uncontrolled;\n\n  const [uncontrolledOpen, setUncontrolledOpen] = React.useState(\n    defaultOpen ?? false,\n  );\n  const open = openProp ?? uncontrolledOpen;\n\n  const setOpen = (next: boolean) => {\n    if (openProp === undefined) setUncontrolledOpen(next);\n    onOpenChange?.(next);\n  };\n\n  const handleSelect = (next: DateRange | undefined) => {\n    if (valueProp === undefined) setUncontrolled(next);\n    onValueChange?.(next);\n  };\n\n  return (\n    <Popover onOpenChange={setOpen} open={open}>\n      <PopoverTrigger\n        render={\n          <Button\n            className={cn(\"w-full justify-start font-normal\", className)}\n            disabled={disabled}\n            variant=\"outline\"\n          />\n        }\n      >\n        <CalendarIcon aria-hidden=\"true\" />\n        {value?.from ? (\n          value.to ? (\n            <>\n              {format(value.from, formatStr)} - {format(value.to, formatStr)}\n            </>\n          ) : (\n            format(value.from, formatStr)\n          )\n        ) : (\n          <span className=\"text-muted-foreground\">{placeholder}</span>\n        )}\n      </PopoverTrigger>\n      <PopoverPopup align=\"start\">\n        <Calendar\n          defaultMonth={value?.from}\n          mode=\"range\"\n          numberOfMonths={numberOfMonths}\n          onSelect={handleSelect}\n          selected={value}\n        />\n      </PopoverPopup>\n    </Popover>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "type": "registry:ui"
+}

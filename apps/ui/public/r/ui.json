@@ -69,7 +69,9 @@
     "@tinji/data-list",
     "@tinji/stacked-horizontal-bar-chart",
     "@tinji/date-field",
-    "@tinji/typography"
+    "@tinji/typography",
+    "@tinji/date-picker",
+    "@tinji/date-range-picker"
   ],
   "type": "registry:ui"
 }

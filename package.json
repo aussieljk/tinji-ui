@@ -4,6 +4,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "2.3.10",
+    "@changesets/cli": "^2.27.12",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.6",
     "turbo": "^2.6.1",
@@ -18,14 +19,17 @@
   "private": true,
   "scripts": {
     "build": "turbo run build",
+    "changeset": "changeset",
     "clean": "turbo run clean && rm -rf .turbo && rm -rf node_modules",
     "dev": "turbo run dev",
     "format": "biome format --write .",
     "format:all": "biome check --write --unsafe --no-errors-on-unmatched",
     "lint": "turbo run lint --",
     "prepare": "husky",
+    "release": "changeset publish",
     "test": "bun test --pass-with-no-tests",
-    "typecheck": "turbo run typecheck"
+    "typecheck": "turbo run typecheck",
+    "version": "changeset version"
   },
   "version": "0.0.1",
   "workspaces": [

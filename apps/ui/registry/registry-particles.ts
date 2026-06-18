@@ -1287,7 +1287,6 @@ export const particles: ParticleItem[] = [
   },
   {
     categories: categories("date picker", "calendar", "popover", "button"),
-    dependencies: ["date-fns", "lucide-react"],
     description: "Basic date picker",
     files: [{ path: "particles/p-date-picker-1.tsx", type: "registry:block" }],
     meta: {
@@ -1295,11 +1294,7 @@ export const particles: ParticleItem[] = [
         "**:data-[slot=preview]:w-full **:data-[slot=preview]:max-w-64",
     },
     name: "p-date-picker-1",
-    registryDependencies: [
-      "@tinji/calendar",
-      "@tinji/popover",
-      "@tinji/button",
-    ],
+    registryDependencies: ["@tinji/date-picker"],
     type: "registry:block",
   },
   {
@@ -5753,6 +5748,20 @@ export const particles: ParticleItem[] = [
     files: [{ path: "particles/p-date-field-1.tsx", type: "registry:block" }],
     name: "p-date-field-1",
     registryDependencies: ["@tinji/date-field"],
+    type: "registry:block",
+  },
+  {
+    categories: categories("date picker", "calendar", "popover", "button"),
+    description: "Date range picker",
+    files: [
+      { path: "particles/p-date-range-picker-1.tsx", type: "registry:block" },
+    ],
+    meta: {
+      className:
+        "**:data-[slot=preview]:w-full **:data-[slot=preview]:max-w-64",
+    },
+    name: "p-date-range-picker-1",
+    registryDependencies: ["@tinji/date-range-picker"],
     type: "registry:block",
   },
 ];

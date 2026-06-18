@@ -1,0 +1,80 @@
+---
+title: Date Range Picker
+description: A date range picker built with Calendar and Popover.
+---
+
+<ComponentPreview name="p-date-range-picker-1" />
+
+## Installation
+
+<CodeTabs>
+
+<TabsList>
+  <TabsTab value="cli">CLI</TabsTab>
+  <TabsTab value="manual">Manual</TabsTab>
+</TabsList>
+<TabsPanel value="cli">
+
+```bash
+npx shadcn@latest add @tinji/date-range-picker
+```
+
+</TabsPanel>
+
+<TabsPanel value="manual">
+
+<Steps>
+
+<Step>Install the following dependencies:</Step>
+
+```bash
+npm install react-day-picker date-fns lucide-react @base-ui/react
+```
+
+<Step>Copy the Calendar, Popover, and Button components to your project.</Step>
+
+See the [Calendar](/ui/docs/components/calendar), [Popover](/ui/docs/components/popover), and [Button](/ui/docs/components/button) documentation for installation instructions.
+
+<Step>Copy and paste the following code into your project.</Step>
+
+<ComponentSource
+  name="date-range-picker"
+  title="components/ui/date-range-picker.tsx"
+/>
+
+<Step>Update the import paths to match your project setup.</Step>
+
+</Steps>
+
+</TabsPanel>
+
+</CodeTabs>
+
+## Usage
+
+```tsx
+import { DateRangePicker } from "@/components/ui/date-range-picker"
+```
+
+```tsx
+<DateRangePicker />
+```
+
+## API Reference
+
+The Date Range Picker is a composition of the `<Calendar>` (with `mode="range"`) and `<Popover>` components. It works in both controlled and uncontrolled modes.
+
+### DateRangePicker
+
+| Prop             | Type                                          | Default              | Description                                       |
+| ---------------- | --------------------------------------------- | -------------------- | ------------------------------------------------- |
+| `value`          | `DateRange`                                   | -                    | The selected range (controlled).                  |
+| `defaultValue`   | `DateRange`                                   | -                    | The initial range (uncontrolled).                 |
+| `onValueChange`  | `(range: DateRange \| undefined) => void`     | -                    | Called when the selected range changes.           |
+| `placeholder`    | `string`                                      | `"Pick a date range"`| Text shown when no range is selected.             |
+| `formatStr`      | `string`                                      | `"LLL dd, y"`        | `date-fns` format string for the trigger label.   |
+| `numberOfMonths` | `number`                                      | `2`                  | Number of months shown in the calendar.           |
+| `disabled`       | `boolean`                                     | -                    | Disables the trigger button.                      |
+| `open`           | `boolean`                                     | -                    | The open state of the popover (controlled).       |
+| `defaultOpen`    | `boolean`                                     | `false`              | The initial open state (uncontrolled).            |
+| `onOpenChange`   | `(open: boolean) => void`                     | -                    | Called when the popover open state changes.       |

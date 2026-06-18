@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+/* tinji design tokens + base styles (themes, fonts, color variables). */
+@import "@tinji/ui/globals.css";
+
+/* Ensure Tailwind scans cosmos fixtures + tinji component source for classes. */
+@source "../fixtures/**/*.{ts,tsx}";
+@source "../../../packages/ui/src/**/*.{ts,tsx}";

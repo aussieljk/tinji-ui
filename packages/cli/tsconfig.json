@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "types": ["node"]
+  },
+  "exclude": ["node_modules", "dist"],
+  "extends": "@tinji/typescript-config/base.json",
+  "include": ["src"]
+}

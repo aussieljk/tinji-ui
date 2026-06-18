@@ -1,0 +1,21 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "date-picker",
+  "dependencies": [
+    "date-fns",
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@tinji/button",
+    "@tinji/calendar",
+    "@tinji/popover"
+  ],
+  "files": [
+    {
+      "path": "registry/default/ui/date-picker.tsx",
+      "content": "\"use client\";\n\nimport { format } from \"date-fns\";\nimport { CalendarIcon } from \"lucide-react\";\nimport * as React from \"react\";\nimport { cn } from \"@/registry/default/lib/utils\";\nimport { Button } from \"@/registry/default/ui/button\";\nimport { Calendar } from \"@/registry/default/ui/calendar\";\nimport {\n  Popover,\n  PopoverPopup,\n  PopoverTrigger,\n} from \"@/registry/default/ui/popover\";\n\nexport type DatePickerProps = {\n  value?: Date;\n  defaultValue?: Date;\n  onValueChange?: (date: Date | undefined) => void;\n  placeholder?: string;\n  formatStr?: string;\n  disabled?: boolean;\n  className?: string;\n  open?: boolean;\n  defaultOpen?: boolean;\n  onOpenChange?: (open: boolean) => void;\n  closeOnSelect?: boolean;\n};\n\nexport function DatePicker({\n  value: valueProp,\n  defaultValue,\n  onValueChange,\n  placeholder = \"Pick a date\",\n  formatStr = \"PPP\",\n  disabled,\n  className,\n  open: openProp,\n  defaultOpen,\n  onOpenChange,\n  closeOnSelect = true,\n}: DatePickerProps): React.ReactElement {\n  const [uncontrolled, setUncontrolled] = React.useState<Date | undefined>(\n    defaultValue,\n  );\n  const value = valueProp ?? uncontrolled;\n\n  const [uncontrolledOpen, setUncontrolledOpen] = React.useState(\n    defaultOpen ?? false,\n  );\n  const open = openProp ?? uncontrolledOpen;\n\n  const setOpen = (next: boolean) => {\n    if (openProp === undefined) setUncontrolledOpen(next);\n    onOpenChange?.(next);\n  };\n\n  const handleSelect = (next: Date | undefined) => {\n    if (valueProp === undefined) setUncontrolled(next);\n    onValueChange?.(next);\n    if (closeOnSelect && next) setOpen(false);\n  };\n\n  return (\n    <Popover onOpenChange={setOpen} open={open}>\n      <PopoverTrigger\n        render={\n          <Button\n            className={cn(\"w-full justify-start font-normal\", className)}\n            disabled={disabled}\n            variant=\"outline\"\n          />\n        }\n      >\n        <CalendarIcon aria-hidden=\"true\" />\n        {value ? (\n          format(value, formatStr)\n        ) : (\n          <span className=\"text-muted-foreground\">{placeholder}</span>\n        )}\n      </PopoverTrigger>\n      <PopoverPopup align=\"start\">\n        <Calendar\n          defaultMonth={value}\n          mode=\"single\"\n          onSelect={handleSelect}\n          selected={value}\n        />\n      </PopoverPopup>\n    </Popover>\n  );\n}\n",
+      "type": "registry:ui"
+    }
+  ],
+  "type": "registry:ui"
+}

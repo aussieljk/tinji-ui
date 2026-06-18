@@ -71,7 +71,9 @@
         "@tinji/data-list",
         "@tinji/stacked-horizontal-bar-chart",
         "@tinji/date-field",
-        "@tinji/typography"
+        "@tinji/typography",
+        "@tinji/date-picker",
+        "@tinji/date-range-picker"
       ],
       "type": "registry:ui"
     },
@@ -1163,6 +1165,183 @@
       ],
       "name": "typography",
       "type": "registry:ui"
+    },
+    {
+      "dependencies": [
+        "date-fns",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/default/ui/date-picker.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "name": "date-picker",
+      "registryDependencies": [
+        "@tinji/button",
+        "@tinji/calendar",
+        "@tinji/popover"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "dependencies": [
+        "date-fns",
+        "lucide-react"
+      ],
+      "files": [
+        {
+          "path": "registry/default/ui/date-range-picker.tsx",
+          "type": "registry:ui"
+        }
+      ],
+      "name": "date-range-picker",
+      "registryDependencies": [
+        "@tinji/button",
+        "@tinji/calendar",
+        "@tinji/popover"
+      ],
+      "type": "registry:ui"
+    },
+    {
+      "categories": [
+        "dashboard"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "description": "",
+      "files": [
+        {
+          "path": "registry/default/blocks/dashboard-01/page.tsx",
+          "type": "registry:block"
+        },
+        {
+          "path": "registry/default/blocks/dashboard-01/components/app-sidebar.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/blocks/dashboard-01/components/stat-cards.tsx",
+          "type": "registry:component"
+        },
+        {
+          "path": "registry/default/blocks/dashboard-01/components/orders-table.tsx",
+          "type": "registry:component"
+        }
+      ],
+      "name": "dashboard-01",
+      "registryDependencies": [
+        "@tinji/avatar",
+        "@tinji/badge",
+        "@tinji/button",
+        "@tinji/card",
+        "@tinji/input-group",
+        "@tinji/separator",
+        "@tinji/sidebar",
+        "@tinji/table"
+      ],
+      "type": "registry:block"
+    },
+    {
+      "categories": [
+        "authentication"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "description": "",
+      "files": [
+        {
+          "path": "registry/default/blocks/login-01/page.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "name": "login-01",
+      "registryDependencies": [
+        "@tinji/button",
+        "@tinji/card",
+        "@tinji/field",
+        "@tinji/form",
+        "@tinji/input",
+        "@tinji/separator"
+      ],
+      "type": "registry:block"
+    },
+    {
+      "categories": [
+        "authentication"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "description": "",
+      "files": [
+        {
+          "path": "registry/default/blocks/signup-01/page.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "name": "signup-01",
+      "registryDependencies": [
+        "@tinji/button",
+        "@tinji/card",
+        "@tinji/checkbox",
+        "@tinji/field",
+        "@tinji/form",
+        "@tinji/input",
+        "@tinji/label"
+      ],
+      "type": "registry:block"
+    },
+    {
+      "categories": [
+        "pricing"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "description": "",
+      "files": [
+        {
+          "path": "registry/default/blocks/pricing-01/page.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "name": "pricing-01",
+      "registryDependencies": [
+        "@tinji/badge",
+        "@tinji/button",
+        "@tinji/card",
+        "@tinji/separator"
+      ],
+      "type": "registry:block"
+    },
+    {
+      "categories": [
+        "settings"
+      ],
+      "description": "",
+      "files": [
+        {
+          "path": "registry/default/blocks/settings-01/page.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "name": "settings-01",
+      "registryDependencies": [
+        "@tinji/avatar",
+        "@tinji/button",
+        "@tinji/card",
+        "@tinji/field",
+        "@tinji/input",
+        "@tinji/label",
+        "@tinji/separator",
+        "@tinji/switch",
+        "@tinji/tabs",
+        "@tinji/textarea"
+      ],
+      "type": "registry:block"
     },
     {
       "categories": [
@@ -3768,10 +3947,6 @@
         "popover",
         "button"
       ],
-      "dependencies": [
-        "date-fns",
-        "lucide-react"
-      ],
       "description": "Basic date picker",
       "files": [
         {
@@ -3784,9 +3959,7 @@
       },
       "name": "p-date-picker-1",
       "registryDependencies": [
-        "@tinji/calendar",
-        "@tinji/popover",
-        "@tinji/button"
+        "@tinji/date-picker"
       ],
       "type": "registry:block"
     },
@@ -11820,6 +11993,29 @@
       "name": "p-date-field-1",
       "registryDependencies": [
         "@tinji/date-field"
+      ],
+      "type": "registry:block"
+    },
+    {
+      "categories": [
+        "date picker",
+        "calendar",
+        "popover",
+        "button"
+      ],
+      "description": "Date range picker",
+      "files": [
+        {
+          "path": "registry/default/particles/p-date-range-picker-1.tsx",
+          "type": "registry:block"
+        }
+      ],
+      "meta": {
+        "className": "**:data-[slot=preview]:w-full **:data-[slot=preview]:max-w-64"
+      },
+      "name": "p-date-range-picker-1",
+      "registryDependencies": [
+        "@tinji/date-range-picker"
       ],
       "type": "registry:block"
     },

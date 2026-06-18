@@ -28,6 +28,7 @@ Use this skill to:
   - `https://github.com/aussieljk/tinji-ui/tree/main/apps/ui/registry/default/particles`
 - tinji particles catalog: `https://ui.tinji.dev/particles`
 - docs map for agents: `https://ui.tinji.dev/llms.txt`
+- full docs for agents (all pages, one file): `https://ui.tinji.dev/llms-full.txt`
 
 ## Out of scope
 

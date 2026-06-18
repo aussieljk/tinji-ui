@@ -44,6 +44,17 @@ npx shadcn@latest add @tinji/select
 npx shadcn@latest add @tinji/toast
 ```
 
+The `@tinji/<component>` namespace resolves to a registry JSON URL. The fully
+qualified URL form is equivalent and works without namespace config:
+
+```bash
+npx shadcn@latest add https://ui.tinji.dev/r/<component>.json
+# e.g. https://ui.tinji.dev/r/dialog.json
+```
+
+Particles install the same way: `https://ui.tinji.dev/r/<particle-name>.json`
+(e.g. `https://ui.tinji.dev/r/p-dialog-1.json`).
+
 ### `add` preview mode (recommended)
 
 ```bash

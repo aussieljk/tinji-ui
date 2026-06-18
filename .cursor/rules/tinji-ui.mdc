@@ -1,0 +1,106 @@
+---
+description: How to use tinji ui (Base UI + Tailwind v4 component library) — imports, install, Base UI conventions, accessibility.
+globs: ["**/*.tsx", "**/*.jsx", "**/*.ts"]
+alwaysApply: false
+---
+
+# tinji ui
+
+tinji ui is a copy/paste component library built on **Base UI** (https://base-ui.com) and **Tailwind CSS v4**. It is shadcn-compatible but uses Base UI primitives, NOT Radix. Docs: https://ui.tinji.dev. Full LLM docs: https://ui.tinji.dev/llms-full.txt.
+
+## Install
+
+```bash
+# add one component (JSON URL form)
+npx shadcn@latest add https://ui.tinji.dev/r/<name>.json
+# or via the registry namespace
+npx shadcn@latest add @tinji/<name>
+# all primitives
+npx shadcn@latest add @tinji/ui
+# new project: full theme + fonts
+npx shadcn@latest init @tinji/style
+```
+
+Discover/inspect before adding: `npx shadcn@latest view @tinji/<name>`, `--dry-run`, `--diff`.
+
+## Imports
+
+- App-local (shadcn alias): `import { Button } from "@/components/ui/<name>"`
+- Monorepo package: `import { Button } from "@tinji/ui/components/<name>"`
+- Prefer the styled export. Use the `*Primitive` export only when you need custom composition/styling: `import { Slider, SliderPrimitive } from "@tinji/ui/components/slider"`.
+- Need Base UI utils? Import via tinji to avoid a direct `@base-ui/react` dep: `@tinji/ui/base-ui/{use-render,merge-props,csp-provider,direction-provider}`.
+- Icons: named imports from `lucide-react` only.
+
+## Base UI conventions (NOT Radix)
+
+- **`render` prop, never `asChild`.** Compose elements with `render`:
+  ```tsx
+  <MenuTrigger render={<Button variant="outline" />}>Open</MenuTrigger>
+  <Button render={<Link href="/login" />}>Login</Button>
+  ```
+- **Popup/Panel naming**, not `*Content`:
+  - Overlays expose `*Popup` (`DialogPopup`, `MenuPopup`, `SelectPopup`, `PopoverPopup`).
+  - `Dialog`/`Sheet`/`Drawer` also have `*Panel` for the scrollable body and `*Header`/`*Footer`.
+- **Menu items use `onClick`**, not `onSelect`. Add `closeOnClick` to close on activation.
+- **Toggle/checkbox groups:** `multiple={true}` (not Radix `type="multiple"`).
+- **`portalProps`** on supported `*Popup` surfaces and toast providers takes Base UI portal options (`keepMounted`, `container`) instead of a manual portal tree.
+
+## Select is items-first
+
+Pass `items` to `<Select>`; map them in `SelectPopup`. `SelectValue` needs no `placeholder` child.
+
+```tsx
+const items = [
+  { label: "Select…", value: null },
+  { label: "Next.js", value: "next" },
+];
+<Select items={items}>
+  <SelectTrigger><SelectValue /></SelectTrigger>
+  <SelectPopup>
+    {items.map((i) => (
+      <SelectItem key={String(i.value)} value={i}>{i.label}</SelectItem>
+    ))}
+  </SelectPopup>
+</Select>
+```
+
+## Toasts use `toastManager` (NOT Sonner)
+
+Wrap the app in `ToastProvider` (or `AnchoredToastProvider`), then:
+
+```tsx
+import { toastManager } from "@/components/ui/toast";
+toastManager.add({ title: "Saved", description: "…", type: "success" });
+```
+
+Pass a stable `id` on `add` to update an existing toast in place instead of stacking a duplicate.
+
+## Composition
+
+- **Dialog/Sheet/Drawer:** `*Trigger` → `*Popup` containing `*Header` (`*Title`/`*Description`), `*Panel`, `*Footer`. For forms, keep the header OUTSIDE `<Form>` and wrap `*Panel` + `*Footer` in `<Form className="contents">`.
+- **Group:** put a `<GroupSeparator />` between every control (required, even between outline buttons).
+- **InputGroup:** `InputGroupAddon` must come AFTER the `InputGroupInput`/`InputGroupTextarea` in DOM order (focus relies on it); use `align` for visual position.
+
+## Accessibility
+
+- Icon-only interactive element → `aria-label` on it, `aria-hidden="true"` on the icon. Prefer `aria-label` over `sr-only` text.
+- Decorative icons (in buttons, badges, menu items, input addons) → `aria-hidden="true"`. Do NOT add opacity classes to icons inside buttons.
+- Semantic icons (Alert severity) → do NOT add `aria-hidden`.
+- Always set an explicit `type` on `Input`/`InputGroupInput` (`text`, `email`, `search`, …).
+- Wrap a checkbox/radio/switch and its text in `<Label>`; only use `id`/`htmlFor` when extra (description) content sits outside the label.
+- Use `Field` (`FieldLabel`, `FieldError`) for form structure.
+
+## Styling
+
+- Semantic tokens only: `text-muted-foreground`, `bg-destructive` — never raw `text-gray-500`.
+- `border-border` is the default; just use `border`/`border-b`.
+- Prefer `in-[[data-slot=button]:hover]:…` over the `group`/`group-hover:` pattern.
+- Use the `!` suffix for important overrides (`h-auto!`).
+- Extra tokens to import when installing manually: `--destructive-foreground`, `--info(-foreground)`, `--success(-foreground)`, `--warning(-foreground)`. The CLI wires these automatically.
+
+## Rules of thumb
+
+1. Use existing tinji primitives/particles before writing custom markup.
+2. Verify component APIs against the docs; do not invent props.
+3. Don't mix Radix patterns (`asChild`, `*Content`, `onSelect`) into tinji.
+4. Browse ready-made examples ("particles") at https://ui.tinji.dev/particles (install via `https://ui.tinji.dev/r/<particle-name>.json`).

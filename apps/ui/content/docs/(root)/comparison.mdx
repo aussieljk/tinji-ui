@@ -1,0 +1,118 @@
+---
+title: Comparison
+description: How tinji ui compares to shadcn/ui, Whop frosted-ui, and the underlying primitive libraries (Radix UI and Base UI).
+---
+
+There are a lot of great ways to build a React UI in 2026. This page is an honest, side‑by‑side look at where **tinji ui** sits relative to other popular options, so you can pick the right tool for your project.
+
+tinji ui is a copy‑paste component library built on **Base UI** and **Tailwind CSS**, distributed through the shadcn registry, and designed to be readable by both developers and AI agents.
+
+<Alert className="bg-muted/24">
+  <InfoIcon />
+  <AlertTitle>A fair comparison</AlertTitle>
+  <AlertDescription>
+    These projects are not strictly competitors — shadcn/ui and tinji ui both
+    sit on top of primitive libraries like Radix UI and Base UI. The table
+    below compares them as practical choices, not as winners and losers. All of
+    them are excellent, and we recommend whichever fits your needs.
+  </AlertDescription>
+</Alert>
+
+## At a glance
+
+|                       | tinji ui                          | shadcn/ui                              | Whop frosted-ui                  | Radix UI / Base UI                |
+| --------------------- | --------------------------------- | -------------------------------------- | -------------------------------- | --------------------------------- |
+| **What it is**        | Copy‑paste component library      | Copy‑paste component library           | Installable component library    | Unstyled headless primitives      |
+| **Foundation**        | Base UI                           | Radix UI (Base UI option available)    | Radix UI                         | —                                 |
+| **Styling**           | Tailwind CSS v4 + semantic tokens | Tailwind CSS + semantic tokens         | Radix Colors + own design system | Unstyled (bring your own)         |
+| **Theming**           | CSS variables, light/dark         | CSS variables, light/dark              | Token-based theme + appearances  | None (you provide it)             |
+| **Distribution**      | shadcn registry (own code)        | shadcn registry (own code)             | npm package (`@whop/frosted-ui`) | npm package                       |
+| **You own the code**  | Yes                               | Yes                                    | No (versioned dependency)        | No (versioned dependency)         |
+| **Accessibility**     | Inherited from Base UI            | Inherited from Radix/Base UI           | Inherited from Radix UI          | Built‑in (the whole point)        |
+
+## Philosophy
+
+|                          | tinji ui                                              | shadcn/ui                                | Whop frosted-ui                            | Radix UI / Base UI                |
+| ------------------------ | ---------------------------------------------------- | ---------------------------------------- | ------------------------------------------ | --------------------------------- |
+| **Primary goal**         | Opinionated, production-tested system on Base UI      | Unstyled-friendly starter you fully own  | Cohesive branded design system (Whop)      | Correct, accessible behavior      |
+| **Opinionation**         | Medium–high (dense, modern defaults)                 | Low–medium                               | High (matches Whop's look)                 | None                              |
+| **Customization model**  | Edit the source you copied                           | Edit the source you copied               | Override via theme tokens / props          | Style from scratch                |
+| **Best for**             | Teams wanting a ready system they can still own       | Teams wanting maximum control            | Teams adopting Whop's aesthetic            | Teams building a bespoke system   |
+
+## AI-native
+
+A core focus for tinji ui is being legible to AI coding assistants. Components are written to be clear, predictable, and consistent so language models can understand and modify them reliably.
+
+|                              | tinji ui                                  | shadcn/ui                          | Whop frosted-ui     | Radix UI / Base UI |
+| ---------------------------- | ----------------------------------------- | ---------------------------------- | ------------------- | ------------------ |
+| **Agent Skill provided**     | Yes (`npx skills add aussieljk/tinji-ui`) | Community skills / rules exist      | No first‑party skill | No first‑party skill |
+| **MCP / registry for agents**| shadcn registry (machine-readable JSON)   | shadcn registry (machine-readable) | npm only            | npm only           |
+| **Designed for LLM editing** | Explicit design goal                      | Readable, widely trained on        | Standard library    | Standard library   |
+
+See the [Skills](/ui/docs/skills) page for what the assistant knows.
+
+## Particles, patterns, and blocks
+
+Beyond primitives, libraries differ a lot in how many ready-made patterns they ship.
+
+|                          | tinji ui                       | shadcn/ui                          | Whop frosted-ui            | Radix UI / Base UI |
+| ------------------------ | ------------------------------ | ---------------------------------- | -------------------------- | ------------------ |
+| **Primitives / components** | ~68 components               | ~50+ components                    | Dozens of components       | The primitives only |
+| **Pre-assembled patterns**  | ~500+ particles              | Blocks (auth, dashboards, etc.)    | Composed components        | None               |
+| **API-integrated components** | Atoms (via [Cal.com](https://cal.com/atoms)) | No                  | Some product‑specific       | No                 |
+
+tinji ui's [particles](/ui/particles) are pre-assembled compositions — forms, tables, command menus, date pickers — that combine multiple primitives into ready-to-use solutions you can still pull apart and edit.
+
+## Installation & distribution
+
+|                       | tinji ui                                              | shadcn/ui                              | Whop frosted-ui                      | Radix UI / Base UI            |
+| --------------------- | ---------------------------------------------------- | -------------------------------------- | ------------------------------------ | ----------------------------- |
+| **Add a component**   | `npx shadcn@latest add https://ui.tinji.dev/r/<name>.json` | `npx shadcn@latest add <name>`   | `npm install @whop/frosted-ui`       | `npm install @base-ui-components/react` |
+| **Where the code goes** | Into your repo                                       | Into your repo                         | `node_modules`                       | `node_modules`                |
+| **Upgrades**          | Re‑run the add command / diff manually               | Re‑run the add command / diff manually | Bump the package version             | Bump the package version      |
+
+## Component coverage
+
+A high-level look at common surfaces. "Yes" means the project ships a first-class component for it; primitive libraries provide the unstyled behavior you'd style yourself.
+
+| Component             | tinji ui | shadcn/ui | Whop frosted-ui | Base UI (primitive) |
+| --------------------- | -------- | --------- | --------------- | ------------------- |
+| Button                | Yes      | Yes       | Yes             | (via `useRender`)   |
+| Dialog / Modal        | Yes      | Yes       | Yes             | Yes                 |
+| Alert Dialog          | Yes      | Yes       | Yes             | Yes                 |
+| Dropdown / Menu       | Yes      | Yes       | Yes             | Yes                 |
+| Select                | Yes      | Yes       | Yes             | Yes                 |
+| Combobox / Autocomplete | Yes    | Yes       | Partial         | Yes                 |
+| Popover               | Yes      | Yes       | Yes             | Yes                 |
+| Tooltip               | Yes      | Yes       | Yes             | Yes                 |
+| Tabs                  | Yes      | Yes       | Yes             | Yes                 |
+| Accordion / Collapsible | Yes    | Yes       | Yes             | Yes                 |
+| Checkbox / Radio / Switch | Yes  | Yes       | Yes             | Yes                 |
+| Slider                | Yes      | Yes       | Yes             | Yes                 |
+| Number Field          | Yes      | No        | No              | Yes                 |
+| Input / Input Group   | Yes      | Yes       | Yes             | (native + helpers)  |
+| Field / Form          | Yes      | Yes       | Yes             | Yes (Field, Form)   |
+| Toast                 | Yes      | Yes (Sonner) | Yes          | Yes                 |
+| Sheet / Drawer        | Yes      | Yes       | Yes             | (via Dialog)        |
+| Table                 | Yes      | Yes       | Yes             | No                  |
+| Toolbar               | Yes      | No        | No              | Yes                 |
+| Meter / Progress      | Yes      | Yes (Progress) | Partial    | Yes                 |
+| Command palette       | Yes      | Yes       | No              | No                  |
+
+<Alert className="bg-muted/24">
+  <InfoIcon />
+  <AlertTitle>Coverage moves fast</AlertTitle>
+  <AlertDescription>
+    Every one of these projects ships new components regularly. Treat this as a
+    snapshot, not a guarantee — check each project's docs for the current list.
+  </AlertDescription>
+</Alert>
+
+## When to choose what
+
+- **Choose tinji ui** if you want an opinionated, production-tested system built on Base UI that you fully own, with a large particle catalog and first-class AI assistant support.
+- **Choose shadcn/ui** if you want the most widely adopted copy-paste workflow and maximum freedom to start from minimal, unopinionated components.
+- **Choose Whop frosted-ui** if you're building inside or alongside the Whop ecosystem, or you specifically want its branded aesthetic as an installed package.
+- **Choose Radix UI or Base UI directly** if you're building a fully bespoke design system and want only the headless, accessible behavior with no styling at all.
+
+If you're coming from shadcn/ui or Radix UI, see the [migration guide](/ui/docs/radix-shadcn-migration) for a smooth transition.

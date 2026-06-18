@@ -1,0 +1,30 @@
+/*
+ * Tailwind v4 entry for Storybook.
+ *
+ * `@tinji/ui/globals.css` already runs `@import "tailwindcss"` and defines the
+ * tinji design tokens / `@theme` block. We import it here so stories pick up the
+ * full token set.
+ *
+ * The tinji globals.css uses `@source` globs that are relative to its own
+ * location inside packages/ui, so they do NOT cover this app. We add explicit
+ * `@source` directives below so Tailwind scans the component source (where the
+ * class names actually live) and our own stories.
+ */
+@import "@tinji/ui/globals.css";
+
+/* Scan the published component source for utility classes. */
+@source "../../packages/ui/src/**/*.{ts,tsx}";
+
+/* Scan our stories for any extra utilities used in wrappers. */
+@source "./stories/**/*.{ts,tsx}";
+
+html,
+body,
+#storybook-root {
+  height: 100%;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}

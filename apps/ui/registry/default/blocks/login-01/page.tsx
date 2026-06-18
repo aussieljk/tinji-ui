@@ -1,0 +1,151 @@
+"use client";
+
+import { GalleryVerticalEndIcon } from "lucide-react";
+import type { FormEvent } from "react";
+import { useState } from "react";
+import { Button } from "@/registry/default/ui/button";
+import {
+  Card,
+  CardDescription,
+  CardHeader,
+  CardPanel,
+  CardTitle,
+} from "@/registry/default/ui/card";
+import { Field, FieldError, FieldLabel } from "@/registry/default/ui/field";
+import { Form } from "@/registry/default/ui/form";
+import { Input } from "@/registry/default/ui/input";
+import { Separator } from "@/registry/default/ui/separator";
+
+export default function Page() {
+  const [loading, setLoading] = useState(false);
+
+  const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setLoading(true);
+    await new Promise((resolve) => setTimeout(resolve, 800));
+    setLoading(false);
+  };
+
+  return (
+    <div className="flex min-h-svh w-full items-center justify-center p-6">
+      <div className="flex w-full max-w-sm flex-col gap-6">
+        <div className="flex flex-col items-center gap-2">
+          <div className="flex size-10 items-center justify-center rounded-xl bg-primary text-primary-foreground">
+            <GalleryVerticalEndIcon aria-hidden="true" className="size-5" />
+          </div>
+          <span className="font-semibold">Acme Inc</span>
+        </div>
+        <Card>
+          <CardHeader className="text-center">
+            <CardTitle>Welcome back</CardTitle>
+            <CardDescription>
+              Sign in to your account to continue.
+            </CardDescription>
+          </CardHeader>
+          <CardPanel>
+            <Form className="flex flex-col gap-6" onSubmit={onSubmit}>
+              <div className="grid grid-cols-2 gap-3">
+                <Button type="button" variant="outline">
+                  <AppleIcon />
+                  Apple
+                </Button>
+                <Button type="button" variant="outline">
+                  <GoogleIcon />
+                  Google
+                </Button>
+              </div>
+              <div className="flex items-center gap-3">
+                <Separator className="flex-1" />
+                <span className="text-muted-foreground text-xs">
+                  Or continue with
+                </span>
+                <Separator className="flex-1" />
+              </div>
+              <Field name="email">
+                <FieldLabel>Email</FieldLabel>
+                <Input
+                  autoComplete="email"
+                  placeholder="you@example.com"
+                  required
+                  type="email"
+                />
+                <FieldError>Please enter a valid email.</FieldError>
+              </Field>
+              <Field name="password">
+                <div className="flex w-full items-center justify-between">
+                  <FieldLabel>Password</FieldLabel>
+                  <a
+                    className="text-muted-foreground text-xs underline-offset-4 hover:underline"
+                    href="#forgot"
+                  >
+                    Forgot password?
+                  </a>
+                </div>
+                <Input
+                  autoComplete="current-password"
+                  placeholder="••••••••"
+                  required
+                  type="password"
+                />
+                <FieldError>Please enter your password.</FieldError>
+              </Field>
+              <Button loading={loading} type="submit">
+                Sign in
+              </Button>
+            </Form>
+          </CardPanel>
+        </Card>
+        <p className="text-center text-muted-foreground text-sm">
+          Don&apos;t have an account?{" "}
+          <a
+            className="text-foreground underline underline-offset-4"
+            href="#signup"
+          >
+            Sign up
+          </a>
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function AppleIcon() {
+  return (
+    <svg
+      aria-hidden="true"
+      fill="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M16.365 1.43c0 1.14-.493 2.27-1.177 3.08-.744.9-1.99 1.57-2.987 1.57-.12 0-.23-.02-.3-.03-.01-.06-.04-.22-.04-.39 0-1.15.572-2.27 1.206-2.98.804-.94 2.142-1.64 3.248-1.68.03.13.05.28.05.43zm4.565 15.71c-.03.07-.463 1.58-1.518 3.12-.945 1.34-1.94 2.71-3.43 2.71-1.517 0-1.9-.88-3.63-.88-1.698 0-2.302.91-3.67.91-1.377 0-2.332-1.26-3.428-2.8-1.287-1.82-2.323-4.63-2.323-7.28 0-4.28 2.797-6.55 5.552-6.55 1.448 0 2.675.95 3.6.95.865 0 2.222-1.01 3.902-1.01.613 0 2.886.06 4.374 2.19-.13.09-2.383 1.37-2.383 4.19 0 3.26 2.854 4.42 2.955 4.45z" />
+    </svg>
+  );
+}
+
+function GoogleIcon() {
+  return (
+    <svg
+      aria-hidden="true"
+      className="opacity-100!"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"
+        fill="#4285F4"
+      />
+      <path
+        d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"
+        fill="#34A853"
+      />
+      <path
+        d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"
+        fill="#FBBC05"
+      />
+      <path
+        d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1A11 11 0 0 0 2.18 7.06l3.66 2.84C6.71 7.31 9.14 5.38 12 5.38z"
+        fill="#EA4335"
+      />
+    </svg>
+  );
+}

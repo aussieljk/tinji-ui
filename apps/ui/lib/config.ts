@@ -11,6 +11,14 @@ export const appConfig = {
       href: "/particles",
       label: "Particles",
     },
+    {
+      href: "/themes",
+      label: "Themes",
+    },
+    {
+      href: "/kitchen-sink",
+      label: "Kitchen Sink",
+    },
   ],
   ogImage: "https://ui.tinji.dev/og.jpg",
   url: "https://ui.tinji.dev",

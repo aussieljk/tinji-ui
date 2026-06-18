@@ -1,0 +1,25 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "pricing-01",
+  "description": "",
+  "dependencies": [
+    "lucide-react"
+  ],
+  "registryDependencies": [
+    "@tinji/badge",
+    "@tinji/button",
+    "@tinji/card",
+    "@tinji/separator"
+  ],
+  "files": [
+    {
+      "path": "registry/default/blocks/pricing-01/page.tsx",
+      "content": "import { CheckIcon } from \"lucide-react\";\nimport { Badge } from \"@/registry/default/ui/badge\";\nimport { Button } from \"@/registry/default/ui/button\";\nimport {\n  Card,\n  CardDescription,\n  CardFooter,\n  CardHeader,\n  CardPanel,\n  CardTitle,\n} from \"@/registry/default/ui/card\";\nimport { Separator } from \"@/registry/default/ui/separator\";\n\nconst tiers = [\n  {\n    cta: \"Get started\",\n    description: \"For individuals just getting started.\",\n    features: [\n      \"Up to 3 projects\",\n      \"1 team member\",\n      \"Community support\",\n      \"1 GB storage\",\n    ],\n    featured: false,\n    name: \"Hobby\",\n    price: \"$0\",\n    priceSuffix: \"/month\",\n  },\n  {\n    cta: \"Start free trial\",\n    description: \"For growing teams that need more power.\",\n    features: [\n      \"Unlimited projects\",\n      \"Up to 10 team members\",\n      \"Priority email support\",\n      \"100 GB storage\",\n      \"Advanced analytics\",\n    ],\n    featured: true,\n    name: \"Pro\",\n    price: \"$29\",\n    priceSuffix: \"/month\",\n  },\n  {\n    cta: \"Contact sales\",\n    description: \"For large organizations with custom needs.\",\n    features: [\n      \"Everything in Pro\",\n      \"Unlimited team members\",\n      \"Dedicated support\",\n      \"Unlimited storage\",\n      \"SSO & audit logs\",\n    ],\n    featured: false,\n    name: \"Enterprise\",\n    price: \"Custom\",\n    priceSuffix: \"\",\n  },\n];\n\nexport default function Page() {\n  return (\n    <div className=\"mx-auto w-full max-w-5xl px-6 py-16\">\n      <div className=\"mx-auto flex max-w-2xl flex-col items-center gap-3 text-center\">\n        <Badge variant=\"secondary\">Pricing</Badge>\n        <h1 className=\"font-semibold text-3xl tracking-tight sm:text-4xl\">\n          Plans for teams of every size\n        </h1>\n        <p className=\"text-balance text-muted-foreground\">\n          Start for free and scale as you grow. Switch plans or cancel anytime.\n        </p>\n      </div>\n      <div className=\"mt-12 grid gap-6 lg:grid-cols-3 lg:items-start\">\n        {tiers.map((tier) => (\n          <Card\n            className={\n              tier.featured\n                ? \"border-primary shadow-md lg:-translate-y-2\"\n                : undefined\n            }\n            key={tier.name}\n          >\n            <CardHeader>\n              <CardTitle className=\"flex items-center justify-between\">\n                {tier.name}\n                {tier.featured ? <Badge>Most popular</Badge> : null}\n              </CardTitle>\n              <CardDescription>{tier.description}</CardDescription>\n              <div className=\"mt-2 flex items-baseline gap-1\">\n                <span className=\"font-semibold text-3xl tracking-tight\">\n                  {tier.price}\n                </span>\n                {tier.priceSuffix ? (\n                  <span className=\"text-muted-foreground text-sm\">\n                    {tier.priceSuffix}\n                  </span>\n                ) : null}\n              </div>\n            </CardHeader>\n            <CardPanel>\n              <Separator />\n              <ul className=\"mt-6 flex flex-col gap-3 text-sm\">\n                {tier.features.map((feature) => (\n                  <li className=\"flex items-center gap-2\" key={feature}>\n                    <CheckIcon\n                      aria-hidden=\"true\"\n                      className=\"size-4 shrink-0 text-success-foreground\"\n                    />\n                    {feature}\n                  </li>\n                ))}\n              </ul>\n            </CardPanel>\n            <CardFooter>\n              <Button\n                className=\"w-full\"\n                variant={tier.featured ? \"default\" : \"outline\"}\n              >\n                {tier.cta}\n              </Button>\n            </CardFooter>\n          </Card>\n        ))}\n      </div>\n    </div>\n  );\n}\n",
+      "type": "registry:block"
+    }
+  ],
+  "categories": [
+    "pricing"
+  ],
+  "type": "registry:block"
+}

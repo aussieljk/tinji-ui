@@ -1231,6 +1231,144 @@ export const Index: Record<string, any> = {
     categories: undefined,
     meta: undefined,
   },
+  "date-picker": {
+    name: "date-picker",
+    description: "",
+    type: "registry:ui",
+    registryDependencies: ["@tinji/button","@tinji/calendar","@tinji/popover"],
+    files: [{
+      path: "registry/default/ui/date-picker.tsx",
+      type: "registry:ui",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/default/ui/date-picker.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  "date-range-picker": {
+    name: "date-range-picker",
+    description: "",
+    type: "registry:ui",
+    registryDependencies: ["@tinji/button","@tinji/calendar","@tinji/popover"],
+    files: [{
+      path: "registry/default/ui/date-range-picker.tsx",
+      type: "registry:ui",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/default/ui/date-range-picker.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: undefined,
+    meta: undefined,
+  },
+  "dashboard-01": {
+    name: "dashboard-01",
+    description: "",
+    type: "registry:block",
+    registryDependencies: ["@tinji/avatar","@tinji/badge","@tinji/button","@tinji/card","@tinji/input-group","@tinji/separator","@tinji/sidebar","@tinji/table"],
+    files: [{
+      path: "registry/default/blocks/dashboard-01/page.tsx",
+      type: "registry:block",
+      target: ""
+    },{
+      path: "registry/default/blocks/dashboard-01/components/app-sidebar.tsx",
+      type: "registry:component",
+      target: ""
+    },{
+      path: "registry/default/blocks/dashboard-01/components/stat-cards.tsx",
+      type: "registry:component",
+      target: ""
+    },{
+      path: "registry/default/blocks/dashboard-01/components/orders-table.tsx",
+      type: "registry:component",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/default/blocks/dashboard-01/page.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: ["dashboard"],
+    meta: undefined,
+  },
+  "login-01": {
+    name: "login-01",
+    description: "",
+    type: "registry:block",
+    registryDependencies: ["@tinji/button","@tinji/card","@tinji/field","@tinji/form","@tinji/input","@tinji/separator"],
+    files: [{
+      path: "registry/default/blocks/login-01/page.tsx",
+      type: "registry:block",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/default/blocks/login-01/page.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: ["authentication"],
+    meta: undefined,
+  },
+  "signup-01": {
+    name: "signup-01",
+    description: "",
+    type: "registry:block",
+    registryDependencies: ["@tinji/button","@tinji/card","@tinji/checkbox","@tinji/field","@tinji/form","@tinji/input","@tinji/label"],
+    files: [{
+      path: "registry/default/blocks/signup-01/page.tsx",
+      type: "registry:block",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/default/blocks/signup-01/page.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: ["authentication"],
+    meta: undefined,
+  },
+  "pricing-01": {
+    name: "pricing-01",
+    description: "",
+    type: "registry:block",
+    registryDependencies: ["@tinji/badge","@tinji/button","@tinji/card","@tinji/separator"],
+    files: [{
+      path: "registry/default/blocks/pricing-01/page.tsx",
+      type: "registry:block",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/default/blocks/pricing-01/page.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: ["pricing"],
+    meta: undefined,
+  },
+  "settings-01": {
+    name: "settings-01",
+    description: "",
+    type: "registry:block",
+    registryDependencies: ["@tinji/avatar","@tinji/button","@tinji/card","@tinji/field","@tinji/input","@tinji/label","@tinji/separator","@tinji/switch","@tinji/tabs","@tinji/textarea"],
+    files: [{
+      path: "registry/default/blocks/settings-01/page.tsx",
+      type: "registry:block",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/default/blocks/settings-01/page.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: ["settings"],
+    meta: undefined,
+  },
   "p-accordion-1": {
     name: "p-accordion-1",
     description: "Basic accordion",
@@ -3629,7 +3767,7 @@ export const Index: Record<string, any> = {
     name: "p-date-picker-1",
     description: "Basic date picker",
     type: "registry:block",
-    registryDependencies: ["@tinji/calendar","@tinji/popover","@tinji/button"],
+    registryDependencies: ["@tinji/date-picker"],
     files: [{
       path: "registry/default/particles/p-date-picker-1.tsx",
       type: "registry:block",
@@ -10392,6 +10530,24 @@ export const Index: Record<string, any> = {
     }),
     categories: ["date field"],
     meta: undefined,
+  },
+  "p-date-range-picker-1": {
+    name: "p-date-range-picker-1",
+    description: "Date range picker",
+    type: "registry:block",
+    registryDependencies: ["@tinji/date-range-picker"],
+    files: [{
+      path: "registry/default/particles/p-date-range-picker-1.tsx",
+      type: "registry:block",
+      target: ""
+    }],
+    component: React.lazy(async () => {
+      const mod = await import("@/registry/default/particles/p-date-range-picker-1.tsx")
+      const exportName = Object.keys(mod).find(key => typeof mod[key] === 'function' || typeof mod[key] === 'object') || item.name
+      return { default: mod.default || mod[exportName] }
+    }),
+    categories: ["date picker","calendar","popover","button"],
+    meta: {"className":"**:data-[slot=preview]:w-full **:data-[slot=preview]:max-w-64"},
   },
   "fonts": {
     name: "fonts",
